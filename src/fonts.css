@@ -1,0 +1,135 @@
+/* Dosis */
+@font-face {
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 200;
+  src: local("Dosis"),
+    url("../public/fonts/dosis/Dosis-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Dosis"),
+    url("../public/fonts/dosis/Dosis-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Dosis"),
+    url("../public/fonts/dosis/Dosis-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Dosis"),
+    url("../public/fonts/dosis/Dosis-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Dosis"),
+    url("../public/fonts/dosis/Dosis-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Dosis"),
+    url("../public/fonts/dosis/Dosis-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Dosis"),
+    url("../public/fonts/dosis/Dosis-ExtraBold.ttf") format("truetype");
+}
+
+
+
+/* ////////////////////////////////////////////////////////// */
+
+/* Exo2 */
+@font-face {
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Exo"),
+    url("../public/fonts/exo2/Exo2-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Exo"),
+    url("../public/fonts/exo2/Exo2-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Exo"),
+    url("../public/fonts/exo2/Exo2-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Exo"),
+    url("../public/fonts/exo2/Exo2-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Exo"),
+    url("../public/fonts/exo2/Exo2-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Exo"),
+    url("../public/fonts/exo2/Exo2-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Exo"),
+    url("../public/fonts/exo2/Exo2-ExtraBold.ttf") format("truetype");
+}
+
+.f-dosis-section-1{
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+}
+
+.f-dosis-bold{
+  font-family: 'Dosis', sans-serif;
+  font-weight: 800; 
+}
+
+.f-dosis-medium{
+  font-family: 'Dosis', sans-serif;
+  font-weight: 400; 
+} 
+.f-exo-bold{
+  font-family: 'Exo', sans-serif;
+  font-weight: 800; 
+}
+
+.f-exo-medium{
+  font-family: 'Exo', sans-serif;
+  font-weight: 400; 
+}
+ 

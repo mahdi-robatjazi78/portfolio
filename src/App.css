@@ -1,42 +1,60 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+
+span.Typewriter__wrapper
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #00ff37 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+@keyframes textclip {
   to {
-    transform: rotate(360deg);
+    background-position: 200% center;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+
+
+.ping {
+	 background: #fff;
+	 border-radius: 50%;
+	 border: 50px solid #222;
+	 width: 20px;
+	 height: 20px;
+	 animation: load 1.5s ease-out infinite;
 }
 
-.card {
-  padding: 2em;
+ @keyframes load {
+	 0% {
+		 background: #fff;
+		 border: 0px solid #fff;
+	}
+	 50% {
+		 background: #fff;
+		 border: 100px solid #222;
+	}
+	 100% {
+		 background: #fff;
+		 border: 0px solid #222;
+	}
 }
 
-.read-the-docs {
-  color: #888;
+.header-styles {
+  background-color: #ffd700;
 }
