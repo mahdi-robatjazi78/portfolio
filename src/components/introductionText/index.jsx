@@ -2,7 +2,7 @@ import React from 'react'
 import Typewriter from "typewriter-effect";
 
 
-const IntroductionText = () => {
+export function IntroductionTextEnglish  () {
   return (
 	<Typewriter
 		onInit={(typewriter) => {
@@ -22,24 +22,7 @@ const IntroductionText = () => {
 
 		.typeString("Stack : javascript 👍")
 		.pauseFor(1500)
-		.deleteAll()
-
-		// .typeString("سلام به همگی")
-		// .pauseFor(1500)
-		// .deleteAll()
-
-		// .typeString("من مهدی رباط جزی هستم")
-		// .pauseFor(2500)
-		// .deleteAll()
-
-		// .typeString("توسعه وب کار من است")
-		// .pauseFor(1500)
-		// .deleteAll()
-
-		// .typeString("دامنه فعالیت : جاوااسکریپت")
-		// .pauseFor(1500)
-		// .deleteAll()
-
+		.deleteAll() 
 		.start();
 	}}
 	options={{
@@ -48,6 +31,37 @@ const IntroductionText = () => {
 	}}
   />
   )
-}
+} 
 
-export default IntroductionText
+
+export function IntroductionTextPersian (){
+	return (
+	  <Typewriter
+		  onInit={(typewriter) => {
+		typewriter
+  
+		  .typeString("سلام به همگی")
+		  .pauseFor(1500)
+		  .deleteAll()
+  
+		  .typeString("من مهدی رباط جزی هستم")
+		  .pauseFor(2500)
+		  .deleteAll()
+  
+		  .typeString("من توسعه وب را انجام می دهم")
+		  .pauseFor(1500)
+		  .deleteAll()
+  
+		  .typeString("ناحیه : جاوااسکریپت 👍")
+		  .pauseFor(1500)
+		  .deleteAll() 
+		  .start();
+	  }}
+	  options={{
+
+		autoStart: true,
+		loop: true,
+	  }}
+	/>
+	)
+  } 

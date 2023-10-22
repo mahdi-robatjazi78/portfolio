@@ -7,6 +7,8 @@ import ContactMe from "./components/contact/contact";
 import MySkills from "./components/skills/skills";
 import Projects from "./components/projects/projects";
 import Introduction from "./components/introdoction/introduction";
+import "animate.css"
+
 
 function App() {
   const [headerShowIntroduction, setHeaderShowIntroduction] = useState(false);

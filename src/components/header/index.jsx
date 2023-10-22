@@ -1,40 +1,55 @@
-import React from "react";
-import IntroductionText from "../introductionText";
+import React  , {useContext} from "react";
+import {IntroductionTextEnglish , IntroductionTextPersian} from "../introductionText";
+import { LanguageContext } from "../../utils/context/language";
+import IntlMessages from "../../utils/intl"
 
 const Header = (props) => {
   const { showIntroductionText } = props;
-
+  const {lang,setLanguageToggle} = useContext(LanguageContext)
   return (
-    <div className="header-styles fixed top-0 w-screen h-20 z-10 p-5">
+    <div className="header-styles fixed top-0 w-screen h-20 z-10 p-6 px-20" dir={lang==="fa-IR" ? "ltr":"rtl"}>
       <div className="flex justify-between">
-        <div>
+        <div className="flex">
+         
+          <div onClick={setLanguageToggle} className="pl-5 text-1xl f-exo-medium cursor-pointer">
+
+            {lang === "en-US" ? "Fa" : "En"}
+
+          </div>
+
           {showIntroductionText && (
-            <div className="text-2xl f-dosis-bold f-dosis-bold z-10 ml-20">
-              <IntroductionText />
+            <div className="text-2xl f-dosis-bold z-10 pb-4">
+             {
+                lang === "fa-IR" ? <IntroductionTextPersian /> : <IntroductionTextEnglish />
+              }
             </div>
           )}
+
+
         </div>
 
-        <div className="flex justify-between gap-24 text-2xl f-exo-medium">
+        <div className="flex justify-between gap-24 text-1xl f-exo-medium" dir={lang==="fa-IR" ? "rtl":"ltr"} >
           <a href="#introduction-section">
             {" "}
-            <p>Introduction</p>{" "}
+            <p>
+              <IntlMessages id="header.section.title.introduction" />
+            </p>{" "}
           </a>
           <a href="#about-me-section">
-            {" "}
-            <p>About</p>{" "}
+        
+            <IntlMessages id="header.section.title.about" />
+
           </a>
           <a href="#skills-section">
-            {" "}
-            <p>Skills</p>{" "}
+          <IntlMessages id="header.section.title.skills" />
           </a>
           <a href="#projects-section">
-            {" "}
-            <p>Projects</p>{" "}
+          <IntlMessages id="header.section.title.projects" />
+
           </a>
           <a href="#contact-me-section">
-            {" "}
-            <p>Contact Me</p>{" "}
+          <IntlMessages id="header.section.title.contactme" />
+
           </a>
         </div>
       </div>
