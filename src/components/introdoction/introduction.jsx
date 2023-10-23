@@ -1,13 +1,17 @@
 import React , {useContext} from "react";
 import {IntroductionTextEnglish , IntroductionTextPersian} from "../introductionText";
 import { LanguageContext } from "../../utils/context/language";
+import useScrollPosition from "../../utils/hooks/useScrollPosition";
 
-const Introduction = (props) => {
-  const {headerShowIntroduction} = props;
+const Introduction = () => {
+  
+
+  const scrollPosition = useScrollPosition()
+
   const {lang} = useContext(LanguageContext)
   return (
     <div id="introduction-section" className={`h-screen  bg-yellow-400`}>
-    {!headerShowIntroduction && (
+     {scrollPosition <= 370 && (
       <div
         className={`f-dosis-section-1 text-7xl h-screen flex justify-center items-center`}
       >
@@ -16,7 +20,7 @@ const Introduction = (props) => {
         }
         
       </div>
-    )}
+    )}  
   </div>
   );
 };

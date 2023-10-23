@@ -1,10 +1,16 @@
 import React, { useContext } from "react";
 import InjectMassage from "../../utils/intl";
-import { LanguageContext } from "../../utils/context/language";
+import { LanguageContext } from "../../utils/context/language"; 
 
 const AboutMe = (props) => {
+
+
+
   const {} = props;
-  const { lang } = useContext(LanguageContext);
+  const { lang } = useContext(LanguageContext); 
+
+
+
 
   return (
     <div
@@ -12,9 +18,9 @@ const AboutMe = (props) => {
       className="relative h-screen bg-sky-300"
       dir={lang === "fa-IR" ? "rtl" : "ltr"}
     >
-      <div className="central right-16 ">
+      <div className="central right-16 " >
 
-      <section className="f-dosis-section-1 text-xl mb-8 animate__animated  animate__fadeInDown animate__delay-1s">
+      <section data-aos='fade-down' className={`f-dosis-section-1 text-xl mb-8 `}>
           <h1 className="font-bold ">
             <InjectMassage id="about.me.section0.title.who.am.i" />
           </h1>
@@ -25,7 +31,7 @@ const AboutMe = (props) => {
       </section>
 
 
-        <section className="f-dosis-section-1 text-xl mb-8 animate__animated  animate__fadeInDown animate__delay-2s">
+        <section data-aos='fade-down' className={`f-dosis-section-1 text-xl mb-8`}>
           <h1 className="font-bold">
             <InjectMassage id="about.me.section1.title.what.i.do" />
           </h1>
@@ -42,7 +48,7 @@ const AboutMe = (props) => {
           </ul>
         </section>
 
-        <section className="f-dosis-section-1 text-xl mt-5  animate__animated  animate__fadeInDown animate__delay-3s">
+        <section data-aos='fade-down' className={`f-dosis-section-1 text-xl mt-5`}> 
           <h1 className="font-bold">
             <InjectMassage id="about.me.section2.title.what.i.want" />
           </h1>
@@ -58,7 +64,7 @@ const AboutMe = (props) => {
             </li>
           </ul>
         </section>
-        <div></div>
+        {/* <div></div> */}
       </div>
     </div>
   );

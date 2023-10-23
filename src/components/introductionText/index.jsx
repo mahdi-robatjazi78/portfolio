@@ -1,8 +1,11 @@
 import React from 'react'
 import Typewriter from "typewriter-effect";
-
+import useScrollPosition from '../../utils/hooks/useScrollPosition';
 
 export function IntroductionTextEnglish  () {
+
+	const scrollPosition = useScrollPosition()
+
   return (
 	<Typewriter
 		onInit={(typewriter) => {
@@ -28,6 +31,9 @@ export function IntroductionTextEnglish  () {
 	options={{
 	  autoStart: true,
 	  loop: true,
+	//   wrapperClassName: scrollPosition <= 370 ?"Typewriter__wrapper": "Typewriter__wrapper",
+	  cursorClassName:'d-none'
+
 	}}
   />
   )
@@ -35,6 +41,8 @@ export function IntroductionTextEnglish  () {
 
 
 export function IntroductionTextPersian (){
+	
+	const scrollPosition = useScrollPosition()
 	return (
 	  <Typewriter
 		  onInit={(typewriter) => {
@@ -44,23 +52,25 @@ export function IntroductionTextPersian (){
 		  .pauseFor(1500)
 		  .deleteAll()
   
-		  .typeString("من مهدی رباط جزی هستم")
+		  .typeString("مهدی رباط جزی هستم")
 		  .pauseFor(2500)
 		  .deleteAll()
   
-		  .typeString("من توسعه وب را انجام می دهم")
+		  .typeString("طراح و توسعه دهنده وب")
 		  .pauseFor(1500)
 		  .deleteAll()
   
-		  .typeString("ناحیه : جاوااسکریپت 👍")
+		  .typeString("فرانت اند سطح متوسط")
 		  .pauseFor(1500)
 		  .deleteAll() 
 		  .start();
 	  }}
 	  options={{
-
 		autoStart: true,
 		loop: true,
+		wrapperClassName: scrollPosition <= 370 ? "Typewriter__wrapper wrapper-type-writer-persian" : "Typewriter__wrapper",
+		cursorClassName:'d-none'
+
 	  }}
 	/>
 	)

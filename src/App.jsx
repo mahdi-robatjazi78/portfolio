@@ -8,31 +8,22 @@ import MySkills from "./components/skills/skills";
 import Projects from "./components/projects/projects";
 import Introduction from "./components/introdoction/introduction";
 import "animate.css"
-
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function App() {
-  const [headerShowIntroduction, setHeaderShowIntroduction] = useState(false);
-  const handleScroll = () => {
-    const position = window.pageYOffset;
-    if (position < 100) {
-    }
 
-    if (position < 1115) {
-      setHeaderShowIntroduction(false);
-    } else {
-      setHeaderShowIntroduction(true);
-    }
-  };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    AOS.init()
+   
+
+   
   }, []);
 
-  //  console.log("position;", scrollPosition)
+
+ 
 
   return (
     <div className="relative">
@@ -41,11 +32,13 @@ function App() {
         className="animate-bounce z-10 fixed bottom-10 right-20"
       />
 
-      <Header showIntroductionText={headerShowIntroduction} />
+      <Header />
 
-      <img src="wave.svg" alt="header-wave" className="absolute" />
+      <img 
+      // data-aos='fade-down'
+       src="wave.svg" alt="header-wave" className="absolute animate__animated animate__rotateInDownLeft" />
 
-      <Introduction showIntroductionText={headerShowIntroduction} />
+      <Introduction  />
 
       <div>
         <AboutMe />

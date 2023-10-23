@@ -109,27 +109,81 @@
     url("../public/fonts/exo2/Exo2-ExtraBold.ttf") format("truetype");
 }
 
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* Vazir font */
+
+
+@font-face {
+  font-family: "Vazir";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Vazir"),
+    url("../public/fonts/vazir/Vazir-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Vazir";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Vazir"),
+    url("../public/fonts/vazir/Vazir-Light.ttf") format("truetype");
+}
+
+ 
+@font-face {
+  font-family: "Vazir";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Vazir"),
+    url("../public/fonts/vazir/Vazir-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Vazir";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Vazir"),
+    url("../public/fonts/vazir/Vazir.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Vazir";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Vazir"),
+    url("../public/fonts/vazir/Vazir-Bold.ttf") format("truetype");
+}
+ 
+
+
+
+
 .f-dosis-section-1{
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis' , Vazir, sans-serif;
   font-weight: 600;
 }
 
 .f-dosis-bold{
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis' , Vazir, sans-serif;
   font-weight: 800; 
 }
 
 .f-dosis-medium{
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis' , Vazir, sans-serif;
   font-weight: 400; 
 } 
 .f-exo-bold{
-  font-family: 'Exo', sans-serif;
-  font-weight: 800; 
+  font-family: 'Exo', Vazir sans-serif;
+  font-weight: 700; 
 }
 
 .f-exo-medium{
-  font-family: 'Exo', sans-serif;
+  font-family: 'Exo' , Vazir, sans-serif;
   font-weight: 400; 
 }
  

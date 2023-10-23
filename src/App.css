@@ -4,7 +4,7 @@ span.Typewriter__wrapper
 {
    text-transform: uppercase;
   background-image: linear-gradient(
-    -225deg,~
+    -225deg,
     #231557 0%,
     #44107a 29%,
     #ff1361 67%,
@@ -21,6 +21,22 @@ span.Typewriter__wrapper
   animation: textclip 2s linear infinite;
   display: inline-block;
 }
+.wrapper-type-writer-persian {
+  line-height:7rem;
+}
+
+.wrapper-type-writer-in-header{
+   font-size: 1rem;
+  transform:translateY(-20px) 
+}
+
+.d-none{
+  display:none;
+}
+
+
+
+
 
 @keyframes textclip {
   to {

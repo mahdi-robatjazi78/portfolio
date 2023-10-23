@@ -1,35 +1,56 @@
-import React, { useContext , useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export const LanguageContext = React.createContext(false);
 
 export const LanguageContextProvider = ({ children }) => {
+  const queryParams = new URLSearchParams(window.location.search);
 
-    const [lang , setLang] = useState ("en-US")
+  const [lang, setLang] = useState(
+    queryParams.get("lang") === "en" ? "en-US" : "fa-IR" || "en-US"
+  );
 
-    const setNewLanguage = (input)=>{
-        if(input === "en" || input === "eng" || "us"){
-            setLang("en-US")
-        }else if(input === "fa" || input === "far" || input === "per" || "ir") {
-            setLang("fa-IR")
-        }
+  const setNewLanguage = (input) => {
+    if (input === "en" || input === "eng" || "us") {
+      setQueryString("en");
+    } else if (input === "fa" || input === "far" || input === "per" || "ir") {
+      setQueryString("fa");
     }
-    const setLanguageToggle = ()=>{
-        if(lang !== "en-US"){
-            setLang("en-US")
-        }else {
-            setLang("fa-IR")
-        }
+  };
+  const setLanguageToggle = () => {
+    if (lang !== "en-US") {
+      setQueryString("en");
+    } else {
+      setQueryString("fa");
     }
+  };
 
-    return(
-        <LanguageContext.Provider value={{lang , setNewLanguage ,setLanguageToggle}}>
+  const setQueryString = (value) => {
+    if (!value) {
+      value = lang === "en-US" ? "en" : "fa";
+    }
+    queryParams.set("lang", value);
+    history.replaceState(null, null, "?" + queryParams.toString());
+    setLang(value === "en" ? "en-US" : "fa-IR")
+  };
 
-            {
-                children
-            }
+  useEffect(() => {
+    if (window.location.search.search("lang") === -1) {
+      setQueryString();
+    } else {
+      const queryaramLanguage =
+        queryParams.get("lang") === "en" ? "en-US" : "fa-IR";
+        console.log(lang , queryaramLanguage)
+      if (queryaramLanguage !== lang) {
+        setLanguageToggle();
+      }
+    }
+  }, []);
 
-        </LanguageContext.Provider>
-    )
-
-}
- 
+  return (
+    <LanguageContext.Provider
+      value={{ lang, setNewLanguage, setLanguageToggle }}
+    >
+      {children}
+    </LanguageContext.Provider>
+  );
+};
