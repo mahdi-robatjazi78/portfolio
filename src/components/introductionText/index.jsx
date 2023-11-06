@@ -4,7 +4,6 @@ import useScrollPosition from '../../utils/hooks/useScrollPosition';
 
 export function IntroductionTextEnglish  () {
 
-	const scrollPosition = useScrollPosition()
 
   return (
 	<Typewriter
@@ -42,12 +41,11 @@ export function IntroductionTextEnglish  () {
 
 export function IntroductionTextPersian (){
 	
-	const scrollPosition = useScrollPosition()
+	const {section} = useScrollPosition()
 	return (
 	  <Typewriter
 		  onInit={(typewriter) => {
 		typewriter
-  
 		  .typeString("سلام به همگی")
 		  .pauseFor(1500)
 		  .deleteAll()
@@ -68,7 +66,7 @@ export function IntroductionTextPersian (){
 	  options={{
 		autoStart: true,
 		loop: true,
-		wrapperClassName: scrollPosition <= 370 ? "Typewriter__wrapper wrapper-type-writer-persian" : "Typewriter__wrapper",
+		wrapperClassName: section !== "intro" ? "Typewriter__wrapper wrapper-type-writer-persian-in-header" : "Typewriter__wrapper wrapper-type-writer-persian",
 		cursorClassName:'d-none'
 
 	  }}

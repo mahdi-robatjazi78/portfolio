@@ -4,7 +4,7 @@ const Projects = (props) => {
   const {} = props;
 
   return (
-		<div id="projects-section" className={`h-screen  bg-emerald-400`}>
+		<div id="projects-section" className={`h-screen  projects-gradient`}>
       <h1>projects</h1>
     </div>
   );

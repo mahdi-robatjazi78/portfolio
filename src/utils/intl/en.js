@@ -11,7 +11,7 @@ export default {
     "introduction.section.text.4":"Expertise : javascript 👍",
 
     "about.me.section0.title.who.am.i":"Who am i? ",
-    "about.me.section0.t1":"Hello! 👋 I am Mehdi Rabat Jezi, a passionate web developer in the field\n" +
+    "about.me.section0.t1":"Hello! 👋 I am Mehdi Robatjazi, a passionate web developer in the field\n" +
       "  Front-end, focusing on Reactjs and Next. I add to my experience by cultivating creative ideas.",
 
     "about.me.section1.title.what.i.do":"What i do? ",

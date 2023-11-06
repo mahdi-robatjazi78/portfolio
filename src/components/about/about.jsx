@@ -8,17 +8,15 @@ const AboutMe = (props) => {
 
   const {} = props;
   const { lang } = useContext(LanguageContext); 
-
-
-
+ 
 
   return (
     <div
       id="about-me-section"
-      className="relative h-screen bg-sky-300"
+      className="relative h-screen about-section-gradient"
       dir={lang === "fa-IR" ? "rtl" : "ltr"}
     >
-      <div className="central right-16 " >
+      <div className="central-about right-16 " >
 
       <section data-aos='fade-down' className={`f-dosis-section-1 text-xl mb-8 `}>
           <h1 className="font-bold ">
@@ -27,7 +25,6 @@ const AboutMe = (props) => {
           <p className="pl-10">
             <InjectMassage id="about.me.section0.t1" />
           </p>
-
       </section>
 
 
