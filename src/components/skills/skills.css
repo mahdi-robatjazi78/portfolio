@@ -1,16 +1,17 @@
 .skills-chevron{
     color:white;
-    font-size:3rem;
+    font-size:2.5rem;
     margin-bottom: 10px ;
     cursor:pointer;
-    background-color: #e1e1e11f ;
-    border-radius: 50% ;
+    /* background-color: #e1e1e11f ; */
+    border-radius:10%;
 }
 
 
 .disable-chevron{
     color:gray !important; 
-
+    opacity: .2;
+    cursor: auto;
 }
 
 .skills-center{
@@ -23,17 +24,150 @@
     top:50%;
     left:0;
     width:100%;
-    height:120px;
+    height:140px;
     transform: translateY(-50%);
-    overflow: hidden;
-    
+    overflow: hidden;    
 
 }
 .skills-center > .road > #parent{
-
-
     transition : all .4s ease;
+}
+
+.skills-row {
+	/* height:110px; */
+	padding:14px 20px;
+}
+.skills-box{
     
+	background-color: black;
+	border-radius:10px;
+	color:white;
+    height:110px;
+    position: relative;
+    overflow: hidden; 
+
 
 }
+
+.skills-animated-border-1{
+    --border-size: 3px;
+    --border-angle: 0turn;
+    /* width: 60vmin;
+    height: 50vmin; */
+    background-image: conic-gradient(
+        from var(--border-angle),
+        #213,
+        #112 50%,
+        #213
+      ),
+      conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+    background-size: calc(100% - (var(--border-size) * 2))
+        calc(100% - (var(--border-size) * 2)),
+      cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  
+    animation: bg-spin 3s linear infinite;
+
+}
+
+
+.skills-animated-border-2{
+    --border-size: 3px;
+    --border-angle: 0turn;
+    /* width: 60vmin;
+    height: 50vmin; */
+    background-image: conic-gradient(
+        from var(--border-angle),
+        #213,
+        #112 50%,
+        #213
+      ),
+      conic-gradient(from var(--border-angle), transparent 20%, rgb(255, 255, 0), rgb(4, 255, 0));
+    background-size: calc(100% - (var(--border-size) * 2))calc(100% - (var(--border-size) * 2)),cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  
+    animation: bg-spin 3s linear infinite;
+}
+
+@keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+.skills-box > img{
+    height:90px;
+    width:94px;
+    transition: all .5s ease;
+    user-select:none;
+    opacity: .3;
+}
+.skills-description{
+    color:white;
+    text-align: center ;
+    width: 100%;
+    font-size:.8rem;
+    position: absolute;
+    bottom:0px;
+    left:50%;
+    transform: translateX(-50%) translateY(15px);
+    transition: all 1s ease;
+
+    
+}
+.start-animate{
+    transition: all 1s ease;
+
+}
+.start-animate > .skills-description {
+    transform: translateX(-50%) translateY(-10px);
+}
+
+.start-animate > img {
+    opacity: 1;
+}
+
+
+/* ------------------------------- */
+
+
+.stepper-container{
+   
+    width:100%;
+}
+
+.stepper-container > .stepper-parent > div{
+    position: relative;
+
+}
+
+.stepper-container > .stepper-parent > div:first-child:after{
+    content:"👽";
+    position:absolute;
+    bottom:0;
+    transform: translateY(30px);
+    font-size:1.3rem;
+}
+
+.stepper-container > .stepper-parent > div:nth-child(3):after{
+    content:"🏫";
+    position:absolute;
+    bottom:0;
+    transform: translateY(30px);
+    font-size:1.3rem;
+}
+.stepper-container > .stepper-parent > div:last-child:after{
+    content:"🧑‍💻";
+    position:absolute;
+    bottom:0;
+    transform: translateY(30px);
+    font-size:1.3rem;
+}
  
+  @property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+  

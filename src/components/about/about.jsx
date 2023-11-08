@@ -18,21 +18,21 @@ const AboutMe = (props) => {
     >
       <div className="central-about right-16 " >
 
-      <section data-aos='fade-down' className={`f-dosis-section-1 text-xl mb-8 `}>
-          <h1 className="font-bold ">
+      <section data-aos='fade-down' className={`f-dosis-section-1 text-xl mb-8  bg-red-500 p-4 rounded-lg`}>
+          <h1 className={`font-bold ${lang === "fa-IR" ? "" : ""}`}>
             <InjectMassage id="about.me.section0.title.who.am.i" />
           </h1>
-          <p className="pl-10">
+          <p className={`${lang === "fa-IR" ? "pr-7 text-base" : "pl-7"}`}>
             <InjectMassage id="about.me.section0.t1" />
           </p>
       </section>
 
 
-        <section data-aos='fade-down' className={`f-dosis-section-1 text-xl mb-8`}>
+        <section data-aos='fade-down' className={`f-dosis-section-1 text-xl mb-8 bg-red-500 p-4 rounded-lg`}>
           <h1 className="font-bold">
             <InjectMassage id="about.me.section1.title.what.i.do" />
           </h1>
-          <ul className="list-disc pl-10">
+          <ul className={`${lang === "fa-IR" ? "list-disc pr-7 text-base" : "list-disc pl-7"}`}>
             <li>
               <InjectMassage id="about.me.section1.t1" />
             </li>
@@ -45,11 +45,11 @@ const AboutMe = (props) => {
           </ul>
         </section>
 
-        <section data-aos='fade-down' className={`f-dosis-section-1 text-xl mt-5`}> 
+        <section data-aos='fade-down' className={`f-dosis-section-1 text-xl mt-5 bg-red-500 p-4 rounded-lg`}> 
           <h1 className="font-bold">
             <InjectMassage id="about.me.section2.title.what.i.want" />
           </h1>
-          <ul className="list-disc pl-10">
+          <ul className={`${lang === "fa-IR" ? "list-disc pr-7 text-base" : "list-disc pl-7"}`}>
             <li>
               <InjectMassage id="about.me.section2.t1" />
             </li>

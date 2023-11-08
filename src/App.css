@@ -21,6 +21,7 @@ span.Typewriter__wrapper {
 span.Typewriter__wrapper::selection{
   background-color: rgba(255, 102, 0, 0.302);
 }
+
 .wrapper-type-writer-persian {
   line-height: 7rem;
 }
@@ -178,4 +179,10 @@ span.Typewriter__wrapper::selection{
 }
 
 
+
+.selection-text-background::selection{
+  background-color: rgba(57, 212, 114, 0.92);
+  color:black;
+
+}
 

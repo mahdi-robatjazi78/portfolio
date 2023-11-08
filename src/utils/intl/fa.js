@@ -27,4 +27,33 @@ export default {
     "about.me.section2.t2":"پیدا کردن دوستان جدید",
     "about.me.section2.t3":"احساس رضایت و ارزش در زندگی",
 
+    "skills.description.js":"جاوااسکرپت",
+    "skills.description.ts":"تایپ اسکریپت",
+    "skills.description.react":"ری اکت",
+    "skills.description.redux":"ری داکس",
+    "skills.description.next":"نکست",
+
+    "skills.description.node":"نود",
+    "skills.description.express":"اکسپرس",
+    "skills.description.mongo":"مانگو",
+    "skills.description.vue":"وی یو ای",
+    "skills.description.python":"پایتون",
+
+    "skills.description.git":"گیت",
+    "skills.description.jira":"جیرا",
+    "skills.description.photoshop":"فوتوشاپ",
+    "skills.description.illustrator":"ایلستریتور",
+    "skills.description.figma":"فیگما", 
+
+    "skills.description.paragraph.professional":"درلیست بالا؛ شما میتوانید مهارت های ",
+  
+  
+
+    "text.skills":"من را ببینید.",
+
+
+    "text.professional":"حرفه ای",
+    "text.learned":"درحال یادگیری",
+    "text.worked":"فرعی",
+
 }

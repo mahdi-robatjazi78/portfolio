@@ -23,4 +23,32 @@ export default {
     "about.me.section2.t1":"Collaborate and continuous learning from work and colleagues",
     "about.me.section2.t2":"Find new friends",
     "about.me.section2.t3":"A sense of satisfaction and value in life",
+
+    
+    "skills.description.js":"Javascript",
+    "skills.description.ts":"Typescript",
+    "skills.description.react":"React",
+    "skills.description.redux":"Redux",
+    "skills.description.next":"Next",
+
+
+    "skills.description.node":"Node",
+    "skills.description.express":"Express",
+    "skills.description.mongo":"Mongo",
+    "skills.description.vue":"Vue",
+    "skills.description.python":"Python",
+
+    "skills.description.git":"Git",
+    "skills.description.jira":"Jira",
+    "skills.description.photoshop":"Photoshop",
+    "skills.description.illustrator":"Illustrator", 
+    "skills.description.figma":"Figma",
+
+    "skills.description.paragraph.professional":"In the list above, you can see my",
+    "text.skills":"skills.",   
+    "text.professional":"Professional",
+    "text.learned":"Learning",
+    "text.worked":"Secondary",
+
+
 }
