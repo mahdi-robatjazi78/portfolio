@@ -35,7 +35,7 @@ export default {
 
     "skills.description.node":"نود",
     "skills.description.express":"اکسپرس",
-    "skills.description.mongo":"مانگو",
+    "skills.description.react-native":"ری اکت نیتیو",
     "skills.description.vue":"وی یو ای",
     "skills.description.python":"پایتون",
 

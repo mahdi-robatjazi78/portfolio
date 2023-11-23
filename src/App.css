@@ -22,7 +22,7 @@ span.Typewriter__wrapper::selection{
   background-color: rgba(255, 102, 0, 0.302);
 }
 
-.wrapper-type-writer-persian {
+.t-w-parent > div > span{
   line-height: 7rem;
 }
 .wrapper-type-writer-persian-in-header {
@@ -80,9 +80,10 @@ span.Typewriter__wrapper::selection{
 }
 .central-about{
   position: absolute;
-  top: 42%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width:100%;
 }
 
 .intro-about-gradient {
@@ -183,6 +184,92 @@ span.Typewriter__wrapper::selection{
 .selection-text-background::selection{
   background-color: rgba(57, 212, 114, 0.92);
   color:black;
+}
+
+.glassMorphism{
+  background: rgba( 255, 255, 255, 0.4 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3.5px );
+  -webkit-backdrop-filter: blur( 3.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.iconBox{
+  padding:8px;
+  cursor:pointer;
+  border-radius: 10px;
+
+}
+.iconBox:hover{ 
+  border-radius: 10px;
+  padding:7px;
+  border:1px solid rgb(191, 191, 191);
+
+  background: rgba( 255, 255, 255, 0.4 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3.5px );
+  -webkit-backdrop-filter: blur( 3.5px );
+ 
+  /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
+
+
+.success-box{
+  animation-name:succesBoxAnimate;
+  animation-duration: 3s
+}
+
+@keyframes succesBoxAnimate {
+
+  from {  background-color: rgb(23, 255, 23);}
+  to { background-color: rgba( 255, 255, 255, 0.4 );}
 
 }
 
+.scale-animation {
+  animation: scaleIcon 3s ease alternate infinite ;
+}
+
+
+@keyframes scaleIcon {
+  from{
+  scale:1;
+
+  }
+  to{
+  scale:.7;
+
+  }
+}
+
+.rotate-animation {
+  animation: rotateIconBox 3s linear forwards infinite ;
+}
+.rotate-animation:hover {
+  background-color: #ff13623d;
+}
+
+@keyframes rotateIconBox{
+  from{
+   transform: rotate(0) ;
+  }
+  to{
+    transform: rotate(360deg) ;
+  }
+}
+
+
+.contact-box-animation{
+  animation : contactBoxAnimation 1s linear forwards;
+}
+
+@keyframes contactBoxAnimation {
+  from{
+    bottom:-233px
+  }
+  to{
+    bottom:25px;
+
+  }
+}

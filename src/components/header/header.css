@@ -49,19 +49,30 @@
         left: 50%;
         /* right: 50%; */
     }
-
     50%{
         width: 100%;
         left: 0;
         /* right: 0; */
-
     }
-
     to {
         width: 0px;
         left: 50%;
         /* right: 50%; */
-
     }
+}
+ 
+.minimized-header-links > a{
+    width:100%;
+    margin-bottom:5px;
+    padding:0 10px;
+    user-select: none;
+    
+}
+.minimized-header-links > div{
+    width:100%;
+     
+}
 
+.minimized-header-links > .active-header-minimized-item {
+    background-color: rgba(105, 255, 105, 0.548) !important;
 }

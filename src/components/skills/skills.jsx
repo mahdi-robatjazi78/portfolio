@@ -5,13 +5,15 @@ import { useEffect } from "react";
 import InjectMassage from "../../utils/intl";
 import StepperSkills from './stepper'
 import { LanguageContext } from "../../utils/context/language";
-
-
+import {Element} from 'react-scroll'
 
 const MySkills = () => {
   const [shownItem, setShownItem] = useState(0);
   const [startAnimate, setStartAnimate] = useState(false);
   const parentRef = useRef(null);
+  const skillsCenterRef = useRef(null);
+
+ 
   const { lang } = useContext(LanguageContext); 
 
   function handleNumberUp() {
@@ -29,11 +31,11 @@ const MySkills = () => {
   useEffect(() => {
     setStartAnimate(false);
     if (parentRef.current) {
-      parentRef.current.style.transform = `translateY(-${shownItem * 140}px)`;
+      parentRef.current.style.transform = `translateY(-${shownItem * parseInt(skillsCenterRef?.current.offsetHeight)}px)`;
     }
     const to = setTimeout(() => {
       setStartAnimate(true);
-    }, 200);
+    }, 300);
     return ()=>clearTimeout(to)
   }, [shownItem]);
 
@@ -41,18 +43,17 @@ const MySkills = () => {
     setShownItem(input)
   }
 
-  
 
   return (
-    <div
+    <Element
+      name="skills-section"
      dir={lang === "fa-IR" ? "rtl" : "ltr"}
     
       id="skills-section"
-      className={`h-screen skills-gradient flex flex-col justify-center items-center `}
+      className={`h-screen skills-gradient flex flex-col justify-center items-center`}
     >
 
- 
-    <div className="mx-w-md skills-animated-border-1 p-12">
+    <div className="mx-w-md skills-animated-border-1 p-4 sm:p-6 md:p-12">
     <StepperSkills 
       activeStep={shownItem}
       handleStepperClick={handleStepperClick}
@@ -80,17 +81,18 @@ const MySkills = () => {
             />
           </div>
         </div>
-        <div className="skills-center">
-          <div className="road">
+        <div className="skills-center" >
+          <div className="road" >
             <div id="parent" ref={parentRef}>
-              <div className="flex gap-5 skills-row">
+              <div ref={skillsCenterRef} className="flex gap-5 skills-row">
                 <div
+                
                   className={`skills-box skills-animated-border-1 ${
                     shownItem === 0 && startAnimate ? "start-animate" : ""
                   }`}
                 >
                   <img src="/logos/js.png" />
-                  <div className="skills-description f-exo-medium select-none">
+                  <div className=" hidden md:block skills-description f-exo-medium select-none">
                     {" "}
                     <InjectMassage id="skills.description.js" />
                   </div>{" "}
@@ -101,7 +103,7 @@ const MySkills = () => {
                   }`}
                 >
                   <img src="/logos/ts.png" />{" "}
-                  <div className="skills-description f-exo-medium select-none">
+                  <div className=" hidden md:block skills-description f-exo-medium select-none">
                     {" "}
                     <InjectMassage id="skills.description.ts" />
                   </div>{" "}
@@ -112,7 +114,7 @@ const MySkills = () => {
                   }`}
                 >
                   <img src="/logos/react.png" />{" "}
-                  <div className="skills-description f-exo-medium select-none">
+                  <div className=" hidden md:block skills-description f-exo-medium select-none">
                     {" "}
                     <InjectMassage id="skills.description.react" />
                   </div>{" "}
@@ -123,7 +125,7 @@ const MySkills = () => {
                   }`}
                 >
                   <img src="/logos/redux.png" />{" "}
-                  <div className="skills-description f-exo-medium select-none">
+                  <div className=" hidden md:block skills-description f-exo-medium select-none">
                     {" "}
                     <InjectMassage id="skills.description.redux" />
                   </div>{" "}
@@ -134,7 +136,7 @@ const MySkills = () => {
                   }`}
                 >
                   <img src="/logos/next.png" />{" "}
-                  <div className="skills-description f-exo-medium select-none">
+                  <div className=" hidden md:block skills-description f-exo-medium select-none">
                     {" "}
                     <InjectMassage id="skills.description.next" />
                   </div>{" "}
@@ -147,7 +149,7 @@ const MySkills = () => {
                   }`}
                 >
                   <img src="/logos/node.png" />{" "}
-                  <div className="skills-description f-exo-medium select-none"> 
+                  <div className=" hidden md:block skills-description f-exo-medium select-none"> 
                     
                   <InjectMassage id="skills.description.node" />
                   </div>{" "}
@@ -158,7 +160,7 @@ const MySkills = () => {
                   }`}
                 >
                   <img src="/logos/express.png" />{" "}
-                  <div className="skills-description f-exo-medium select-none"> 
+                  <div className=" hidden md:block skills-description f-exo-medium select-none"> 
                     <InjectMassage id="skills.description.express" />
                   </div>{" "}
                 </div>
@@ -167,9 +169,9 @@ const MySkills = () => {
                     shownItem === 1 && startAnimate ? "start-animate" : ""
                   }`}
                 >
-                  <img src="/logos/mongo.png" />{" "}
-                  <div className="skills-description f-exo-medium select-none"> 
-                    <InjectMassage id="skills.description.mongo" />
+                  <img src="/logos/reactnative.png" />{" "}
+                  <div className=" hidden md:block skills-description f-exo-medium select-none"> 
+                    <InjectMassage id="skills.description.react-native" />
                   </div>{" "}
                 </div>
                 <div
@@ -178,7 +180,7 @@ const MySkills = () => {
                   }`}
                 >
                   <img src="/logos/vue.png" />{" "}
-                  <div className="skills-description f-exo-medium select-none">
+                  <div className=" hidden md:block skills-description f-exo-medium select-none">
                       <InjectMassage id="skills.description.vue" />
                      </div>{" "}
                 </div>
@@ -188,7 +190,7 @@ const MySkills = () => {
                   }`}
                 >
                   <img src="/logos/python.png" />{" "}
-                  <div className="skills-description f-exo-medium select-none"> 
+                  <div className=" hidden md:block skills-description f-exo-medium select-none"> 
                     <InjectMassage id="skills.description.python" />
                   </div>{" "}
                 </div>
@@ -200,7 +202,7 @@ const MySkills = () => {
                   }`}
                 >
                   <img src="/logos/git.png" />{" "}
-                  <div className="skills-description f-exo-medium select-none">
+                  <div className=" hidden md:block skills-description f-exo-medium select-none">
                       <InjectMassage id="skills.description.git" />
                      </div>{" "}
                 </div>
@@ -210,7 +212,7 @@ const MySkills = () => {
                   }`}
                 >
                   <img src="/logos/jira.png" />{" "}
-                  <div className="skills-description f-exo-medium select-none">
+                  <div className=" hidden md:block skills-description f-exo-medium select-none">
                       <InjectMassage id="skills.description.jira" />
                      </div>{" "}
                 </div>
@@ -220,7 +222,7 @@ const MySkills = () => {
                   }`}
                 >
                   <img src="/logos/photoshop.png" />{" "}
-                  <div className="skills-description f-exo-medium select-none">
+                  <div className=" hidden md:block skills-description f-exo-medium select-none">
                       <InjectMassage id="skills.description.photoshop" />
                      </div>{" "}
                 </div>
@@ -230,7 +232,7 @@ const MySkills = () => {
                   }`}
                 >
                   <img src="/logos/illustrator.png" />{" "}
-                  <div className="skills-description f-exo-medium select-none">
+                  <div className=" hidden md:block skills-description f-exo-medium select-none">
                   <InjectMassage id="skills.description.illustrator" /></div>{" "}
                 </div>
 
@@ -240,7 +242,7 @@ const MySkills = () => {
                   }`}
                 >
                   <img src="/logos/figma.png" />{" "}
-                  <div className="skills-description f-exo-medium select-none">
+                  <div className=" hidden md:block skills-description f-exo-medium select-none">
                   <InjectMassage id="skills.description.figma" /></div>{" "}
                 </div>
               </div>
@@ -264,7 +266,7 @@ const MySkills = () => {
         </div>
       </div>
       </div>
-    </div>
+    </Element>
   );
 };
 

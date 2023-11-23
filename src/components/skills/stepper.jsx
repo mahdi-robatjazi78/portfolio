@@ -5,7 +5,7 @@ const StepperSkills = (props) => {
   const { activeStep , handleStepperClick } = props;
   const {lang} = useContext(LanguageContext) 
   return (
-    <div className="stepper-container h-16 opacity-100">
+    <div className="stepper-container h-16 opacity-100 hidden md:block">
       <div className="stepper-parent flex justify-between align-middle items-center h-16 select-none">
         <div
           tabIndex={1}

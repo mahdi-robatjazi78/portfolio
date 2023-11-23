@@ -45,7 +45,7 @@ export function IntroductionTextPersian (){
 	return (
 	  <Typewriter
 		  onInit={(typewriter) => {
-		typewriter
+			typewriter
 		  .typeString("سلام به همگی")
 		  .pauseFor(1500)
 		  .deleteAll()
@@ -66,7 +66,9 @@ export function IntroductionTextPersian (){
 	  options={{
 		autoStart: true,
 		loop: true,
-		wrapperClassName: section !== "intro" ? "Typewriter__wrapper wrapper-type-writer-persian-in-header" : "Typewriter__wrapper wrapper-type-writer-persian",
+		// wrapperClassName: section !== "intro" ? "Typewriter__wrapper wrapper-type-writer-persian-in-header" : "Typewriter__wrapper wrapper-type-writer-persian",
+		// wrapperClassName: section === "intro" ? "Typewriter__wrapper wrapper-type-writer-persian" :undefined,
+
 		cursorClassName:'d-none'
 
 	  }}

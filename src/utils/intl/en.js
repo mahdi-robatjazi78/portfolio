@@ -34,7 +34,7 @@ export default {
 
     "skills.description.node":"Node",
     "skills.description.express":"Express",
-    "skills.description.mongo":"Mongo",
+    "skills.description.react-native":"React Native",
     "skills.description.vue":"Vue",
     "skills.description.python":"Python",
 

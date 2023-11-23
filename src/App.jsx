@@ -1,62 +1,102 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef ,useContext } from "react";
 import "./App.css";
- 
-import Header from "./components/header"; 
+
+import Header from "./components/header";
 import AboutMe from "./components/about/about";
 import ContactMe from "./components/contact/contact";
 import MySkills from "./components/skills/skills";
 import Projects from "./components/projects/projects";
 import Introduction from "./components/introdoction/introduction";
-import "animate.css"
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import "animate.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import useScrollPosition from "./utils/hooks/useScrollPosition";
+import PositionContext from './utils/context/position'
+
+
+
+
 
 function App() {
 
-
   useEffect(() => {
-
-    AOS.init()
-   
-
-   
+    AOS.init({
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 1000, // values from 0 to 3000, with step 50ms
+      easing: "ease", // default easing for AOS animations
+    });
   }, []);
 
+  const [openContactMeBox, setOpenContactMeBox] = useState(false);
+  const { fixtureUserPosition } = useScrollPosition();
+  const {handlePositionFixtures} = useContext(PositionContext)
+  const introductionRef = useRef(null);
+  const aboutRef = useRef(null);
+  const skillsRef = useRef(null);
+  const projectsRef = useRef(null);
 
- 
+  useEffect(() => {
+    if (
+      (introductionRef.current,
+      aboutRef.current,
+      skillsRef.current,
+      projectsRef.current)
+    ) {
+      const positions = {
+        introduction: introductionRef.current.offsetTop,
+        about: aboutRef.current.offsetTop,
+        skills: skillsRef.current.offsetTop,
+        projects: projectsRef.current.offsetTop,
+      };
+
+      handlePositionFixtures(positions);
+    }
+  }, [
+    introductionRef.current,
+    aboutRef.current,
+    skillsRef.current,
+    projectsRef.current,
+  ]);
+
+
+
+
+
+
 
   return (
     <div className="relative">
-      
-
-      <Header />
-
-      <img 
-      // data-aos='fade-down'
-       src="wave.svg" alt="header-wave" className="absolute animate__animated animate__rotateInDownLeft" />
-
-      <Introduction  />
-      {/* <div className="h-56 z-10 " >
-     
-      </div> */}
       <div>
+        <Header
+          openContactMeBox={openContactMeBox}
+          setOpenContactMeBox={setOpenContactMeBox}
+        />
+        <img
+          // data-aos='fade-down'
+          src="wave.svg"
+          alt="header-wave"
+          className="absolute animate__animated animate__rotateInDownLeft hidden lg:block"
+        />
+      </div>
+      <div ref={introductionRef}>
+        <Introduction />
+      </div>
+      <div ref={aboutRef}>
         <AboutMe />
       </div>
-     
-      {/* <div className="h-56 z-10 " >
-     
-     </div> */}
-      <div>
+      <div ref={skillsRef}>
         <MySkills />
       </div>
-
-      <div>
+      <div ref={projectsRef}>
         <Projects />
       </div>
-
-      <div>
-        <ContactMe />
-      </div>
+      {openContactMeBox ? (
+        <ContactMe
+          openContactMeBox={openContactMeBox}
+          setOpenContactMeBox={setOpenContactMeBox}
+        />
+      ) : undefined}
     </div>
   );
 }
