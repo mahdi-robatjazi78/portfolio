@@ -1,66 +1,59 @@
-import React from 'react'
+import React from "react";
 import Typewriter from "typewriter-effect";
-import useScrollPosition from '../../utils/hooks/useScrollPosition';
 
-export function IntroductionTextEnglish  () {
-
-
+export function IntroductionTextEnglish() {
   return (
-	<Typewriter
-		onInit={(typewriter) => {
-	  typewriter
+    <Typewriter
+      onInit={(typewriter) => {
+        typewriter
 
-		.typeString("Hi 🙌")
-		.pauseFor(1500)
-		.deleteAll()
+          .typeString("Hi 🙌")
+          .pauseFor(1500)
+          .deleteAll()
 
-		.typeString("I Am Mahdi Robatjazi")
-		.pauseFor(2500)
-		.deleteAll()
+          .typeString("I Am Mahdi Robatjazi")
+          .pauseFor(2500)
+          .deleteAll()
 
-		.typeString("I do web development")
-		.pauseFor(1500)
-		.deleteAll()
-		.start();
-	}}
-	options={{
-	  autoStart: true,
-	  loop: true,
-	  cursorClassName:'d-none'
+          .typeString("I do web development")
+          .pauseFor(1500)
+          .deleteAll()
+          .start();
+      }}
+      options={{
+        autoStart: true,
+        loop: true,
+        cursorClassName: "d-none",
+      }}
+    />
+  );
+}
 
-	}}
-  />
-  )
-} 
+export function IntroductionTextPersian() {
+  return (
+    <Typewriter
+      onInit={(typewriter) => {
+        typewriter
+          .typeString("سلام")
+          .pauseFor(1500)
+          .deleteAll()
 
+          .typeString("مهدی رباط جزی هستم")
+          .pauseFor(2500)
+          .deleteAll()
 
-export function IntroductionTextPersian (){
+          .typeString("طراح و توسعه دهنده وب")
+          .pauseFor(1500)
+          .deleteAll()
 
-	return (
-	  <Typewriter
-		  onInit={(typewriter) => {
-			typewriter
-		  .typeString("سلام")
-		  .pauseFor(1500)
-		  .deleteAll()
-  
-		  .typeString("مهدی رباط جزی هستم")
-		  .pauseFor(2500)
-		  .deleteAll()
-  
-		  .typeString("طراح و توسعه دهنده وب")
-		  .pauseFor(1500)
-		  .deleteAll()
-  
-		  .start(); 
-	  }}
-	  options={{
-		autoStart: true,
-		loop: true,
-	
-		cursorClassName:'d-none'
+          .start();
+      }}
+      options={{
+        autoStart: true,
+        loop: true,
 
-	  }}
-	/>
-	)
-  } 
+        cursorClassName: "d-none",
+      }}
+    />
+  );
+}
