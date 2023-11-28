@@ -2,7 +2,7 @@ export default {
     "header.section.title.introduction":"Introduction",
     "header.section.title.about":"َAbout Me",
     "header.section.title.skills":"Skills",
-    "header.section.title.projects":"Projects",
+    "header.section.title.projects":"My Path",
     "header.section.title.contactme":"Contact Me",
 
     "introduction.section.text.1":"Hi every body",
@@ -32,7 +32,7 @@ export default {
     "skills.description.next":"Next",
 
 
-    "skills.description.node":"Node",
+    "skills.description.node":"Node Js",
     "skills.description.express":"Express",
     "skills.description.react-native":"React Native",
     "skills.description.vue":"Vue",
@@ -50,5 +50,17 @@ export default {
     "text.learned":"Learning",
     "text.worked":"Secondary",
 
+    "path.shahab.danesh.title": "Chapter One - Shahab Danesh University",
+    "path.shahab.danesh.description": "I attended Shahab Danesh University in the city of Qom. Unfortunately, due to migration and financial difficulties, I couldn't continue my studies at the university. As a result, I do not have a university degree.",
+    
+    "path.mapsa.title": "Chapter Two - Bootcamp at Mapsa",
+    "path.mapsa.description": "One of the right decisions in my life was participating in the Front-end Bootcamp at Mapsa, where I learned programming under the supervision of Professor Moein Alizadeh. Additionally, I completed a supplementary project as a sample of my work.",
+    
+    "path.notash.title": "Chapter Three - Notash Company",
+    "path.notash.description": "After attending the Mapsa Bootcamp, I quickly got employed at Notash Company. I worked there for 20 months as a front-end programmer, gaining valuable team collaboration experience.",
+    
+    "path.kar.title": "Chapter Four - Launching the Work Project",
+    "path.kar.description": "During my time at Notash Company, I engaged in a resume project and also took on a testing project to learn new front-end technologies. The project is about a to-do list, and I encourage you to take a professional look at it if possible.",
+    
 
 }

@@ -6,14 +6,14 @@ import InjectMassage from "../../utils/intl";
 import StepperSkills from './stepper'
 import { LanguageContext } from "../../utils/context/language";
 import {Element} from 'react-scroll'
+import useWindowSize from "../../utils/hooks/useWindowSize"
 
 const MySkills = () => {
   const [shownItem, setShownItem] = useState(0);
   const [startAnimate, setStartAnimate] = useState(false);
   const parentRef = useRef(null);
   const skillsCenterRef = useRef(null);
-
- 
+  const {sizeName} = useWindowSize()
   const { lang } = useContext(LanguageContext); 
 
   function handleNumberUp() {
@@ -43,17 +43,40 @@ const MySkills = () => {
     setShownItem(input)
   }
 
+ 
+
+  const handleClickOnSkillsBox = (e)=>{
+    if(sizeName === "mobile" || sizeName === "tablet"){
+      const list = document.querySelectorAll(".skillbox-show-placeholder")
+      if( list.length > 0 ){
+        for(const item of list){
+          item.classList.remove("skillbox-show-placeholder")
+    
+        }
+      }
+      if(!e.currentTarget.classList.contains("skillbox-show-placeholder")){        
+        e.currentTarget.classList.add("skillbox-show-placeholder")
+        
+      }else{
+        e.currentTarget.classList.remove("skillbox-show-placeholder")
+      }
+
+    
+    }
+    else return
+  }
+
 
   return (
     <Element
       name="skills-section"
-     dir={lang === "fa-IR" ? "rtl" : "ltr"}
+      dir={lang === "fa-IR" ? "rtl" : "ltr"}
     
       id="skills-section"
-      className={`h-screen skills-gradient flex flex-col justify-center items-center`}
+      className={`h-screen w-screen skills-gradient flex flex-col justify-center items-center`}
     >
 
-    <div className="mx-w-md skills-animated-border-1 p-4 sm:p-6 md:p-12">
+    <div className="mx-w-md  skills-animated-border-1 p-4 sm:p-12 md:p-12">
     <StepperSkills 
       activeStep={shownItem}
       handleStepperClick={handleStepperClick}
@@ -86,7 +109,7 @@ const MySkills = () => {
             <div id="parent" ref={parentRef}>
               <div ref={skillsCenterRef} className="flex gap-5 skills-row">
                 <div
-                
+                  onClick={handleClickOnSkillsBox}
                   className={`skills-box skills-animated-border-1 ${
                     shownItem === 0 && startAnimate ? "start-animate" : ""
                   }`}
@@ -98,6 +121,7 @@ const MySkills = () => {
                   </div>{" "}
                 </div>
                 <div
+                 onClick={handleClickOnSkillsBox}
                   className={`skills-box skills-animated-border-1 ${
                     shownItem === 0 && startAnimate ? "start-animate" : ""
                   }`}
@@ -109,6 +133,7 @@ const MySkills = () => {
                   </div>{" "}
                 </div>
                 <div
+                 onClick={handleClickOnSkillsBox}
                   className={`skills-box skills-animated-border-1 ${
                     shownItem === 0 && startAnimate ? "start-animate" : ""
                   }`}
@@ -120,6 +145,7 @@ const MySkills = () => {
                   </div>{" "}
                 </div>
                 <div
+                 onClick={handleClickOnSkillsBox}
                   className={`skills-box skills-animated-border-1 ${
                     shownItem === 0 && startAnimate ? "start-animate" : ""
                   }`}
@@ -131,6 +157,7 @@ const MySkills = () => {
                   </div>{" "}
                 </div>
                 <div
+                 onClick={handleClickOnSkillsBox}
                   className={`skills-box skills-animated-border-1 ${
                     shownItem === 0 && startAnimate ? "start-animate" : ""
                   }`}
@@ -144,6 +171,7 @@ const MySkills = () => {
               </div>
               <div className="flex gap-5 skills-row">
                 <div
+                 onClick={handleClickOnSkillsBox}
                   className={`skills-box skills-animated-border-1 ${
                     shownItem === 1 && startAnimate ? "start-animate" : ""
                   }`}
@@ -155,6 +183,7 @@ const MySkills = () => {
                   </div>{" "}
                 </div>
                 <div
+                 onClick={handleClickOnSkillsBox}
                   className={`skills-box skills-animated-border-1 ${
                     shownItem === 1 && startAnimate ? "start-animate" : ""
                   }`}
@@ -165,6 +194,7 @@ const MySkills = () => {
                   </div>{" "}
                 </div>
                 <div
+                 onClick={handleClickOnSkillsBox}
                   className={`skills-box skills-animated-border-1 ${
                     shownItem === 1 && startAnimate ? "start-animate" : ""
                   }`}
@@ -175,6 +205,7 @@ const MySkills = () => {
                   </div>{" "}
                 </div>
                 <div
+                 onClick={handleClickOnSkillsBox}
                   className={`skills-box skills-animated-border-1 ${
                     shownItem === 1 && startAnimate ? "start-animate" : ""
                   }`}
@@ -185,6 +216,7 @@ const MySkills = () => {
                      </div>{" "}
                 </div>
                 <div
+                 onClick={handleClickOnSkillsBox}
                   className={`skills-box skills-animated-border-1 ${
                     shownItem === 1 && startAnimate ? "start-animate" : ""
                   }`}
@@ -197,6 +229,7 @@ const MySkills = () => {
               </div>
               <div className="flex gap-5 skills-row">
                 <div
+                 onClick={handleClickOnSkillsBox}
                   className={`skills-box skills-animated-border-1 ${
                     shownItem === 2 && startAnimate ? "start-animate" : ""
                   }`}
@@ -207,6 +240,7 @@ const MySkills = () => {
                      </div>{" "}
                 </div>
                 <div
+                 onClick={handleClickOnSkillsBox}
                   className={`skills-box skills-animated-border-1 ${
                     shownItem === 2 && startAnimate ? "start-animate" : ""
                   }`}
@@ -217,6 +251,7 @@ const MySkills = () => {
                      </div>{" "}
                 </div>
                 <div
+                 onClick={handleClickOnSkillsBox}
                   className={`skills-box skills-animated-border-1 ${
                     shownItem === 2 && startAnimate ? "start-animate" : ""
                   }`}
@@ -227,6 +262,7 @@ const MySkills = () => {
                      </div>{" "}
                 </div>
                 <div
+                 onClick={handleClickOnSkillsBox}
                   className={`skills-box skills-animated-border-1 ${
                     shownItem === 2 && startAnimate ? "start-animate" : ""
                   }`}
@@ -237,6 +273,7 @@ const MySkills = () => {
                 </div>
 
                 <div
+                 onClick={handleClickOnSkillsBox}
                   className={`skills-box skills-animated-border-1 ${
                     shownItem === 2 && startAnimate ? "start-animate" : ""
                   }`}

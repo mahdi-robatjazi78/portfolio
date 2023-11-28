@@ -17,14 +17,9 @@ const Header = (props) => {
   const { openContactMeBox, setOpenContactMeBox } = props;
 
   const { lang, setLanguageToggle } = useContext(LanguageContext);
-  const { activePosition : section } = useContext(PositionContext);
-  // const { scrollPosition , section : ScrollPosition } = useScrollPosition();
-  // console.log("ScrollPosition>>>  ", ScrollPosition)
+  const { activePosition : section , hardSetActivePosition} = useContext(PositionContext); 
   const { size } = useWindowSize();
-  const [expandHeader, setExpandHeader] = useState(true);
-  // const [section, setSection] = useState("");
-
-  // useEffect(()=>{setSection(ScrollPosition)} , [ScrollPosition])
+  const [expandHeader, setExpandHeader] = useState(true); 
 
   const windowWidthSize = size[0];
 
@@ -34,16 +29,7 @@ const Header = (props) => {
     }
   }, [windowWidthSize]);
 
-  function ScrollToTarget(target) {
-    scroller.scrollTo(target, {
-      duration: 1500,
-      delay: 100,
-      smooth: true,
-      // containerId: 'ContainerElementID',
-      // offset: 50, // Scrolls to element + 50 pixels down the page
-      // ... other options
-    });
-  }
+ 
 
   function position(elem) {
     var left = 0,
@@ -60,16 +46,16 @@ const Header = (props) => {
   useEffect(() => { 
 
     // Registering the 'begin' event and logging it to the console when triggered.
-    Events.scrollEvent.register('begin', (to, element) => {
-      // console.log('begin', to, element.scrolTop);
-      console.log(position(element))
-    });
-
+      /*
+        Events.scrollEvent.register('begin', (to, element) => {
+    
+        });
+      */
     // Registering the 'end' event and logging it to the console when triggered.
     Events.scrollEvent.register('end', (to, element) => {
-      setSection(to.split("-")[0]);
-      
-
+      setOpenContactMeBox((prevState)=>false)
+      const section = to.split("-")[0];
+      hardSetActivePosition(section)
     });
 
     // Updating scrollSpy when the component mounts.
@@ -86,7 +72,7 @@ const Header = (props) => {
 
   return (
     <div
-      className={`header-styles transition-[height] ease-in-out duration-300 fixed top-0 w-screen z-10 p-6 overflow-hidden ${
+      className={`header-styles transition-[height] ease-in-out duration-300 fixed top-0 w-full z-10 p-6 overflow-hidden ${
         expandHeader ? "h-20 px-16" : "h-56 px-16"
       }`}
       dir={lang === "fa-IR" ? "ltr" : "rtl"}
@@ -138,12 +124,12 @@ const Header = (props) => {
           dir={lang === "fa-IR" ? "rtl" : "ltr"}
         >
           <Link
-           spy={true} 
-           smooth={true} 
-           offset={50} 
-           duration={500} 
+            spy={true} 
+            smooth={true} 
+            offset={50} 
+            duration={300} 
             to="introduction-section"
-            // onClick={() => ScrollToTarget("introduction-section")}
+            // onClick={()=>{handlePositionFixtures("introduction")}}
             className={section === "introduction" ? "active-section-header" : ""}
           >
             <IntlMessages id="header.section.title.introduction" />
@@ -152,9 +138,10 @@ const Header = (props) => {
            spy={true} 
            smooth={true} 
            offset={50} 
-           duration={500} 
+           duration={300} 
+          //  onClick={()=>{handlePositionFixtures("aboutme")}}
             to="aboutme-section"
-            // onClick={() => ScrollToTarget("aboutme-section")}
+             
             className={section === "aboutme" ? "active-section-header" : ""}
           >
             <IntlMessages id="header.section.title.about" />
@@ -163,9 +150,9 @@ const Header = (props) => {
            spy={true} 
            smooth={true} 
            offset={50} 
-           duration={500} 
+           duration={300} 
             to="skills-section"
-            // onClick={() => ScrollToTarget("skills-section")}
+            // onClick={()=>{handlePositionFixtures("skills")}}
             className={section === "skills" ? "active-section-header" : ""}
           >
             <IntlMessages id="header.section.title.skills" />
@@ -174,9 +161,9 @@ const Header = (props) => {
            spy={true} 
            smooth={true} 
            offset={50} 
-           duration={500} 
+           duration={300} 
             to="projects-section"
-            // onClick={() => ScrollToTarget("project-section")}
+            // onClick={()=>{handlePositionFixtures("projects")}}
             className={section === "projects" ? "active-section-header" : ""}
           >
             <IntlMessages id="header.section.title.projects" />
@@ -200,7 +187,7 @@ const Header = (props) => {
             spy={true} 
             smooth={true} 
             offset={50} 
-            duration={500} 
+            duration={300} 
             to="introduction-section"
             className={`glassMorphism ${
               section === "introduction" ? "active-header-minimized-item" : ""
@@ -212,7 +199,7 @@ const Header = (props) => {
             spy={true} 
             smooth={true} 
             offset={50} 
-            duration={500} 
+            duration={300} 
             to="about-me-section"
             className={`glassMorphism ${
               section === "aboutme" ? "active-header-minimized-item" : ""
@@ -226,7 +213,7 @@ const Header = (props) => {
             spy={true} 
             smooth={true} 
             offset={50} 
-            duration={500} 
+            duration={300} 
             to="skills-section"
             className={`glassMorphism ${
               section === "skills" ? "active-header-minimized-item" : ""
@@ -238,7 +225,7 @@ const Header = (props) => {
             spy={true} 
             smooth={true} 
             offset={50} 
-            duration={500} 
+            duration={300} 
             to="projects-section"
             className={`glassMorphism ${
               section === "projects" ? "active-header-minimized-item" : ""

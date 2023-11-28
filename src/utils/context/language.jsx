@@ -39,7 +39,7 @@ export const LanguageContextProvider = ({ children }) => {
     } else {
       const queryaramLanguage =
         queryParams.get("lang") === "en" ? "en-US" : "fa-IR";
-        console.log(lang , queryaramLanguage)
+         
       if (queryaramLanguage !== lang) {
         setLanguageToggle();
       }

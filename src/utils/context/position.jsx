@@ -16,54 +16,50 @@ export const PositionContextProvider = ({ children }) => {
     setPositions(data);
   };
 
+
+
   const [activePosition, setActivePosition] = useState("introduction");
   // introduction , aboutme , skills , projects
+
+  const hardSetActivePosition = (pos)=>{
+    setActivePosition(pos)
+  }
 
   function execute() {
     if (positions.about > 0) {
 			
 			let pageY_Offset = parseInt(window.scrollY.toFixed());
-			
 
-      if (pageY_Offset <= positions.about-100) {
+      if (pageY_Offset <= positions.about-150) {
         setActivePosition("introduction");
       } else if (
-        pageY_Offset > positions.about-100 &&
-        pageY_Offset <= positions.skills-100
+        pageY_Offset > positions.about-150 &&
+        pageY_Offset <= positions.skills-150
       ) {
         setActivePosition("aboutme");
       } else if (
-        pageY_Offset > positions.skills-100 &&
-        pageY_Offset < positions.projects-100
+        pageY_Offset > positions.skills-150 &&
+        pageY_Offset < positions.projects-150
       ) {
         setActivePosition("skills");
-      } else if (pageY_Offset >= positions.projects-100) {
+      } else if (pageY_Offset >= positions.projects-150) {
         setActivePosition("projects");
       }
     }
   }
 
-
 	useEffect(()=>{
 		window.addEventListener(
 			"scroll",
-			debounce(() => execute(), 500)
+			debounce(() => execute(), 300)
 		);
 
   return () => window.removeEventListener("scroll", execute);
 
 	},[window.scrollY])
 
-
-	useEffect(()=>{
-		console.log("activePosition   > > >> ",parseInt(window.scrollY.toFixed()) ,positions,activePosition)
-	},[activePosition])
-
-	
- 
-
   return (
-    <PositionContext.Provider value={{ activePosition , handlePositionFixtures  }}>
+    <PositionContext.Provider value={{ activePosition , handlePositionFixtures ,hardSetActivePosition }}>
       {children}
     </PositionContext.Provider>
   );

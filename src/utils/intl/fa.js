@@ -3,7 +3,7 @@ export default {
     "header.section.title.introduction":"معرفی",
     "header.section.title.about":"درباره من",
     "header.section.title.skills":"مهارت ها",
-    "header.section.title.projects":"پروژه ها ",
+    "header.section.title.projects":"مسیر من",
     "header.section.title.contactme":"بامن تماس بگیر",
 
     "introduction.section.text.1":"سلام به همگی",
@@ -33,7 +33,7 @@ export default {
     "skills.description.redux":"ری داکس",
     "skills.description.next":"نکست",
 
-    "skills.description.node":"نود",
+    "skills.description.node":"نودجی اس",
     "skills.description.express":"اکسپرس",
     "skills.description.react-native":"ری اکت نیتیو",
     "skills.description.vue":"وی یو ای",
@@ -44,16 +44,23 @@ export default {
     "skills.description.photoshop":"فوتوشاپ",
     "skills.description.illustrator":"ایلستریتور",
     "skills.description.figma":"فیگما", 
-
     "skills.description.paragraph.professional":"درلیست بالا؛ شما میتوانید مهارت های ",
-  
-  
-
     "text.skills":"من را ببینید.",
-
-
     "text.professional":"حرفه ای",
     "text.learned":"درحال یادگیری",
     "text.worked":"فرعی",
+
+    "path.shahab.danesh.title":"فصل اول: دانشگاه شهاب دانش",
+    "path.shahab.danesh.description":"من در شهر قم به دانشگاه شهاب دانش رفتم اما متاسفانه به دلیل مهاجرت و مشکلات مالی نتوانستم درس و دانشگاه را ادامه بدهم واینکه مدرک دانشگاهی ندارم ",
+
+    "path.mapsa.title":"فصل دوم: بوت کمپ مپصا",
+    "path.mapsa.description":" یکی از تصمیمات درست زندگی من شرکت در بوت کمپ فرانت مپصا بود که در آنجا زیر نظر استاد معین علی زاده مشغول یادگیری برنامه نویسی فرانت اند شدم و البته یگ پروژه تکمیلی به عنوان نمونه کار انجام دادم",
+
+    "path.notash.title":"فصل سوم: شرکت نوتاش",
+    "path.notash.description":"بعد از حضورم در بوت کمپ مپصا توانستم به سرعت در شرکت نوتاش استخدام شوم و به مدت 20 ماه در آنجا مشغول به برنامه نویسی سمت فرانت باشم که تجربه ارزشمند مشارکت تیمی را برای من به ارمغان آورد",
+
+    "path.kar.title":"فصل چهارم: پروژه کار را بنداز",
+    "path.kar.description":"درحین حضورم درشرکت نوتاش من مشغول یک پروژه رزومه ای وهمچنین تستی برای یادگیری تکنولوژی های جدید سمت فرانت شدم پروژه درمورد تودو است اما حرفه ای حتما در صورت امکان نگاهی به آن بیندازید ",
+
 
 }

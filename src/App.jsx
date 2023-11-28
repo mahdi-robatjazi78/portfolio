@@ -14,9 +14,6 @@ import useScrollPosition from "./utils/hooks/useScrollPosition";
 import PositionContext from './utils/context/position'
 
 
-
-
-
 function App() {
 
   useEffect(() => {
@@ -57,17 +54,11 @@ function App() {
     aboutRef.current,
     skillsRef.current,
     projectsRef.current,
-  ]);
-
-
-
-
-
-
+  ]); 
 
   return (
-    <div className="relative">
-      <div>
+    <div>
+        <div className="w-full">
         <Header
           openContactMeBox={openContactMeBox}
           setOpenContactMeBox={setOpenContactMeBox}
@@ -79,12 +70,12 @@ function App() {
           className="absolute animate__animated animate__rotateInDownLeft hidden lg:block"
         />
       </div>
-      <div ref={introductionRef}>
+       <div ref={introductionRef}>
         <Introduction />
       </div>
-      <div ref={aboutRef}>
+       <div ref={aboutRef}>
         <AboutMe />
-      </div>
+      </div> 
       <div ref={skillsRef}>
         <MySkills />
       </div>

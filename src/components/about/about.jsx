@@ -15,12 +15,12 @@ const AboutMe = (props) => {
     <Element
       name = "aboutme-section"
       id="about-me-section"
-      className="relative h-screen about-section-gradient"
+      className="relative h-screen w-screen about-section-gradient"
       dir={lang === "fa-IR" ? "rtl" : "ltr"}
     >
-      <div className="central-about px-5 sm:px-5 lg:w-full" >
+      <div className="central-about px-5 sm:px-5 w-full" >
 
-      <section data-aos='fade-up-right' className={`f-dosis-section-1 text-xl bg-red-600 border border-amber-200  my-4 p-4 rounded-lg sm:w-full md:w-1/2 md:mx-auto`}>
+     <section data-aos='fade-up' className={`f-dosis-section-1 text-xl bg-red-600 border border-amber-200  my-4 p-4 rounded-lg sm:w-full md:w-1/2 md:mx-auto`}>
           <h1 className={`selection-text-background text-amber-400 font-bold ${lang === "fa-IR" ? "" : ""}`}>
             <InjectMassage id="about.me.section0.title.who.am.i" />
           </h1>
@@ -30,7 +30,7 @@ const AboutMe = (props) => {
       </section>
 
 
-        <section data-aos='fade-up-left' className={`f-dosis-section-1 text-xl bg-red-600 border border-amber-200  my-4 p-4 rounded-lg sm:w-full md:w-1/2 md:mx-auto`}>
+        <section data-aos='fade-up' className={`f-dosis-section-1 text-xl bg-red-600 border border-amber-200  my-4 p-4 rounded-lg sm:w-full md:w-1/2 md:mx-auto`}>
           <h1 className="selection-text-background font-bold text-amber-400">
             <InjectMassage id="about.me.section1.title.what.i.do" />
           </h1>
@@ -47,7 +47,7 @@ const AboutMe = (props) => {
           </ul>
         </section>
 
-        <section data-aos='fade-up-right' className={`f-dosis-section-1 text-xl bg-red-600 border border-amber-200  my-4 p-4 rounded-lg sm:w-full md:w-1/2 md:mx-auto`}> 
+        <section data-aos='fade-up' className={`f-dosis-section-1 text-xl bg-red-600 border border-amber-200  my-4 p-4 rounded-lg sm:w-full md:w-1/2 md:mx-auto`}> 
           <h1 className="selection-text-background font-bold text-amber-400">
             <InjectMassage id="about.me.section2.title.what.i.want" />
           </h1>
@@ -62,8 +62,7 @@ const AboutMe = (props) => {
               <InjectMassage id="about.me.section2.t3" />
             </li>
           </ul>
-        </section>
-        {/* <div></div> */}
+        </section> 
       </div>
     </Element>
   );

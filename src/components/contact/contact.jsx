@@ -64,7 +64,7 @@ const ContactMe = (props) => {
 
 
   return (
-    <div className="fixed left-4 sm:left-1/2 translate-x-0 sm:-translate-x-1/2  w-5/6 sm:w-3/5 h-42 px-4 py-3 glassMorphism contact-box-animation">
+    <div className="fixed left-4 sm:left-1/2 translate-x-0 sm:-translate-x-1/2  w-[94%] sm:w-3/5 h-42 px-4 py-3 glassMorphism contact-box-animation">
       <div className="relative flex flex-col xl:flex-row" >
         <span style={closeIconStyles} className="glassMorphism rotate-animation" onClick={()=>{setOpenContactMeBox(false)}}>
           <IoCloseOutline className="text-3xl scale-animation" />
@@ -73,8 +73,8 @@ const ContactMe = (props) => {
         <div className="flex mb-2">
           <img src="/contactme-logos/linkedin.png" width={40} height={40} />
           <div ref={LinkedinRef} className="flex w-full glassMorphism mx-3 px-3 rounded-md justify-between items-center">
-            <p  className="selection-text-background f-dosis-medium tracking-wider hidden sm:block space-2">
-              www.linkedin.com/in/mehdirobatjazi
+            <p  className="selection-text-background f-dosis-medium tracking-wider  space-2">
+              linkedin.com/in/mehdirobatjazi
             </p>
             <div className="flex pt-1">
 
@@ -95,7 +95,7 @@ const ContactMe = (props) => {
         <div className="flex mb-2">
           <img src="/contactme-logos/gmail.png" width={40} height={40} />
           <div ref={GmailRef} className="flex w-full glassMorphism mx-3 px-3 rounded-md justify-between items-center">
-            <p  className="selection-text-background f-dosis-medium tracking-wider hidden sm:block space-2">
+            <p  className="selection-text-background f-dosis-medium tracking-wider   space-2">
               mahdi.robatjazi78@gmail.com
             </p>
 
@@ -119,7 +119,7 @@ const ContactMe = (props) => {
         <div className="flex mb-2">
           <img src="/contactme-logos/telegram.png" width={40} height={40} />
           <div ref={TelegramRef} className="flex w-full glassMorphism mx-3 px-3 rounded-md justify-between items-center">
-            <p  className="selection-text-background f-dosis-medium tracking-wider hidden sm:block space-2">
+            <p  className="selection-text-background f-dosis-medium tracking-wider   space-2">
               https://t.me/Mahdi_Robatjazi
             </p>
 
@@ -144,7 +144,7 @@ const ContactMe = (props) => {
         <div className="flex mb-2">
           <img src="/contactme-logos/github2.png" width={40} height={40} />
           <div ref={GithubRef} className="flex w-full glassMorphism mx-3 px-3 rounded-md justify-between items-center">
-            <p className="selection-text-background f-dosis-medium tracking-wider hidden sm:block space-2">
+            <p className="selection-text-background f-dosis-medium tracking-wider   space-2">
             https://github.com/mahdi-robatjazi78
             </p>
             <div className="flex  pt-1">

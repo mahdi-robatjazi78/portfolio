@@ -10,7 +10,7 @@ export function IntroductionTextEnglish  () {
 		onInit={(typewriter) => {
 	  typewriter
 
-		.typeString("Hi every body")
+		.typeString("Hi 🙌")
 		.pauseFor(1500)
 		.deleteAll()
 
@@ -21,16 +21,11 @@ export function IntroductionTextEnglish  () {
 		.typeString("I do web development")
 		.pauseFor(1500)
 		.deleteAll()
-
-		.typeString("Stack : javascript 👍")
-		.pauseFor(1500)
-		.deleteAll() 
 		.start();
 	}}
 	options={{
 	  autoStart: true,
 	  loop: true,
-	//   wrapperClassName: scrollPosition <= 370 ?"Typewriter__wrapper": "Typewriter__wrapper",
 	  cursorClassName:'d-none'
 
 	}}
@@ -40,13 +35,12 @@ export function IntroductionTextEnglish  () {
 
 
 export function IntroductionTextPersian (){
-	
-	const {section} = useScrollPosition()
+
 	return (
 	  <Typewriter
 		  onInit={(typewriter) => {
 			typewriter
-		  .typeString("سلام به همگی")
+		  .typeString("سلام")
 		  .pauseFor(1500)
 		  .deleteAll()
   
@@ -58,17 +52,12 @@ export function IntroductionTextPersian (){
 		  .pauseFor(1500)
 		  .deleteAll()
   
-		  .typeString("فرانت اند سطح متوسط")
-		  .pauseFor(1500)
-		  .deleteAll() 
-		  .start();
+		  .start(); 
 	  }}
 	  options={{
 		autoStart: true,
 		loop: true,
-		// wrapperClassName: section !== "intro" ? "Typewriter__wrapper wrapper-type-writer-persian-in-header" : "Typewriter__wrapper wrapper-type-writer-persian",
-		// wrapperClassName: section === "intro" ? "Typewriter__wrapper wrapper-type-writer-persian" :undefined,
-
+	
 		cursorClassName:'d-none'
 
 	  }}

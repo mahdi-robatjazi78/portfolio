@@ -18,12 +18,17 @@ span.Typewriter__wrapper {
   animation: textclip 2s linear infinite;
   display: inline-block;
 }
-span.Typewriter__wrapper::selection{
-  background-color: rgba(255, 102, 0, 0.302);
-}
+span.Typewriter__wrapper::selection {
+  background-color: rgba(165, 255, 198, 0.482);
+  color: black;
 
-.t-w-parent > div > span{
+
+}
+ 
+
+.t-w-parent > div > span {
   line-height: 7rem;
+
 }
 .wrapper-type-writer-persian-in-header {
   line-height: 2mrem;
@@ -78,17 +83,16 @@ span.Typewriter__wrapper::selection{
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.central-about{
+.central-about {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width:100%;
+  width: 100%;
 }
 
 .intro-about-gradient {
   background: hsla(48, 96%, 53%, 1);
-
   background: linear-gradient(
     270deg,
     hsla(48, 96%, 53%, 1) 0%,
@@ -157,8 +161,6 @@ span.Typewriter__wrapper::selection{
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FF7E7E", endColorstr="#AC0000", GradientType=1 );
 }
 
-
-
 .projects-gradient {
   background: rgb(3, 12, 32);
   background: linear-gradient(
@@ -179,97 +181,90 @@ span.Typewriter__wrapper::selection{
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FF7E7E", endColorstr="#AC0000", GradientType=1 );
 }
 
-
-
-.selection-text-background::selection{
+.selection-text-background::selection {
   background-color: rgba(57, 212, 114, 0.92);
-  color:black;
+  color: black;
 }
 
-.glassMorphism{
-  background: rgba( 255, 255, 255, 0.4 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 3.5px );
-  -webkit-backdrop-filter: blur( 3.5px );
+.glassMorphism {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.iconBox{
-  padding:8px;
-  cursor:pointer;
+.iconBox {
+  padding: 8px;
+  cursor: pointer;
   border-radius: 10px;
-
 }
-.iconBox:hover{ 
+.iconBox:hover {
   border-radius: 10px;
-  padding:7px;
-  border:1px solid rgb(191, 191, 191);
+  padding: 7px;
+  border: 1px solid rgb(191, 191, 191);
 
-  background: rgba( 255, 255, 255, 0.4 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 3.5px );
-  -webkit-backdrop-filter: blur( 3.5px );
- 
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+
   /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 }
 
-
-.success-box{
-  animation-name:succesBoxAnimate;
-  animation-duration: 3s
+.success-box {
+  animation-name: succesBoxAnimate;
+  animation-duration: 3s;
 }
 
 @keyframes succesBoxAnimate {
-
-  from {  background-color: rgb(23, 255, 23);}
-  to { background-color: rgba( 255, 255, 255, 0.4 );}
-
+  from {
+    background-color: rgb(23, 255, 23);
+  }
+  to {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
 }
 
 .scale-animation {
-  animation: scaleIcon 3s ease alternate infinite ;
+  animation: scaleIcon 3s ease alternate infinite;
 }
 
-
 @keyframes scaleIcon {
-  from{
-  scale:1;
-
+  from {
+    scale: 1;
   }
-  to{
-  scale:.7;
-
+  to {
+    scale: 0.7;
   }
 }
 
 .rotate-animation {
-  animation: rotateIconBox 3s linear forwards infinite ;
+  animation: rotateIconBox 3s linear forwards infinite;
 }
 .rotate-animation:hover {
   background-color: #ff13623d;
 }
 
-@keyframes rotateIconBox{
-  from{
-   transform: rotate(0) ;
+@keyframes rotateIconBox {
+  from {
+    transform: rotate(0);
   }
-  to{
-    transform: rotate(360deg) ;
+  to {
+    transform: rotate(360deg);
   }
 }
 
-
-.contact-box-animation{
-  animation : contactBoxAnimation 1s linear forwards;
+.contact-box-animation {
+  animation: contactBoxAnimation 1s linear forwards;
 }
 
 @keyframes contactBoxAnimation {
-  from{
-    bottom:-233px
+  from {
+    bottom: -233px;
   }
-  to{
-    bottom:25px;
-
+  to {
+    bottom: 25px;
   }
 }
