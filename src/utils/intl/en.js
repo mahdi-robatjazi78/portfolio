@@ -63,4 +63,5 @@ export default {
     "path.kar.description": "During my time at Notash Company, I engaged in a resume project and also took on a testing project to learn new front-end technologies. The project is about a to-do list, and I encourage you to take a professional look at it if possible.",
     
 
+    "resume.title":"You can see my resume file here"
 }

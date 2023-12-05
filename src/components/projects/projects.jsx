@@ -22,12 +22,12 @@ const Projects = () => {
                 className="w-14 h-14 rounded-lg mx-5"
               />
               <RtlMaker>
-                <div className="p-4 f-dosis-bold overflow-y-auto max-h-36	">
-                  <h2>
+                <div className="p-4 f-dosis-bold overflow-y-auto max-h-36">
+                  <h2 className="selection-text-background">
                     <InjectMassage id="path.shahab.danesh.title" />
                   </h2>
                   <br />
-                  <p className="">
+                  <p className="selection-text-background">
                     <InjectMassage id="path.shahab.danesh.description" />
                   </p>
                 </div>
@@ -47,11 +47,11 @@ const Projects = () => {
               </div>
               <RtlMaker>
                 <div className="p-4 f-dosis-bold overflow-y-auto max-h-36	">
-                  <h2>
+                  <h2 className="selection-text-background">
                     <InjectMassage id="path.mapsa.title" />
                   </h2>
                   <br />
-                  <p>
+                  <p className="selection-text-background">
                     <InjectMassage id="path.mapsa.description" />
                   </p>
                 </div>
@@ -79,11 +79,11 @@ const Projects = () => {
 
               <RtlMaker>
                 <div className="p-4 f-dosis-bold overflow-y-auto max-h-36	">
-                  <h2>
+                  <h2 className="selection-text-background">
                     <InjectMassage id="path.notash.title" />
                   </h2>
                   <br />
-                  <p>
+                  <p className="selection-text-background">
                     <InjectMassage id="path.notash.description" />
                   </p>
                 </div>
@@ -97,11 +97,11 @@ const Projects = () => {
               />
               <RtlMaker>
                 <div className="p-4 f-dosis-bold overflow-y-auto max-h-36	">
-                  <h2>
+                  <h2 className="selection-text-background">
                     <InjectMassage id="path.kar.title" />
                   </h2>
                   <br />
-                  <p>
+                  <p className="selection-text-background">
                     <InjectMassage id="path.kar.description" />
                   </p>
                 </div>

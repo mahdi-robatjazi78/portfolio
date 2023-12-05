@@ -43,23 +43,21 @@ const MySkills = () => {
     setShownItem(input)
   }
 
- 
-
   const handleClickOnSkillsBox = (e)=>{
     if(sizeName === "mobile" || sizeName === "tablet"){
-      const list = document.querySelectorAll(".skillbox-show-placeholder")
-      if( list.length > 0 ){
-        for(const item of list){
-          item.classList.remove("skillbox-show-placeholder")
+      // const list = document.querySelectorAll(".skillbox-show-placeholder")
+      // if( list.length > 0 ){
+      //   for(const item of list){
+      //     item.classList.remove("skillbox-show-placeholder")
     
-        }
-      }
-      if(!e.currentTarget.classList.contains("skillbox-show-placeholder")){        
-        e.currentTarget.classList.add("skillbox-show-placeholder")
+      //   }
+      // }
+      // if(!e.currentTarget.classList.contains("skillbox-show-placeholder")){        
+        e.currentTarget.classList.toggle("skillbox-show-placeholder")
         
-      }else{
-        e.currentTarget.classList.remove("skillbox-show-placeholder")
-      }
+      // }else{
+      //   e.currentTarget.classList.remove("skillbox-show-placeholder")
+      // }
 
     
     }
