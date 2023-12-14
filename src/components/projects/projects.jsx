@@ -4,7 +4,7 @@ import InjectMassage from "../../utils/intl";
 import RtlMaker from "../../utils/helpers/rtlMaker";
 import { GoDownload } from "react-icons/go";
 import { FiLink } from "react-icons/fi";
-import Pdf from "../../../public/cv/cv.pdf";
+import Pdf from "../../../public/cv/mycv.pdf";
 import { LanguageContext } from "../../utils/context/language";
 
 const Projects = (props) => {

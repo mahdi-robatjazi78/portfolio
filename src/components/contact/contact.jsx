@@ -5,7 +5,7 @@ import { IoCloseOutline } from "react-icons/io5";
 import { GoDownload } from "react-icons/go";
 import InjectMassage from "../../utils/intl";
 import { LanguageContext } from "../../utils/context/language";
-import Pdf from "../../../public/cv/cv.pdf";
+import Pdf from "../../../public/cv/mycv.pdf";
 
 const ContactMe = (props) => {
   const { openContactMeBox, setOpenContactMeBox } = props;
