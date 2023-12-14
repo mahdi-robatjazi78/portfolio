@@ -57,11 +57,12 @@ export default {
     "path.mapsa.description": "One of the right decisions in my life was participating in the Front-end Bootcamp at Mapsa, where I learned programming under the supervision of Professor Moein Alizadeh. Additionally, I completed a supplementary project as a sample of my work.",
     
     "path.notash.title": "Chapter Three - Notash Company",
-    "path.notash.description": "After attending the Mapsa Bootcamp, I quickly got employed at Notash Company. I worked there for 20 months as a front-end programmer, gaining valuable team collaboration experience.",
+    "path.notash.description": "After attending the Mapsa Bootcamp, I quickly got employed at Notash Company. I worked there for 20 months as a front-end programmer, gaining valuable team collaboration experience. Notash is actually a local provider of Internet of Things in Iran.",
     
     "path.kar.title": "Chapter Four - Launching the Work Project",
     "path.kar.description": "During my time at Notash Company, I engaged in a resume project and also took on a testing project to learn new front-end technologies. The project is about a to-do list, and I encourage you to take a professional look at it if possible.",
     
 
-    "resume.title":"You can see my resume file here"
+    "resume.title":"You can see my resume file here",
+    "get.resume.file":"Get Resume File",
 }

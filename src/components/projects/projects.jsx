@@ -1,121 +1,132 @@
-import React, { useRef} from "react";
+import React, { useContext } from "react";
 import { Element } from "react-scroll";
 import InjectMassage from "../../utils/intl";
 import RtlMaker from "../../utils/helpers/rtlMaker";
+import { GoDownload } from "react-icons/go";
+import Pdf from "../../../public/cv/cv.pdf";
+import { LanguageContext } from "../../utils/context/language";
 
 
 const Projects = () => {
-  
+  const { lang } = useContext(LanguageContext);
   return (
     <Element
       name="project-section"
-      id="projects-section" 
-      className={`relative w-screen  h:fit md:h-screen projects-gradient`}
+      id="projects-section"
+      className={`relative w-screen  h:fit md:h-screen projects-gradient pb-10 md:pb-none`}
     >
       <div className="flex flex-col gap-5 w-full p-10 h-full justify-center items-center">
         <div className="h-fit">
-        <RtlMaker>
-          <div className="flex flex-col md:flex-row justify-center gap-5 w-full">
-            <div className="glassMorphism w-full md:w-3/5 h-52 flex justify-between items-center">
-              <img
-                src="/project-logos/shahabDanesh.jpg"
-                className="w-14 h-14 rounded-lg mx-5"
-              />
-              <RtlMaker>
-                <div className="p-4 f-dosis-bold overflow-y-auto max-h-36">
-                  <h2 className="selection-text-background">
-                    <InjectMassage id="path.shahab.danesh.title" />
-                  </h2>
-                  <br />
-                  <p className="selection-text-background">
-                    <InjectMassage id="path.shahab.danesh.description" />
-                  </p>
-                </div>
-              </RtlMaker>
-            </div>
-
-            <div className="glassMorphism w-full md:w-3/5 h-52 flex justify-between items-center">
-              <div className="mx-5 max-w-14">
+          <RtlMaker>
+            <div className="flex flex-col md:flex-row justify-center gap-5 w-full">
+              <div className="glassMorphism w-full md:w-3/5 h-52 flex justify-between items-center">
                 <img
-                  src="/project-logos/mapsa.jpg"
-                  className="max-w-4xl h-14 mb-3 rounded-lg"
+                  src="/project-logos/shahabDanesh.jpg"
+                  className="w-14 h-14 rounded-lg mx-5"
                 />
-                <img
-                  src="/project-logos/theMovieProject.jpg"
-                  className="max-w-4xl h-14 rounded-lg"
-                />
+                <RtlMaker>
+                  <div className="p-4 f-dosis-bold overflow-y-auto max-h-36">
+                    <h2 className="selection-text-background">
+                      <InjectMassage id="path.shahab.danesh.title" />
+                    </h2>
+                    <br />
+                    <p className="selection-text-background">
+                      <InjectMassage id="path.shahab.danesh.description" />
+                    </p>
+                  </div>
+                </RtlMaker>
               </div>
-              <RtlMaker>
-                <div className="p-4 f-dosis-bold overflow-y-auto max-h-36	">
-                  <h2 className="selection-text-background">
-                    <InjectMassage id="path.mapsa.title" />
-                  </h2>
-                  <br />
-                  <p className="selection-text-background">
-                    <InjectMassage id="path.mapsa.description" />
-                  </p>
+
+              <div className="glassMorphism w-full md:w-3/5 h-52 flex justify-between items-center">
+                <div className="mx-5 max-w-14">
+                  <img
+                    src="/project-logos/mapsa.jpg"
+                    className="max-w-4xl h-14 mb-3 rounded-lg"
+                  />
+                  <img
+                    src="/project-logos/theMovieProject.jpg"
+                    className="max-w-4xl h-14 rounded-lg"
+                  />
                 </div>
-              </RtlMaker>
+                <RtlMaker>
+                  <div className="p-4 f-dosis-bold overflow-y-auto max-h-36	">
+                    <h2 className="selection-text-background">
+                      <InjectMassage id="path.mapsa.title" />
+                    </h2>
+                    <br />
+                    <p className="selection-text-background">
+                      <InjectMassage id="path.mapsa.description" />
+                    </p>
+                  </div>
+                </RtlMaker>
+              </div>
             </div>
-          </div>
-        </RtlMaker>
+          </RtlMaker>
         </div>
 
         <div className="h-fit">
-        <RtlMaker>
-          
-          <div className="flex flex-col md:flex-row justify-center gap-5 w-full">
-            <div className="glassMorphism w-full md:w-3/5 h-52 flex justify-between items-center">
-              <div className="mx-5 max-w-14">
-                <img
-                  src="/project-logos/danialmoj.jpg"
-                  className="h-14 mb-3 rounded-lg max-w-4xl"
-                />
-                <img
-                  src="/project-logos/notash.jpg"
-                  className="h-14 rounded-lg max-w-4xl"
-                />
+          <RtlMaker>
+            <div className="flex flex-col md:flex-row justify-center gap-5 w-full">
+              <div className="glassMorphism w-full md:w-3/5 h-52 flex justify-between items-center">
+                <div className="mx-5 max-w-14">
+                  <img
+                    src="/project-logos/danialmoj.jpg"
+                    className="h-14 mb-3 rounded-lg max-w-4xl"
+                  />
+                  <img
+                    src="/project-logos/notash.jpg"
+                    className="h-14 rounded-lg max-w-4xl"
+                  />
+                </div>
+
+                <RtlMaker>
+                  <div className="p-4 f-dosis-bold overflow-y-auto max-h-36	">
+                    <h2 className="selection-text-background">
+                      <InjectMassage id="path.notash.title" />
+                    </h2>
+                    <br />
+                    <p className="selection-text-background">
+                      <InjectMassage id="path.notash.description" />
+                    </p>
+                  </div>
+                </RtlMaker>
               </div>
 
-              <RtlMaker>
-                <div className="p-4 f-dosis-bold overflow-y-auto max-h-36	">
-                  <h2 className="selection-text-background">
-                    <InjectMassage id="path.notash.title" />
-                  </h2>
-                  <br />
-                  <p className="selection-text-background">
-                    <InjectMassage id="path.notash.description" />
-                  </p>
-                </div>
-              </RtlMaker>
+              <div className="glassMorphism w-full md:w-3/5 h-52 flex justify-between items-center">
+                <img
+                  src="/project-logos/todo-512.jpg"
+                  className="w-14 h-14 rounded-lg mx-5"
+                />
+                <RtlMaker>
+                  <div className="p-4 f-dosis-bold overflow-y-auto max-h-36	">
+                    <h2 className="selection-text-background">
+                      <InjectMassage id="path.kar.title" />
+                    </h2>
+                    <br />
+                    <p className="selection-text-background">
+                      <InjectMassage id="path.kar.description" />
+                    </p>
+                  </div>
+                </RtlMaker>
+              </div>
             </div>
-
-            <div className="glassMorphism w-full md:w-3/5 h-52 flex justify-between items-center">
-              <img
-                src="/project-logos/todo-512.jpg"
-                className="w-14 h-14 rounded-lg mx-5"
-              />
-              <RtlMaker>
-                <div className="p-4 f-dosis-bold overflow-y-auto max-h-36	">
-                  <h2 className="selection-text-background">
-                    <InjectMassage id="path.kar.title" />
-                  </h2>
-                  <br />
-                  <p className="selection-text-background">
-                    <InjectMassage id="path.kar.description" />
-                  </p>
-                </div>
-              </RtlMaker>
-            </div>
-          </div>
-        </RtlMaker>
+          </RtlMaker>
         </div>
       </div>
 
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/3 w-64 cursor-pointer">
+            <a target="_blank" href={Pdf}>
+        <div className="flex justify-around items-center px-4 pt-1 glassMorphism w-44"
+          dir={lang === "fa-IR" ? "rtl" : "ltr"}
 
+        >
 
+              <GoDownload />
 
-
+          <p className="py-2 f-exo-medium"><InjectMassage id="get.resume.file" /></p>
+        </div>
+            </a>
+      </div>
     </Element>
   );
 };
