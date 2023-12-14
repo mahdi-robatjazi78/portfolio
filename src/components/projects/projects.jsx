@@ -3,12 +3,14 @@ import { Element } from "react-scroll";
 import InjectMassage from "../../utils/intl";
 import RtlMaker from "../../utils/helpers/rtlMaker";
 import { GoDownload } from "react-icons/go";
+import { FiLink } from "react-icons/fi";
 import Pdf from "../../../public/cv/cv.pdf";
 import { LanguageContext } from "../../utils/context/language";
 
-
-const Projects = () => {
+const Projects = (props) => {
   const { lang } = useContext(LanguageContext);
+  const { setOpenContactMeBox } = props;
+
   return (
     <Element
       name="project-section"
@@ -114,18 +116,36 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/3 w-64 cursor-pointer">
-            <a target="_blank" href={Pdf}>
-        <div className="flex justify-around items-center px-4 pt-1 glassMorphism w-44"
-          dir={lang === "fa-IR" ? "rtl" : "ltr"}
-
-        >
-
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 cursor-pointer flex gap-5 md:gap-10">
+        <div className="glassMorphism w-44">
+          <a target="_blank" href={Pdf}>
+            <div
+              className="flex justify-around items-center px-4 "
+              dir={lang === "fa-IR" ? "rtl" : "ltr"}
+            >
               <GoDownload />
 
-          <p className="py-2 f-exo-medium"><InjectMassage id="get.resume.file" /></p>
+              <p className="leading-10 f-exo-medium">
+                <InjectMassage id="get.resume.file" />
+              </p>
+            </div>
+          </a>
         </div>
-            </a>
+        <div className="glassMorphism w-44">
+          
+            <div
+              onClick={() => setOpenContactMeBox((prevState) => !prevState)}
+              className="flex justify-around items-center px-4 "
+              dir={lang === "fa-IR" ? "rtl" : "ltr"}
+            >
+              <FiLink />
+
+              <p className="leading-10 f-exo-medium">
+                <InjectMassage id="header.section.title.contactme" />
+              </p>
+            </div>
+          
+        </div>
       </div>
     </Element>
   );

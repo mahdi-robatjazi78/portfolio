@@ -14,7 +14,7 @@ import { scroller , Events , scrollSpy ,  Link} from "react-scroll";
 import PositionContext from '../../utils/context/position'
 
 const Header = (props) => {
-  const { openContactMeBox, setOpenContactMeBox } = props;
+  const { setOpenContactMeBox } = props;
 
   const { lang, setLanguageToggle } = useContext(LanguageContext);
   const { activePosition : section , hardSetActivePosition} = useContext(PositionContext); 

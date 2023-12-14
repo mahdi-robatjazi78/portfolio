@@ -60,7 +60,6 @@ function App() {
     <div>
         <div className="w-full">
         <Header
-          openContactMeBox={openContactMeBox}
           setOpenContactMeBox={setOpenContactMeBox}
         />
         <img
@@ -80,7 +79,10 @@ function App() {
         <MySkills />
       </div>
       <div ref={projectsRef}>
-        <Projects />
+        <Projects
+          setOpenContactMeBox={setOpenContactMeBox}
+
+        />
       </div>
       {openContactMeBox ? (
         <ContactMe
