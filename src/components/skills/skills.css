@@ -268,3 +268,9 @@
     height: 6rem;
   }
 }
+
+@-moz-document url-prefix() {
+  .skills-animated-border-1 {
+    background-color: #112;
+  }
+}
