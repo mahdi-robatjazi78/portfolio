@@ -39,6 +39,17 @@
     height:2px;
     background-color: rgba(0, 0, 0, 0.264);
     animation: bottomLineAnimationSection 2s ease-in-out infinite;
+}
+
+.active-section-header-yellow::after {
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:50%;
+    width:0px;
+    height:2px;
+    background-color: rgb(249, 255, 65);
+    animation: bottomLineAnimationSection 2s ease-in-out infinite;
 
 }
 

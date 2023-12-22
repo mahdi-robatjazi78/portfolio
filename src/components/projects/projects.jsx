@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Element } from "react-scroll";
 import InjectMassage from "../../utils/intl";
 import RtlMaker from "../../utils/helpers/rtlMaker";
@@ -6,10 +6,20 @@ import { GoDownload } from "react-icons/go";
 import { FiLink } from "react-icons/fi";
 import Pdf from "../../../public/cv/word-cv.pdf";
 import { LanguageContext } from "../../utils/context/language";
+import NotashDetailModal from "./notashDetailModal";
+import { IoIosInformationCircleOutline } from "react-icons/io";
 
 const Projects = (props) => {
   const { lang } = useContext(LanguageContext);
   const { setOpenContactMeBox } = props;
+  const [open, setOpen] = useState(false);
+
+  const closeIconStyles = {
+    position: "absolute",
+    top: "20px",
+    cursor: "pointer",
+    ...(lang === "en-US" ? { right: "30px" } : { left: "30px" }),
+  };
 
   return (
     <Element
@@ -69,7 +79,16 @@ const Projects = (props) => {
         <div className="h-fit">
           <RtlMaker>
             <div className="flex flex-col md:flex-row justify-center gap-5 w-full">
-              <div className="glassMorphism w-full md:w-3/5 h-52 flex justify-between items-center">
+              <div
+                onClick={() => {
+                  setOpen(true);
+                }}
+                className="glassMorphism cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center"
+              >
+                <span style={closeIconStyles} className="glassMorphism">
+                  <IoIosInformationCircleOutline className="text-3xl scale-animation" />
+                </span>
+
                 <div className="mx-5 max-w-14">
                   <img
                     src="/project-logos/danialmoj.jpg"
@@ -94,7 +113,16 @@ const Projects = (props) => {
                 </RtlMaker>
               </div>
 
-              <div className="glassMorphism w-full md:w-3/5 h-52 flex justify-between items-center">
+              <div className="glassMorphism relative w-full md:w-3/5 h-52 flex justify-between items-center">
+              <span
+                  style={closeIconStyles}
+                  className="glassMorphism"
+                  
+                >
+                  <IoIosInformationCircleOutline className="text-3xl scale-animation" />
+                </span>
+
+
                 <img
                   src="/project-logos/todo-512.jpg"
                   className="w-14 h-14 rounded-lg mx-5"
@@ -132,21 +160,20 @@ const Projects = (props) => {
           </a>
         </div>
         <div className="glassMorphism w-44">
-          
-            <div
-              onClick={() => setOpenContactMeBox((prevState) => !prevState)}
-              className="flex justify-around items-center px-4 "
-              dir={lang === "fa-IR" ? "rtl" : "ltr"}
-            >
-              <FiLink />
+          <div
+            onClick={() => setOpenContactMeBox((prevState) => !prevState)}
+            className="flex justify-around items-center px-4 "
+            dir={lang === "fa-IR" ? "rtl" : "ltr"}
+          >
+            <FiLink />
 
-              <p className="leading-10 f-exo-medium">
-                <InjectMassage id="header.section.title.contactme" />
-              </p>
-            </div>
-          
+            <p className="leading-10 f-exo-medium">
+              <InjectMassage id="header.section.title.contactme" />
+            </p>
+          </div>
         </div>
       </div>
+      <NotashDetailModal open={open} setOpen={setOpen} />
     </Element>
   );
 };
