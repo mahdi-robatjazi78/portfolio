@@ -124,9 +124,9 @@ const MapsaDetailModal = (props) => {
                           : "list-disc pl-7"
                       }`}
                     >
-                      <li className="text-yellow-300 mt-5 f-exo-medium"><a href="https://bootcamp.mapsahr.com/"><InjectMassage id="mapsa.bootcamp.modal.title" /></a></li>
-                      <li className="text-yellow-300 mt-5 f-exo-medium"><a href="https://cv-mehdirobatjazi-tmp.vercel.app/"><InjectMassage id="mapsa.bootcamp.movie.project.tab.2" /></a></li>
-                      <li className="text-yellow-300 mt-5 f-exo-medium"><a href="https://www.linkedin.com/in/truemoein/?originalSubdomain=ir"><InjectMassage id="mapsa.bootcamp.moein.alizadeh.linkedin" /></a></li>
+                      <li className="text-yellow-300 mt-5 f-exo-medium"><a target="_blank" href="https://bootcamp.mapsahr.com/"><InjectMassage id="mapsa.bootcamp.modal.title" /></a></li>
+                      <li className="text-yellow-300 mt-5 f-exo-medium"><a target="_blank" href="https://cv-mehdirobatjazi-tmp.vercel.app/"><InjectMassage id="mapsa.bootcamp.movie.project.tab.2" /></a></li>
+                      <li className="text-yellow-300 mt-5 f-exo-medium"><a target="_blank" href="https://www.linkedin.com/in/truemoein/?originalSubdomain=ir"><InjectMassage id="mapsa.bootcamp.moein.alizadeh.linkedin" /></a></li>
                       </ul>
                     <div className="py-4">
                       <p className="text-sm text-black f-exo-medium selection-text-background">
