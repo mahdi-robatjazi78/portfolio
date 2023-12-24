@@ -52,35 +52,30 @@ export default {
 
     "path.shahab.danesh.title": "Shahab Danesh University",
     "path.shahab.danesh.description": "I attended Shahab Danesh University in the city of Qom. Unfortunately, due to migration and financial difficulties, I couldn't continue my studies at the university. As a result, I do not have a university degree.",
-    
     "path.mapsa.title": "Bootcamp at Mapsa",
     "path.mapsa.description": "One of the right decisions in my life was participating in the Front-end Bootcamp at Mapsa, where I learned programming under the supervision of Professor Moein Alizadeh. Additionally, I completed a supplementary project as a sample of my work.",
-    
     "path.notash.title": "Notash Company",
     "path.notash.description": "After attending the Mapsa Bootcamp, I quickly got employed at Notash Company. I worked there for 20 months as a front-end programmer, gaining valuable team collaboration experience. Notash is actually a local provider of Internet of Things in Iran.",
-    
-    "path.kar.title": "Launching the Work Project",
+    "path.kar.title": "Kar Ra Bendaz Project",
     "path.kar.description": "During my time at Notash Company, I engaged in a resume project and also took on a testing project to learn new front-end technologies. The project is about a to-do list, and I encourage you to take a professional look at it if possible.",
-    
-
     "resume.title":"You can see my resume file here",
     "get.resume.file":"Get Resume File",
     "project.detail.box.notash.description.section.1": "About 20 months of activity as a front-end programmer at Notash company. Notash is a subsidiary of Holding Danial Moaj and is actively involved in the Internet of Things (IoT) field. The most significant challenges in this job position include collaborating with highly experienced software engineers and meeting their requirements as the first working position. Additionally, managing the processes of the IoT application provider with three levels of user interface alongside just one front-end colleague. Unforgettable teamwork experience with experienced engineers in web and software development is one of my valuable achievements at Notash company.",
-
     "holding.danial.moj": 'Holding Danial Moj',
-    
     "project.detail.box.notash.description.section.2": "My role involves working in the Internet of Things (IoT) field. Some key projects assigned to me include: collaboration with highly experienced software engineers, managing the processes of the IoT application provider with three levels of user interface alongside just one front-end colleague. The unforgettable teamwork experience with experienced engineers in web and software development is one of my valuable achievements at Notash company.",
-    
     "project.detail.box.notash.description.subtitle": "Some projects entirely was entrusted to me:",
+    "project.detail.box.notash.rulechain.description": "A motor for a framework is a simple tool for building event-driven workflows. By dragging and dropping pre-programmed graphical blocks, you can define event-driven workflows without the need for hours of coding.",
+    "project.detail.box.notash.ticketing.description": " ",
+    "project.detail.box.notash.select.rulechain": "Rule Chain",
+    "project.detail.box.notash.select.ticketing": "Ticketing",
     
-    "project.detail.box.notash.rulechain.description": "This is the rule chain.",
-    
-    "project.detail.box.notash.ticketing.description": "This is the ticketing system.",
-    
-    "project.detail.box.notash.select.rulechain": "Select Rule Chain",
-    
-    "project.detail.box.notash.select.ticketing": "Select Ticketing",
-    
-
+    "kar.ra.bendaz.title":"Kar Ra Bendaz",
+    "kar.ra.bendaz.description1":"The 'Kar Ra Bendaz' Project is a completely personal project, open-source, developed without the use of any ready-made templates or consultation with others. Its purpose is to test and learn new technologies and enhance resume skills. The project is currently not complete and online. The technologies used are new to me.",
+    "kar.ra.bendaz.description2":"This project is currently not complete and online.",
+    "kar.ra.bendaz.description3":"The technologies used were new to me.",
+    "kar.ra.bendaz.description4":"Redux Toolkit , Redux Toolkit Query , Formik , Sass , ExpressJs , Mongo , Front And Back System Design",
+    "kar.ra.bendaz.modal.tab.title":"Introduction",
+    'kar.ra.bendaz.modal.tab.1':"Image And Logo",
+    'kar.ra.bendaz.modal.tab.2':"Video Introduction", 
 
 }

@@ -6,13 +6,15 @@ import { GoDownload } from "react-icons/go";
 import { FiLink } from "react-icons/fi";
 import Pdf from "../../../public/cv/word-cv.pdf";
 import { LanguageContext } from "../../utils/context/language";
-import NotashDetailModal from "./notashDetailModal";
+import NotashDetailModal from "./NotashDetailModal";
+import KarRaBendazDetailModal from "./KarRaBendazlModal";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 
 const Projects = (props) => {
   const { lang } = useContext(LanguageContext);
   const { setOpenContactMeBox } = props;
-  const [open, setOpen] = useState(false);
+  const [openNotashModal, setOpenNotashModal] = useState(false);
+  const [openKarModal, setOpenKarModal] = useState(false);
 
   const closeIconStyles = {
     position: "absolute",
@@ -81,7 +83,7 @@ const Projects = (props) => {
             <div className="flex flex-col md:flex-row justify-center gap-5 w-full">
               <div
                 onClick={() => {
-                  setOpen(true);
+                  setOpenNotashModal(true);
                 }}
                 className="glassMorphism cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center"
               >
@@ -113,15 +115,15 @@ const Projects = (props) => {
                 </RtlMaker>
               </div>
 
-              <div className="glassMorphism relative w-full md:w-3/5 h-52 flex justify-between items-center">
-              <span
-                  style={closeIconStyles}
-                  className="glassMorphism"
-                  
-                >
+              <div
+                onClick={() => {
+                  setOpenKarModal(true);
+                }}
+                className="glassMorphism cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center"
+              >
+                <span style={closeIconStyles} className="glassMorphism">
                   <IoIosInformationCircleOutline className="text-3xl scale-animation" />
                 </span>
-
 
                 <img
                   src="/project-logos/todo-512.jpg"
@@ -173,7 +175,8 @@ const Projects = (props) => {
           </div>
         </div>
       </div>
-      <NotashDetailModal open={open} setOpen={setOpen} />
+      <NotashDetailModal open={openNotashModal} setOpen={setOpenNotashModal} />
+      <KarRaBendazDetailModal open={openKarModal} setOpen={setOpenKarModal} />
     </Element>
   );
 };

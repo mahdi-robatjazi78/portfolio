@@ -58,21 +58,29 @@ export default {
 
     "path.notash.title":"شرکت نوتاش",
     "path.notash.description":"بعد از حضورم در بوت کمپ مپصا توانستم به سرعت در شرکت نوتاش استخدام شوم و به مدت 20 ماه در آنجا مشغول به برنامه نویسی سمت فرانت باشم که تجربه ارزشمند مشارکت تیمی را برای من به ارمغان آورد . نوتاش در واقع شرکت ارائه دهنده بومی اینترنت اشیاء در ایران است.",
-
     "path.kar.title":"پروژه کار را بنداز",
     "path.kar.description":"درحین حضورم درشرکت نوتاش من مشغول یک پروژه رزومه ای وهمچنین تستی برای یادگیری تکنولوژی های جدید سمت فرانت شدم پروژه درمورد تودو است اما حرفه ای حتما در صورت امکان نگاهی به آن بیندازید ",
-  
     "resume.title":"دراین بخش میتوانید به فایل رزومه من دسترسی داشته باشید",
     "get.resume.file":"دریافت فایل رزومه",
-
     "project.detail.box.notash.description.section.1":"حدود 20 ماه فعالیت به عنوان برنامه نویس سمت فرانت شرکت نوتاش. شرکت نوتاش از زیر مجموعه های",
     "holding.danial.moj":'هلدینگ دانیال موج',
     "project.detail.box.notash.description.section.2":" است و در زمینه اینترنت اشیا در حال ادامه فعالیت می باشد. مهم ترین چالش های من در این پوزیشن شغلی یکی همکاری با مهندسین نرم افزار با تجربه زیاد و براورد خواسته هایشان به عنوان اولین پوزیشن کاری، دوم مدیریت فرایند های اپلیکیشن ارائه دهنده اینترنت اشیا با سه سطح کاربری در کنار فقط یک همکار فرانت ، تجربه فراموش نشدنی کار تیمی درکنار مهندسین مجرب در زمینه وب و نرم افزار از دستاورد های ارزشمند من در شرکت نوتاش است.",
-
-
     "project.detail.box.notash.description.subtitle":"بعضی پروژه های کاملا به من محول شده :",
-    "project.detail.box.notash.rulechain.description":"این رول چین است",
-    "project.detail.box.notash.ticketing.description":"این تیکتینگ است",
-    "project.detail.box.notash.select.rulechain":"رول چین",
-    "project.detail.box.notash.select.ticketing":"تیکتینگ",
+    "project.detail.box.notash.rulechain.description":"موتور قواعد یک چارچوب ساده برای ساخت گردش کارهای مبتنی بر رویداد است. تنها با کشیدن و رها کردن بلوک‌های گرافیکی از قبل برنامه‌نویسی شده، می‌توانید گردش کارهای مبتنی بر رویداد را تعریف کنید و دیگر نیازی به ساعت‌ها کد نویسی نیست.",
+    "project.detail.box.notash.ticketing.description":" ",
+    "project.detail.box.notash.select.rulechain":"موتور قواعد (رول چین)",
+    "project.detail.box.notash.select.ticketing":"سیستم پرسش و پاسخ (تیکتینگ)",
+    
+    "kar.ra.bendaz.title":"کار را بنداز",
+    "kar.ra.bendaz.description1":" پروژه کار رابنداز یک پروژه کاملا شخصی، متن باز، بدون استفاده از هیچگونه تمپلیت آماده یا مشورت با دیگران کار شده است وهدف آن تست ویادگیری تکنولوژی های جدید و کار رزومه ای است ",
+    "kar.ra.bendaz.description2":"این پروژه در حال حاضر کامل و آنلاین نیست",
+    "kar.ra.bendaz.description3":"تکنولوژی های مورد استفاده من که برایم جدید بود",
+    "kar.ra.bendaz.description4":"Redux Toolkit , Redux Toolkit Query , Formik , Sass , ExpressJs , Mongo , Front And Back System Design",
+    "kar.ra.bendaz.modal.tab.title":"معرفی : ",
+    'kar.ra.bendaz.modal.tab.1':"تصویر و لوگو",
+    'kar.ra.bendaz.modal.tab.2':"معرفی ویدئویی",
+
+
+
+
 }

@@ -8,7 +8,7 @@ import { IoCloseOutline } from "react-icons/io5";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
-const NotashDetailModal = (props) => {
+const KarRaBendazDetailModal = (props) => {
   const { open, setOpen } = props;
   const cancelButtonRef = useRef(null);
   const { lang } = useContext(LanguageContext);
@@ -48,7 +48,7 @@ const NotashDetailModal = (props) => {
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
-              enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+              enterFrom="opacity-0 translate-y-4 sm:translate-y-  0 sm:scale-95"
               enterTo="opacity-100 translate-y-0 sm:scale-100"
               leave="ease-in duration-200"
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
@@ -71,34 +71,28 @@ const NotashDetailModal = (props) => {
                         as="h2"
                         className="text-center font-semibold leading-6  underline-offset-8 text-2xl f-exo-medium"
                       >
-                        <a
-                          href="https://notash.net"
-                          target="_blank"
-                          className="selection-text-background text-yellow-400"
+                        <p
+                          className="selection-text-background text-white"
                         >
-                          <InjectMassage id="path.notash.title" />
-                        </a>
+                          <InjectMassage id="kar.ra.bendaz.title" />
+                        </p>
                       </Dialog.Title>
 
                       <div className="py-4 my-4 overflow-y-scroll h-24">
-                        <p className="text-sm selection-text-background text-gray-100 f-exo-medium px-2">
-                          <InjectMassage id="project.detail.box.notash.description.section.1" />{" "}
-                          <a
-                            className="text-yellow-400 selection-text-background"
-                            href="https://web.danialmoj.com/"
-                            target="_blank"
-                          > 
-                            <InjectMassage id="holding.danial.moj" />
-                          </a>{" "}
-                          <InjectMassage id="project.detail.box.notash.description.section.2" />
-                        </p>
+                        <ul className={`list-disc pr-5  ${lang === "fa-IR" ? "list-disc pr-7 text-base" : "list-disc pl-7"}`}>
+                          <li className="text-sm selection-text-background text-gray-100 f-exo-medium px-2"><InjectMassage id="kar.ra.bendaz.description1" />{" "}</li>
+                          <li className="mt-2 text-sm selection-text-background text-gray-100 f-exo-medium px-2"><InjectMassage id="kar.ra.bendaz.description2" />{" "}</li>
+                          <li className="mt-2 text-sm selection-text-background text-gray-100 f-exo-medium px-2"><InjectMassage id="kar.ra.bendaz.description3" />{" "}</li>
+                          <li className="mt-2 text-sm selection-text-background text-gray-100 f-exo-medium px-2"><InjectMassage id="kar.ra.bendaz.description4" />{" "}</li>
+                          
+                        </ul>
                       </div>
 
                       <Dialog.Title
                         as="h3"
-                        className="px-4 selection-text-background text-base font-semibold leading-6 text-gray-100 f-exo-medium"
+                        className="px-7 selection-text-background text-base font-semibold leading-6 text-gray-100 f-exo-medium"
                       >
-                        <InjectMassage id="project.detail.box.notash.description.subtitle" />
+                        <InjectMassage id="kar.ra.bendaz.modal.tab.title" />
                       </Dialog.Title>
 
                       <div className="w-full max-w-md px-0 md:px-2 py-6 sm:px-0">
@@ -115,7 +109,7 @@ const NotashDetailModal = (props) => {
                                 );
                               }}
                             >
-                              <InjectMassage id="project.detail.box.notash.select.rulechain" />
+                              <InjectMassage id="kar.ra.bendaz.modal.tab.1" />
                             </Tab>
                             <Tab
                               className={({ selected }) =>
@@ -128,7 +122,7 @@ const NotashDetailModal = (props) => {
                                 )
                               }
                             >
-                              <InjectMassage id="project.detail.box.notash.select.ticketing" />
+                              <InjectMassage id="kar.ra.bendaz.modal.tab.2" />
                             </Tab>
                           </Tab.List>
                           <Tab.Panels className="">
@@ -138,18 +132,11 @@ const NotashDetailModal = (props) => {
                                 "ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
                               )}
                             >
-                              <iframe
-                                src="https://www.aparat.com/video/video/embed/videohash/fzwQO/vt/frame"
-                                allowFullScreen="true"
-                                webkitallowfullscreen="true"
-                                mozallowfullscreen="true"
-                                className="w-full h-56"
-                              ></iframe>
+                           
 
-                              <div className="py-4">
-                                <p className="text-sm text-black f-exo-medium selection-text-background">
-                                  <InjectMassage id="project.detail.box.notash.rulechain.description" />
-                                </p>
+                              <div className="py-4 flex justify-around items-center flex-row">
+                              <img className="w-64" alt="Kar Ra Bendaz Poster" src="/portfolio/karRaBendaz/landing.png" />
+                              <img className="w-28" alt="Kar Ra Bendaz Poster" src="/portfolio/karRaBendaz/logo512.png" />
                               </div>
                             </Tab.Panel>
 
@@ -160,12 +147,13 @@ const NotashDetailModal = (props) => {
                               )}
                             >
                               <iframe
-                                src="https://www.aparat.com/video/video/embed/videohash/5R743/vt/frame"
+                                src="https://www.aparat.com/video/video/embed/videohash/vl9zO/vt/frame"
                                 allowFullScreen="true"
                                 webkitallowfullscreen="true"
                                 mozallowfullscreen="true"
                                 className="w-full h-56"
                               ></iframe>
+
                               <div className="py-4">
                                 <p className="text-sm text-black f-exo-medium selection-text-background">
                                   <InjectMassage id="project.detail.box.notash.ticketing.description" />
@@ -187,4 +175,4 @@ const NotashDetailModal = (props) => {
   );
 };
 
-export default NotashDetailModal;
+export default KarRaBendazDetailModal;

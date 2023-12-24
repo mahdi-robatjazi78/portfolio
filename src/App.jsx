@@ -5,7 +5,7 @@ import Header from "./components/header";
 import AboutMe from "./components/about/about";
 import ContactMe from "./components/contact/contact";
 import MySkills from "./components/skills/skills";
-import Projects from "./components/projects/projects";
+import Projects from "./components/projects";
 import Introduction from "./components/introdoction/introduction";
 import "animate.css";
 import AOS from "aos";
