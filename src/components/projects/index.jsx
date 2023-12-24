@@ -6,7 +6,7 @@ import { GoDownload } from "react-icons/go";
 import { FiLink } from "react-icons/fi";
 import Pdf from "../../../public/cv/word-cv.pdf";
 import { LanguageContext } from "../../utils/context/language";
-import NotashDetailModal from "./NotashDetailModal";
+import NotashDetailModal from "./notashModal";
 import KarRaBendazDetailModal from "./KarRaBendazlModal";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 
