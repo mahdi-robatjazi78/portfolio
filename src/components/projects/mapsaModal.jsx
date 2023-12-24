@@ -97,7 +97,7 @@ const MapsaDetailModal = (props) => {
                     )}
                   >
                     <div className="py-4 flex justify-around items-center flex-row">
-                      <img alt="Mapsa Bootcamp Group Image" src="/public/project-logos/mapsaGroupTogether.jpeg" />
+                      <img alt="Mapsa Bootcamp Group Image" src="/project-logos/mapsaGroupTogether.jpeg" />
                     </div>
                   </Tab.Panel>
                   <Tab.Panel
@@ -107,7 +107,7 @@ const MapsaDetailModal = (props) => {
                     )}
                   >
                     <div className="py-4 flex justify-around items-center flex-row">
-                      <img alt="Mapsa Bootcamp: The Movie Project Landing Page" src="/public/project-logos/theMovieProjectLanding.png" />
+                      <img alt="Mapsa Bootcamp: The Movie Project Landing Page" src="/project-logos/theMovieProjectLanding.png" />
                     </div>
                   </Tab.Panel>
 
