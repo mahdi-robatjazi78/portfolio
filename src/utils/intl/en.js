@@ -78,4 +78,15 @@ export default {
     'kar.ra.bendaz.modal.tab.1':"Image And Logo",
     'kar.ra.bendaz.modal.tab.2':"Video Introduction", 
 
+    "mapsa.bootcamp.modal.title":"Mapsa Bootcamp",
+    "mapsa.bootcamp.modal.description1":"The Bootcamp Frontend Mapsa started with basic tutorials such as JavaScript, bundle tools, ES6, and continued with React and Redux, concluding with Next.js.",
+    "mapsa.bootcamp.modal.description2":"In the end, it concluded with a Movie project.",
+    "mapsa.bootcamp.group.image.tab.1":"Mapsa Group Photo",
+    "mapsa.bootcamp.movie.project.tab.2":"Movie Project",
+    "mapsa.bootcamp.movie.project.description1":"The final project of Mapsa was designed for resume purposes and to practice acquired skills, utilizing the TMDB website's API.",
+    "mapsa.bootcamp.movie.project.description2":" For enter, be sure to use a VPN, as the APIs of the TMDB website are filtered.",
+    "mapsa.bootcamp.links.tab.3":"Links",
+    "mapsa.bootcamp.moein.alizadeh.linkedin":"Moein Alizadeh"
+
+
 }

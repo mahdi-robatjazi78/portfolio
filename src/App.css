@@ -245,6 +245,8 @@ span.Typewriter__wrapper::selection {
 }
 .rotate-animation:hover {
   background-color: #ff13623d;
+  border:2px solid #ff13623d;
+
 }
 .rotate-animation2 {
   animation: rotateIconBox 3s linear forwards infinite;

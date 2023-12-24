@@ -6,18 +6,19 @@ import { GoDownload } from "react-icons/go";
 import { FiLink } from "react-icons/fi";
 import Pdf from "../../../public/cv/word-cv.pdf";
 import { LanguageContext } from "../../utils/context/language";
+import { IoIosInformationCircleOutline } from "react-icons/io";
+import MapsaDetailModal from "./mapsaModal";
 import NotashDetailModal from "./notashModal";
 import KarRaBendazDetailModal from "./KarRaBendazlModal";
-import { IoIosInformationCircleOutline } from "react-icons/io";
 
 const Projects = (props) => {
- 
   const { lang } = useContext(LanguageContext);
   const { setOpenContactMeBox } = props;
   const [openNotashModal, setOpenNotashModal] = useState(false);
   const [openKarModal, setOpenKarModal] = useState(false);
+  const [openMapsaModal, setOpenMapsaModal] = useState(false);
 
-  const closeIconStyles = {
+  const InformationIconStyle = {
     position: "absolute",
     top: "20px",
     cursor: "pointer",
@@ -52,7 +53,15 @@ const Projects = (props) => {
                 </RtlMaker>
               </div>
 
-              <div className="glassMorphism w-full md:w-3/5 h-52 flex justify-between items-center">
+              <div
+                className="glassMorphism cursor-pointer w-full md:w-3/5 h-52 flex justify-between items-center"
+                onClick={() => {
+                  setOpenMapsaModal(true);
+                }}
+              >
+                <span style={InformationIconStyle} className="glassMorphism">
+                  <IoIosInformationCircleOutline className="text-3xl scale-animation" />
+                </span>
                 <div className="mx-5 max-w-14">
                   <img
                     src="/project-logos/mapsa.jpg"
@@ -83,12 +92,12 @@ const Projects = (props) => {
           <RtlMaker>
             <div className="flex flex-col md:flex-row justify-center gap-5 w-full">
               <div
+                className="glassMorphism cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center"
                 onClick={() => {
                   setOpenNotashModal(true);
                 }}
-                className="glassMorphism cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center"
               >
-                <span style={closeIconStyles} className="glassMorphism">
+                <span style={InformationIconStyle} className="glassMorphism">
                   <IoIosInformationCircleOutline className="text-3xl scale-animation" />
                 </span>
 
@@ -122,7 +131,7 @@ const Projects = (props) => {
                 }}
                 className="glassMorphism cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center"
               >
-                <span style={closeIconStyles} className="glassMorphism">
+                <span style={InformationIconStyle} className="glassMorphism">
                   <IoIosInformationCircleOutline className="text-3xl scale-animation" />
                 </span>
 
@@ -176,6 +185,8 @@ const Projects = (props) => {
           </div>
         </div>
       </div>
+
+      <MapsaDetailModal open={openMapsaModal} setOpen={setOpenMapsaModal} />
       <NotashDetailModal open={openNotashModal} setOpen={setOpenNotashModal} />
       <KarRaBendazDetailModal open={openKarModal} setOpen={setOpenKarModal} />
     </Element>
