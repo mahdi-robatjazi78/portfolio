@@ -11,6 +11,7 @@ import KarRaBendazDetailModal from "./KarRaBendazlModal";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 
 const Projects = (props) => {
+ 
   const { lang } = useContext(LanguageContext);
   const { setOpenContactMeBox } = props;
   const [openNotashModal, setOpenNotashModal] = useState(false);
