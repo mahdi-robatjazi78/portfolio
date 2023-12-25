@@ -39,13 +39,6 @@ const MapsaDetailModal = (props) => {
               </p>
             </div>
 
-            <Dialog.Title
-              as="h3"
-              className="px-7 selection-text-background text-base font-semibold leading-6 text-gray-100 f-exo-medium"
-            >
-              <InjectMassage id="kar.ra.bendaz.modal.tab.title" />
-            </Dialog.Title>
-
             <div className="w-full max-w-md px-0 md:px-2 py-6 sm:px-0">
               <Tab.Group>
                 <Tab.List className="flex space-x-1 mb-3 rounded-xl bg-blue-900/20 p-1">
@@ -128,7 +121,7 @@ const MapsaDetailModal = (props) => {
                       <li className="text-yellow-300 mt-5 f-exo-medium"><a target="_blank" href="https://cv-mehdirobatjazi-tmp.vercel.app/"><InjectMassage id="mapsa.bootcamp.movie.project.tab.2" /></a></li>
                       <li className="text-yellow-300 mt-5 f-exo-medium"><a target="_blank" href="https://www.linkedin.com/in/truemoein/?originalSubdomain=ir"><InjectMassage id="mapsa.bootcamp.moein.alizadeh.linkedin" /></a></li>
                       </ul>
-                    <div className="py-4">
+                    <div className="">
                       <p className="text-sm text-black f-exo-medium selection-text-background">
                         <InjectMassage id="project.detail.box.notash.ticketing.description" />
                       </p>

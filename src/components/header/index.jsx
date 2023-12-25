@@ -31,18 +31,6 @@ const Header = (props) => {
 
  
 
-  function position(elem) {
-    var left = 0,
-        top = 0;
-
-    do {
-        left += elem.offsetLeft;
-        top += elem.offsetTop;
-    } while ( elem = elem.offsetParent );
-
-    return [ left, top ];
-} 
-
   useEffect(() => { 
 
     // Registering the 'begin' event and logging it to the console when triggered.
@@ -56,6 +44,10 @@ const Header = (props) => {
       setOpenContactMeBox((prevState)=>false)
       const section = to.split("-")[0];
       hardSetActivePosition(section)
+
+      setExpandHeader(true);
+
+
     });
 
     // Updating scrollSpy when the component mounts.
@@ -73,7 +65,7 @@ const Header = (props) => {
   return (
     <div
       className={`header-styles transition-[height] ease-in-out duration-300 fixed top-0 w-full z-10 p-6 overflow-hidden ${
-        expandHeader ? "h-20 px-16" : "h-56 px-16"
+        expandHeader ? "h-20 px-16" : "h-56 sm:px-16"
       }`}
       dir={lang === "fa-IR" ? "ltr" : "rtl"}
     >

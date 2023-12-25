@@ -26,7 +26,7 @@ const KarRaBendazDetailModal = (props) => {
               </p>
             </Dialog.Title>
 
-            <div className="py-4 my-4 overflow-y-scroll h-24">
+            <div className="py-4 my-4 overflow-y-scroll h-52">
               <ul
                 className={`list-disc pr-5  ${
                   lang === "fa-IR"
@@ -93,14 +93,14 @@ const KarRaBendazDetailModal = (props) => {
                       "ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
                     )}
                   >
-                    <div className="py-4 flex justify-around items-center flex-row">
+                    <div className="py-4 flex justify-around items-center flex-col sm:flex-row gap-3 lg:gap-0 ">
                       <img
-                        className="w-64"
+                        className="w-32 sm:w-64 sm:h-44"
                         alt="Kar Ra Bendaz Poster"
                         src="/portfolio/karRaBendaz/landing.png"
                       />
                       <img
-                        className="w-28"
+                        className="w-20 md:w-28"
                         alt="Kar Ra Bendaz Poster"
                         src="/portfolio/karRaBendaz/logo512.png"
                       />
@@ -109,7 +109,7 @@ const KarRaBendazDetailModal = (props) => {
 
                   <Tab.Panel
                     className={classNames(
-                      "rounded-xl glassMorphism p-0 md:p-3",
+                      "rounded-xl glassMorphism p-4 md:p-3",
                       "ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
                     )}
                   >
@@ -121,7 +121,7 @@ const KarRaBendazDetailModal = (props) => {
                       className="w-full h-56"
                     ></iframe>
 
-                    <div className="py-4">
+                    <div className="">
                       <p className="text-sm text-black f-exo-medium selection-text-background">
                         <InjectMassage id="project.detail.box.notash.ticketing.description" />
                       </p>

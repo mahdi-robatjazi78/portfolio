@@ -288,11 +288,11 @@ const MySkills = () => {
           <div className="skills-description f-dosis-medium">
               {
                 shownItem === 0 ? (
-                  <p className={`selection-text-background text-xl ${lang === "fa-IR" ? "text-right mr-5" :"text-left ml-5"}`}><InjectMassage id="skills.description.paragraph.professional" />{" "}<span className="f-dosis-bold  selection-text-background text-green-400">{" "}<InjectMassage id="text.professional" /></span>{" "}<InjectMassage id="text.skills" /></p>
+                  <p className={`selection-text-background text-xl ${lang === "fa-IR" ? "text-right mr-5" :"text-left ml-5"}`}><InjectMassage id="text.professional" /></p>
                 ): shownItem === 1 ? (
-                  <p className={`selection-text-background text-xl ${lang === "fa-IR" ? "text-right mr-5" :"text-left ml-5"}`}><InjectMassage id="skills.description.paragraph.professional" />{" "}<span className="f-dosis-bold  selection-text-background text-green-400">{" "}<InjectMassage id="text.learned" /></span>{" "}<InjectMassage id="text.skills" /></p>
+                  <p className={`selection-text-background text-xl ${lang === "fa-IR" ? "text-right mr-5" :"text-left ml-5"}`}><InjectMassage id="text.learned" /></p>
                 ):(
-                  <p className={`selection-text-background text-xl ${lang === "fa-IR" ? "text-right mr-5" :"text-left ml-5"}`}><InjectMassage id="skills.description.paragraph.professional" />{" "}<span className="f-dosis-bold selection-text-background text-green-400 ">{" "}<InjectMassage id="text.worked" /></span>{" "}<InjectMassage id="text.skills" /></p>
+                  <p className={`selection-text-background text-xl ${lang === "fa-IR" ? "text-right mr-5" :"text-left ml-5"}`}><InjectMassage id="text.worked" /></p>
                 )
               }
 
