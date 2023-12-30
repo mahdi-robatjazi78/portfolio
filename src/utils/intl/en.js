@@ -69,6 +69,7 @@ export default {
     "project.detail.box.notash.select.rulechain": "Rule Chain",
     "project.detail.box.notash.select.ticketing": "Ticketing",
     
+    
     "kar.ra.bendaz.title":"Kar Ra Bendaz",
     "kar.ra.bendaz.description1":"The 'Kar Ra Bendaz' Project is a completely personal project, open-source, developed without the use of any ready-made templates or consultation with others. Its purpose is to test and learn new technologies and enhance resume skills. The project is currently not complete and online. The technologies used are new to me.",
     "kar.ra.bendaz.description2":"This project is currently not complete and online.",
@@ -77,6 +78,9 @@ export default {
     "kar.ra.bendaz.modal.tab.title":"Introduction",
     'kar.ra.bendaz.modal.tab.1':"Image And Logo",
     'kar.ra.bendaz.modal.tab.2':"Video Introduction", 
+    'kar.ra.bendaz.modal.tab.3':"Link",
+    "kar.ra.bendaz.links.aparat":'Aparat Link',
+    "kar.ra.bendaz.links.youtube":'Youtube Link',
 
     "mapsa.bootcamp.modal.title":"Mapsa Bootcamp",
     "mapsa.bootcamp.modal.description1":"The Bootcamp Frontend Mapsa started with basic tutorials such as JavaScript, bundle tools, ES6, and continued with React and Redux, concluding with Next.js.",

@@ -4,6 +4,7 @@ import InjectMassage from "../../utils/intl";
 import { LanguageContext } from "../../utils/context/language";
 import { Tab } from "@headlessui/react";
 import MyModal from "../../utils/templates/modal";
+import ReactPlayer from "react-player/youtube";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -85,6 +86,19 @@ const KarRaBendazDetailModal = (props) => {
                   >
                     <InjectMassage id="kar.ra.bendaz.modal.tab.2" />
                   </Tab>
+                  <Tab
+                    className={({ selected }) =>
+                      classNames(
+                        "selection-text-background f-exo-medium w-full rounded-lg py-2.5 text-sm font-medium leading-5",
+                        "ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2",
+                        selected
+                          ? "bg-white text-gray-950 shadow"
+                          : "text-blue-100 hover:bg-white/[0.12] hover:text-white"
+                      )
+                    }
+                  >
+                    <InjectMassage id="kar.ra.bendaz.modal.tab.3" />
+                  </Tab>
                 </Tab.List>
                 <Tab.Panels className="">
                   <Tab.Panel
@@ -109,23 +123,58 @@ const KarRaBendazDetailModal = (props) => {
 
                   <Tab.Panel
                     className={classNames(
-                      "rounded-xl glassMorphism p-4 md:p-3",
+                      "rounded-xl glassMorphism p-4 md:p-3 w-full",
                       "ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
                     )}
                   >
-                    <iframe
+                    {/* <iframe
                       src="https://www.aparat.com/video/video/embed/videohash/vl9zO/vt/frame"
                       allowFullScreen="true"
                       webkitallowfullscreen="true"
                       mozallowfullscreen="true"
                       className="w-full h-56"
-                    ></iframe>
+                    ></iframe> */}
+
+                    <ReactPlayer
+                      width="100%"
+                      height="180px"
+                      url="https://youtu.be/FpQn0ZuypFA"
+                    />
 
                     <div className="">
                       <p className="text-sm text-black f-exo-medium selection-text-background">
                         <InjectMassage id="project.detail.box.notash.ticketing.description" />
                       </p>
                     </div>
+                  </Tab.Panel>
+
+                  <Tab.Panel
+                    className={classNames(
+                      "rounded-xl glassMorphism p-4 md:p-3 w-full",
+                      "ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
+                    )}
+                  >
+                    <ul
+                      className={`list-disc pr-5 pb-8 ${
+                        lang === "fa-IR"
+                          ? "list-disc pr-7 text-base"
+                          : "list-disc pl-7"
+                      }`}
+                    >
+                      <li className="text-yellow-300 mt-5 f-exo-medium">
+                        <a
+                          target="_blank"
+                          href="https://www.aparat.com/video/video/embed/videohash/vl9zO/vt/frame"
+                        >
+                          <InjectMassage id="kar.ra.bendaz.links.aparat" />
+                        </a>
+                      </li>
+                      <li className="text-yellow-300 mt-5 f-exo-medium">
+                        <a target="_blank" href="https://youtu.be/FpQn0ZuypFA">
+                          <InjectMassage id="kar.ra.bendaz.links.youtube" />
+                        </a>
+                      </li>
+                    </ul>
                   </Tab.Panel>
                 </Tab.Panels>
               </Tab.Group>

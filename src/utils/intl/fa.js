@@ -77,6 +77,9 @@ export default {
     "kar.ra.bendaz.modal.tab.title":"معرفی : ",
     'kar.ra.bendaz.modal.tab.1':"تصویر و لوگو",
     'kar.ra.bendaz.modal.tab.2':"معرفی ویدئویی",
+    'kar.ra.bendaz.modal.tab.3':"لینک",
+    "kar.ra.bendaz.links.aparat":'لینک آپارات',
+    "kar.ra.bendaz.links.youtube":'لینک یوتیوب',
 
     "mapsa.bootcamp.modal.title":"بوت کمپ مپصا",
     "mapsa.bootcamp.modal.description1":"بوت کمپ فرانت اند مپصا با شروع آموزش های پایه ای مثل جاوااسکریپت، ابزارهای باندل، ای اس 6 و ... شروع شد و با ری اکت و ری داکس ادامه پیدا کرد و با نکست جی اس هم تمام شد.",
@@ -87,6 +90,8 @@ export default {
     "mapsa.bootcamp.movie.project.description2":"برای ورود حتما از VPN استفاده کنید، Api های سایت TMDB فیلتر است.",
     "mapsa.bootcamp.links.tab.3":"لینک ها",
     "mapsa.bootcamp.moein.alizadeh.linkedin":"معین علیزاده"
+
+
 
 
 

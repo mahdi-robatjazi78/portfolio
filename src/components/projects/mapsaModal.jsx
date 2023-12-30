@@ -85,7 +85,7 @@ const MapsaDetailModal = (props) => {
                 <Tab.Panels className="">
                   <Tab.Panel
                     className={classNames(
-                      "rounded-xl glassMorphism p-0 md:p-3",
+                      "rounded-xl glassMorphism p-3 md:p-3",
                       "ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
                     )}
                   >
@@ -95,7 +95,7 @@ const MapsaDetailModal = (props) => {
                   </Tab.Panel>
                   <Tab.Panel
                     className={classNames(
-                      "rounded-xl glassMorphism p-0 md:p-3",
+                      "rounded-xl glassMorphism p-3 md:p-3",
                       "ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
                     )}
                   >
@@ -106,12 +106,12 @@ const MapsaDetailModal = (props) => {
 
                   <Tab.Panel
                     className={classNames(
-                      "rounded-xl glassMorphism p-0 md:p-3",
+                      "rounded-xl glassMorphism p-3 md:p-3",
                       "ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
                     )}
                   >
                     <ul
-                       className={`list-disc pr-5  ${
+                       className={`list-disc pr-5 pb-4  ${
                         lang === "fa-IR"
                           ? "list-disc pr-7 text-base"
                           : "list-disc pl-7"
