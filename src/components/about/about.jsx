@@ -28,7 +28,7 @@ const AboutMe = (props) => {
             <InjectMassage id="about.me.section0.t1" />
           </p>
       </section>
-<div className="flex gap-2 md:gap-5">
+<div className="flex flex-col md:flex-row gap-2 md:gap-5">
 
         <section data-aos='fade-up' className={`f-dosis-section-1 text-xl border border-amber-200  my-4 p-4 rounded-lg sm:w-full md:w-1/2 md:mx-auto`}>
           <h1 className="selection-text-background font-bold text-amber-400 leading-10 ">
