@@ -1,10 +1,9 @@
 import React from "react";
+import useWindowSize from "../hooks/useWindowSize";
 
 const SlideUpAnimationText = ({ text, lang }) => {
-  const styles1 = {
-    filter: "blur(0px)",
-    animationDuration: "14s",
-  };
+  const { sizeName } = useWindowSize();
+
 
   const styles2 = {
     fontSize: "15vw",
@@ -28,6 +27,17 @@ const SlideUpAnimationText = ({ text, lang }) => {
       <span style={spanGhostStyle3}>{text}</span>
       <span style={spanGhostStyle3}>{text}</span>
       <span style={spanGhostStyle3}>{text}</span>
+      {
+        (sizeName === "mobile" || sizeName === "tablet") && (
+          <>
+              <span style={spanGhostStyle3}>{text}</span>
+              <span style={spanGhostStyle3}>{text}</span>
+              <span style={spanGhostStyle3}>{text}</span>
+              <span style={spanGhostStyle3}>{text}</span>
+              <span style={spanGhostStyle3}>{text}</span>
+          </>
+        )
+      }
    
     </div>
   );
