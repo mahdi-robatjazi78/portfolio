@@ -70,7 +70,7 @@ const Header = (props) => {
       dir={lang === "fa-IR" ? "ltr" : "rtl"}
     >
       <div className="flex justify-between">
-        <div className="flex gap-36">
+        <div className="flex gap-20">
           <span className="relative flex h-6 w-6 text-center">
             <span className="animate-ping absolute h-full w-full rounded-full bg-gray-400 opacity-75"></span>
             <span

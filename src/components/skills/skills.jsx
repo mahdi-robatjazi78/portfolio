@@ -285,14 +285,14 @@ const MySkills = () => {
             
           </div>
 
-          <div className="skills-description f-dosis-medium">
+          <div className="skills-description f-dosis-bold ">
               {
                 shownItem === 0 ? (
-                  <p className={`selection-text-background text-xl ${lang === "fa-IR" ? "text-right mr-5" :"text-left ml-5"}`}><InjectMassage id="text.professional" /></p>
+                  <p className={`selection-text-background text-xl gradient-text-skills inline-block select-none ${lang === "fa-IR" ? "text-right mr-5" :"text-left ml-5"}`}><InjectMassage id="text.professional" /></p>
                 ): shownItem === 1 ? (
-                  <p className={`selection-text-background text-xl ${lang === "fa-IR" ? "text-right mr-5" :"text-left ml-5"}`}><InjectMassage id="text.learned" /></p>
+                  <p className={`selection-text-background text-xl gradient-text-skills inline-block select-none ${lang === "fa-IR" ? "text-right mr-5" :"text-left ml-5"}`}><InjectMassage id="text.learned" /></p>
                 ):(
-                  <p className={`selection-text-background text-xl ${lang === "fa-IR" ? "text-right mr-5" :"text-left ml-5"}`}><InjectMassage id="text.worked" /></p>
+                  <p className={`selection-text-background text-xl gradient-text-skills inline-block select-none ${lang === "fa-IR" ? "text-right mr-5" :"text-left ml-5"}`}><InjectMassage id="text.worked" /></p>
                 )
               }
 

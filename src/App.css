@@ -278,3 +278,68 @@ span.Typewriter__wrapper::selection {
     bottom: 25px;
   }
 }
+
+.embed-animated-text-background{
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 100px;
+  font-weight: 700;
+  left: 0;
+  line-height: .9;
+  opacity: .06;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.embed-animated-text-background > span {
+  animation: slideUp 20s linear infinite;
+  display: block;
+  white-space: nowrap;
+  will-change: transform,opacity;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+}
+
+100% {
+    transform: translateY(-100%);
+}
+}
+
+.image-me-styles{
+  /* opacity: 1;
+  background-image: url("public/me/me.png");
+  background-size: contain;
+  background-position: right bottom;
+  max-width: min(30vw, 480px);
+  max-height: 40vh;
+  width: 100%;
+  height: 100%;
+  inset: auto 10vw 10vw auto;
+  translate: none;
+  rotate: none;
+  scale: none;
+  transform: translate(0%, 0%);
+  background-repeat: no-repeat */
+  width:200px;
+  height:300px;
+  position: absolute;
+  bottom:-6.2rem;
+  right:1rem;
+}
+
+.image-me-styles{ 
+  /* inset: auto 10vw 10vw auto; */
+  translate: none;
+  rotate: none;
+  scale: none;
+  transform: translate(0%, 0%);
+}
+

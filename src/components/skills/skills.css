@@ -274,3 +274,11 @@
     background-color: #112;
   }
 }
+
+
+.gradient-text-skills{
+  background:linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(217, 100%, 50%, 1) 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+
+}
