@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
+import App from "./App";
+import VercelAnalyticsComponent from "./analytics";
 import { InternationalizationProvider } from "./utils/intl/index";
 import { LanguageContextProvider } from "./utils/context/language";
 import { PositionContextProvider } from "./utils/context/position.jsx";
@@ -12,7 +13,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <LanguageContextProvider>
       <InternationalizationProvider>
         <PositionContextProvider>
-          <App />
+          <VercelAnalyticsComponent>
+            <App />
+          </VercelAnalyticsComponent>
         </PositionContextProvider>
       </InternationalizationProvider>
     </LanguageContextProvider>

@@ -10,7 +10,7 @@ import Introduction from "./components/introdoction/introduction";
 import "animate.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import useScrollPosition from "./utils/hooks/useScrollPosition";
+// import useScrollPosition from "./utils/hooks/useScrollPosition";
 import PositionContext from "./utils/context/position";
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
   }, []);
 
   const [openContactMeBox, setOpenContactMeBox] = useState(false);
-  const { fixtureUserPosition } = useScrollPosition();
+  // const { fixtureUserPosition } = useScrollPosition();
   const { handlePositionFixtures } = useContext(PositionContext);
   const introductionRef = useRef(null);
   const aboutRef = useRef(null);
