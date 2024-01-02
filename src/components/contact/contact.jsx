@@ -14,6 +14,7 @@ const ContactMe = (props) => {
   const GmailRef = useRef(null);
   const TelegramRef = useRef(null);
   const GithubRef = useRef(null);
+  const mobileRef = useRef(null)
 
   function copyOperation(el, txt) {
     // Get the text field
@@ -42,6 +43,13 @@ const ContactMe = (props) => {
       GithubRef.current.classList.add("success-box");
       timeoutId = setTimeout(() => {
         GithubRef.current.classList.remove("success-box");
+      }, 3000);
+    }
+
+    if (el === "mobile") {
+      mobileRef.current.classList.add("success-box");
+      timeoutId = setTimeout(() => {
+        mobileRef.current.classList.remove("success-box");
       }, 3000);
     }
 
@@ -206,6 +214,55 @@ const ContactMe = (props) => {
               </div>
             </div>
           </div>
+
+
+
+
+          <div className="flex mb-2">
+            <img src="/contactme-logos/mobile.jpg" width={35} height={20} />
+            <div
+                ref={mobileRef}
+                className="flex w-full glassMorphism mx-3 px-3 rounded-md justify-between items-center"
+            >
+              <p
+                  className={`selection-text-background f-dosis-medium tracking-wider space-2 ${
+                      lang === "fa-IR" ? "text-md text-right pr-2" : ""
+                  }  `}
+              >
+                <InjectMassage id="mobile.number" />
+              </p>
+              <div className="flex px-4 pt-1">
+                 <span
+                     className="iconBox"
+                     data-tooltip-target="copy-tooltip-box"
+                     onClick={() => {
+                       copyOperation(
+                           "mobile",
+                           "09190868386"
+                       );
+                     }}
+                 >
+                  <GoCopy />
+                </span>
+
+                <div
+                    data-tooltip-target="copy-tooltip-box"
+                    className="h-1 w-4"
+                >
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
 
           <div className="flex mb-2">
             <img src="/contactme-logos/cv.png" width={35} height={20} />

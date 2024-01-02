@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef ,useContext } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import "./App.css";
 
 import Header from "./components/header";
@@ -11,11 +11,9 @@ import "animate.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import useScrollPosition from "./utils/hooks/useScrollPosition";
-import PositionContext from './utils/context/position'
-
+import PositionContext from "./utils/context/position";
 
 function App() {
-
   useEffect(() => {
     AOS.init({
       offset: 120, // offset (in px) from the original trigger point
@@ -27,7 +25,7 @@ function App() {
 
   const [openContactMeBox, setOpenContactMeBox] = useState(false);
   const { fixtureUserPosition } = useScrollPosition();
-  const {handlePositionFixtures} = useContext(PositionContext)
+  const { handlePositionFixtures } = useContext(PositionContext);
   const introductionRef = useRef(null);
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
@@ -54,14 +52,12 @@ function App() {
     aboutRef.current,
     skillsRef.current,
     projectsRef.current,
-  ]); 
+  ]);
 
   return (
-    <div>
-        <div className="w-full">
-        <Header
-          setOpenContactMeBox={setOpenContactMeBox}
-        />
+    <div className="overflow-hidden">
+      <div className="w-full y-mandatory">
+        <Header setOpenContactMeBox={setOpenContactMeBox} />
         <img
           // data-aos='fade-down'
           src="wave.svg"
@@ -69,20 +65,17 @@ function App() {
           className="absolute animate__animated animate__rotateInDownLeft hidden lg:block"
         />
       </div>
-       <div ref={introductionRef}>
+      <div className="y-mandatory" ref={introductionRef}>
         <Introduction />
       </div>
-       <div ref={aboutRef}>
+      <div className="y-mandatory" ref={aboutRef}>
         <AboutMe />
-      </div> 
-      <div ref={skillsRef}>
+      </div>
+      <div className="y-mandatory" ref={skillsRef}>
         <MySkills />
       </div>
-      <div ref={projectsRef}>
-        <Projects
-          setOpenContactMeBox={setOpenContactMeBox}
-
-        />
+      <div className="y-mandatory" ref={projectsRef}>
+        <Projects setOpenContactMeBox={setOpenContactMeBox} />
       </div>
       {openContactMeBox ? (
         <ContactMe

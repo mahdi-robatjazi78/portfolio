@@ -29,7 +29,7 @@ const Projects = (props) => {
     <Element
       name="project-section"
       id="projects-section"
-      className={`relative w-screen  h:fit md:h-screen projects-gradient pb-10 md:pb-none`}
+      className={`relative w-screen  h:fit md:h-screen projects-gradient pb-10 md:pb-none y-mandatory`}
     >
       <div className="flex flex-col gap-5 w-full p-10 h-full justify-center items-center">
         <div className="h-fit">
