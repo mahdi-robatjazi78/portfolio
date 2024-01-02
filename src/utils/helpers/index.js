@@ -14,3 +14,19 @@ export const handleNumberToPersian = (en) => {
 
   return result;
 };
+
+
+export const truncateText = (txt , limit)=>{
+
+  const len = txt.length;
+
+  if(len <= limit){
+    return txt
+  }
+
+  const limitedText = txt.slice(0 , limit) + "..."
+
+  return limitedText
+
+
+}

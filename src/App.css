@@ -241,7 +241,7 @@ span.Typewriter__wrapper::selection {
 }
 
 .rotate-animation {
-  animation: rotateIconBox 3s linear forwards infinite;
+  /* animation: rotateIconBox 3s linear forwards infinite; */
 }
 .rotate-animation:hover {
   background-color: #ff13623d;
@@ -249,7 +249,7 @@ span.Typewriter__wrapper::selection {
 
 }
 .rotate-animation2 {
-  animation: rotateIconBox 3s linear forwards infinite;
+  /* animation: rotateIconBox 3s linear forwards infinite; */
 }
 .rotate-animation2:hover {
   background-color: #ff13623d;
@@ -342,4 +342,3 @@ span.Typewriter__wrapper::selection {
   scale: none;
   transform: translate(0%, 0%);
 }
-

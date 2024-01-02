@@ -6,15 +6,17 @@ import { GoDownload } from "react-icons/go";
 import InjectMassage from "../../utils/intl";
 import { LanguageContext } from "../../utils/context/language";
 import Pdf from "../../../public/cv/word-cv.pdf";
+import { truncateText } from "../../utils/helpers";
+import useWindowSize from "../../utils/hooks/useWindowSize";
 
 const ContactMe = (props) => {
   const { openContactMeBox, setOpenContactMeBox } = props;
-
+  const { size } = useWindowSize();
   const LinkedinRef = useRef(null);
   const GmailRef = useRef(null);
   const TelegramRef = useRef(null);
   const GithubRef = useRef(null);
-  const mobileRef = useRef(null)
+  const mobileRef = useRef(null);
 
   function copyOperation(el, txt) {
     // Get the text field
@@ -62,8 +64,8 @@ const ContactMe = (props) => {
 
   const closeIconStyles = {
     position: "absolute",
-    top: "-26px",
-    right: "-28px",
+    top: "-40px",
+    right: "-1px",
     cursor: "pointer",
   };
 
@@ -74,7 +76,7 @@ const ContactMe = (props) => {
   }
 
   return (
-    <div className="fixed left-4 sm:left-1/2 translate-x-0 sm:-translate-x-1/2  w-[94%] sm:w-3/5 h-42 px-4 py-3 glassMorphism contact-box-animation">
+    <div className="fixed left-4 sm:left-1/2 translate-x-0 sm:-translate-x-1/2  w-[94%] sm:w-3/5 h-42 px-4 pt-12 pb-6 md:py-3 glassMorphism contact-box-animation">
       <div className="relative flex flex-col xl:flex-row">
         <span
           style={closeIconStyles}
@@ -85,15 +87,17 @@ const ContactMe = (props) => {
         >
           <IoCloseOutline className="text-3xl scale-animation" />
         </span>
-        <section className="w-full xl:w-1/2 mt-2">
-          <div className="flex mb-2">
+        <section className="w-full xl:w-1/2 md:mt-2">
+          <div className="flex w-[100%] mb-2">
             <img src="/contactme-logos/linkedin.png" width={40} height={40} />
             <div
               ref={LinkedinRef}
-              className="flex w-full glassMorphism mx-3 px-3 rounded-md justify-between items-center"
+              className="flex flex-nowrap w-full glassMorphism mx-3 px-3 rounded-md justify-between items-center"
             >
               <p className="selection-text-background f-dosis-medium tracking-wider  space-2">
-                linkedin.com/in/mehdirobatjazi
+                {size[0] < 480
+                  ? truncateText("linkedin.com/in/mehdirobatjazi", 20)
+                  : "linkedin.com/in/mehdirobatjazi"}
               </p>
               <div className="flex pt-1">
                 <span
@@ -119,14 +123,16 @@ const ContactMe = (props) => {
             </div>
           </div>
 
-          <div className="flex mb-2">
+          <div className="flex w-[100%] mb-2">
             <img src="/contactme-logos/gmail.png" width={40} height={40} />
             <div
               ref={GmailRef}
-              className="flex w-full glassMorphism mx-3 px-3 rounded-md justify-between items-center"
+              className="flex flex-nowrap w-full glassMorphism mx-3 px-3 rounded-md justify-between items-center"
             >
               <p className="selection-text-background f-dosis-medium tracking-wider   space-2">
-                mahdi.robatjazi78@gmail.com
+                {size[0] < 480
+                  ? truncateText("mahdi.robatjazi78@gmail.com", 20)
+                  : "mahdi.robatjazi78@gmail.com"}
               </p>
 
               <div className="flex  pt-1">
@@ -147,14 +153,16 @@ const ContactMe = (props) => {
             </div>
           </div>
 
-          <div className="flex mb-2">
+          <div className="flex w-[100%] mb-2">
             <img src="/contactme-logos/telegram.png" width={40} height={40} />
             <div
               ref={TelegramRef}
-              className="flex w-full glassMorphism mx-3 px-3 rounded-md justify-between items-center"
+              className="flex flex-nowrap w-full glassMorphism mx-3 px-3 rounded-md justify-between items-center"
             >
-              <p className="selection-text-background f-dosis-medium tracking-wider   space-2">
-                https://t.me/Mahdi_Robatjazi
+              <p className="selection-text-background f-dosis-medium tracking-wider space-2">
+                {size[0] < 480
+                  ? truncateText("https://t.me/Mahdi_Robatjazi", 20)
+                  : "https://t.me/Mahdi_Robatjazi"}
               </p>
 
               <div className="flex pt-1">
@@ -176,15 +184,17 @@ const ContactMe = (props) => {
           </div>
         </section>
 
-        <section className="w-full xl:w-1/2 mt-2">
-          <div className="flex mb-2">
+        <section className="w-full xl:w-1/2 md:mt-2">
+          <div className="flex w-[100%] mb-2">
             <img src="/contactme-logos/github2.png" width={40} height={40} />
             <div
               ref={GithubRef}
-              className="flex w-full glassMorphism mx-3 px-3 rounded-md justify-between items-center"
+              className="flex flex-nowrap w-full glassMorphism mx-3 px-3 rounded-md justify-between items-center"
             >
               <p className="selection-text-background f-dosis-medium tracking-wider space-2">
-                https://github.com/mahdi-robatjazi78
+                {size[0] < 480
+                  ? truncateText("https://github.com/mahdi-robatjazi78", 20)
+                  : "https://github.com/mahdi-robatjazi78"}
               </p>
               <div className="flex  pt-1">
                 <span
@@ -215,60 +225,43 @@ const ContactMe = (props) => {
             </div>
           </div>
 
-
-
-
-          <div className="flex mb-2">
-            <img src="/contactme-logos/mobile.jpg" width={35} height={20} />
+          <div className="flex w-[100%] mb-2">
+            <img src="/contactme-logos/mobile.jpg" width={40} height={40} />
             <div
-                ref={mobileRef}
-                className="flex w-full glassMorphism mx-3 px-3 rounded-md justify-between items-center"
+              ref={mobileRef}
+              className="flex flex-nowrap w-full glassMorphism mx-3 px-3 rounded-md justify-between items-center"
             >
               <p
-                  className={`selection-text-background f-dosis-medium tracking-wider space-2 ${
-                      lang === "fa-IR" ? "text-md text-right pr-2" : ""
-                  }  `}
+                className={`selection-text-background f-dosis-medium tracking-wider space-2 ${
+                  lang === "fa-IR" ? "text-md text-right pr-2" : ""
+                }  `}
               >
-                <InjectMassage id="mobile.number" />
+                09190868386
               </p>
               <div className="flex px-4 pt-1">
-                 <span
-                     className="iconBox"
-                     data-tooltip-target="copy-tooltip-box"
-                     onClick={() => {
-                       copyOperation(
-                           "mobile",
-                           "09190868386"
-                       );
-                     }}
-                 >
+                <span
+                  className="iconBox"
+                  data-tooltip-target="copy-tooltip-box"
+                  onClick={() => {
+                    copyOperation("mobile", "09190868386");
+                  }}
+                >
                   <GoCopy />
                 </span>
 
                 <div
-                    data-tooltip-target="copy-tooltip-box"
-                    className="h-1 w-4"
-                >
-
-                </div>
-
+                  data-tooltip-target="copy-tooltip-box"
+                  className="h-1 w-4"
+                ></div>
               </div>
             </div>
           </div>
 
-
-
-
-
-
-
-
-
-          <div className="flex mb-2">
-            <img src="/contactme-logos/cv.png" width={35} height={20} />
+          <div className="flex w-[100%] mb-2">
+            <img src="/contactme-logos/cv.png" width={40} height={40} />
             <div
               ref={GithubRef}
-              className="flex w-full glassMorphism mx-3 px-3 rounded-md justify-between items-center"
+              className="flex flex-nowrap w-full glassMorphism mx-3 px-3 rounded-md justify-between items-center"
             >
               <p
                 className={`selection-text-background f-dosis-medium tracking-wider space-2 ${
@@ -287,12 +280,10 @@ const ContactMe = (props) => {
                   </a>
                 </span>
 
-                <div 
+                <div
                   data-tooltip-target="copy-tooltip-box"
                   className="h-1 w-4"
-                >
-                 
-                </div>
+                ></div>
               </div>
             </div>
           </div>

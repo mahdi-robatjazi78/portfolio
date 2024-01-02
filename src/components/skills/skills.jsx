@@ -68,7 +68,7 @@ const MySkills = () => {
       name="skills-section"
       dir={lang === "fa-IR" ? "rtl" : "ltr"}
       id="skills-section"
-      className={`h-screen w-screen skills-gradient flex flex-col justify-center items-center y-mandatory`}
+      className={`h-screen w-screen skills-gradient flex flex-col justify-center items-center`}
     >
       <div className="mx-w-md  skills-animated-border-1 p-4 sm:p-12 md:p-12">
         <StepperSkills

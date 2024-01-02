@@ -60,6 +60,12 @@ const Header = (props) => {
     };
   }, []);
 
+
+  const handleClickContactMeSection = ()=>{
+    setExpandHeader(prevState=>!prevState)
+    setOpenContactMeBox((prevState) => !prevState)
+  }
+
     
 
   return (
@@ -160,7 +166,7 @@ const Header = (props) => {
           >
             <IntlMessages id="header.section.title.projects" />
           </Link>
-          <a onClick={() => setOpenContactMeBox((prevState) => !prevState)}>
+          <a onClick={()=>setOpenContactMeBox((prevState) => !prevState)}>
             <IntlMessages id="header.section.title.contactme" />
           </a>
         </div>
@@ -229,7 +235,7 @@ const Header = (props) => {
         <div className="flex justify-between leading-10 gap-5 minimized-header-links">
           <a
             className={`cursor-pointer glassMorphism`}
-            onClick={() => setOpenContactMeBox((prevState) => !prevState)}
+            onClick={handleClickContactMeSection}
           >
             <IntlMessages id="header.section.title.contactme" />
           </a>

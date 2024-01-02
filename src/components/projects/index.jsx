@@ -29,9 +29,9 @@ const Projects = (props) => {
     <Element
       name="project-section"
       id="projects-section"
-      className={`relative w-screen  h:fit md:h-screen projects-gradient pb-10 md:pb-none y-mandatory`}
+      className={`relative w-screen  h:fit md:h-screen projects-gradient pb-10 md:pb-none`}
     >
-      <div className="flex flex-col gap-5 w-full p-10 h-full justify-center items-center">
+      <div className="flex flex-col gap-5 w-full px-3 p-20 md:p-10 h-full justify-center items-center">
         <div className="h-fit">
           <RtlMaker>
             <div className="flex flex-col md:flex-row justify-center gap-5 w-full">
@@ -156,7 +156,7 @@ const Projects = (props) => {
         </div>
       </div>
 
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 cursor-pointer flex gap-5 md:gap-10">
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 cursor-pointer flex flex-col md:flex-row gap-3 md:gap-10">
         <div className="glassMorphism w-44">
           <a target="_blank" href={Pdf}>
             <div

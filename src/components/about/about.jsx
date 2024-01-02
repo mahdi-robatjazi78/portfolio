@@ -11,7 +11,7 @@ const AboutMe = (props) => {
     <Element
       name="aboutme-section"
       id="about-me-section"
-      className="relative h-screen w-screen about-section-gradient y-mandatory"
+      className="relative h-screen w-screen about-section-gradient"
       dir={lang === "fa-IR" ? "rtl" : "ltr"}
     >
       <div className="central-about px-5 sm:px-5 w-full md:w-[72%]">

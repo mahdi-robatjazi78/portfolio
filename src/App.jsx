@@ -55,8 +55,8 @@ function App() {
   ]);
 
   return (
-    <div className="overflow-hidden">
-      <div className="w-full y-mandatory">
+    <div>
+      <div className="w-full">
         <Header setOpenContactMeBox={setOpenContactMeBox} />
         <img
           // data-aos='fade-down'
@@ -65,16 +65,16 @@ function App() {
           className="absolute animate__animated animate__rotateInDownLeft hidden lg:block"
         />
       </div>
-      <div className="y-mandatory" ref={introductionRef}>
+      <div ref={introductionRef}>
         <Introduction />
       </div>
-      <div className="y-mandatory" ref={aboutRef}>
+      <div ref={aboutRef}>
         <AboutMe />
       </div>
-      <div className="y-mandatory" ref={skillsRef}>
+      <div ref={skillsRef}>
         <MySkills />
       </div>
-      <div className="y-mandatory" ref={projectsRef}>
+      <div ref={projectsRef}>
         <Projects setOpenContactMeBox={setOpenContactMeBox} />
       </div>
       {openContactMeBox ? (
