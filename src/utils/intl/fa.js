@@ -43,6 +43,8 @@ export default {
     "skills.description.jira":"جیرا",
     "skills.description.photoshop":"فوتوشاپ",
     "skills.description.illustrator":"ایلستریتور",
+    "skills.description.mysql":"مای اس کیو ال", 
+
     "skills.description.figma":"فیگما", 
     "text.professional":"مهارت های حرفه ای من",
     "text.learned":"مهارت های درحال یادگیری من",

@@ -260,9 +260,9 @@ const MySkills = () => {
                       shownItem === 2 && startAnimate ? "start-animate" : ""
                     }`}
                   >
-                    <img src="/logos/illustrator.png" />{" "}
+                    <img src="/logos/mysql.png" />{" "}
                     <div className=" hidden md:block skills-description f-exo-medium select-none">
-                      <InjectMassage id="skills.description.illustrator" />
+                      <InjectMassage id="skills.description.mysql" />
                     </div>{" "}
                   </div>
 

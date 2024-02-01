@@ -42,6 +42,7 @@ export default {
     "skills.description.jira":"Jira",
     "skills.description.photoshop":"Photoshop",
     "skills.description.illustrator":"Illustrator", 
+    "skills.description.mysql":"Mysql", 
     "skills.description.figma":"Figma",
 
     "skills.description.paragraph.professional":"In the list above, you can see my",
