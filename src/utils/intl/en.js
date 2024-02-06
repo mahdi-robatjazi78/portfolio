@@ -37,6 +37,8 @@ export default {
     "skills.description.react-native":"React Native",
     "skills.description.vue":"Vue",
     "skills.description.python":"Python",
+    "skills.description.sql":"Sql",
+    "skills.description.mongo":"Mongo Db",
 
     "skills.description.git":"Git",
     "skills.description.jira":"Jira",
@@ -52,7 +54,7 @@ export default {
     "text.worked":"Secondary",
 
     "path.shahab.danesh.title": "Shahab Danesh University",
-    "path.shahab.danesh.description": "I attended Shahab Danesh University in the city of Qom. Unfortunately, due to migration and financial difficulties, I couldn't continue my studies at the university. As a result, I do not have a university degree.",
+    "path.shahab.danesh.description": "I studied software engineering at Shahab Danesh University located in Qom, but I don't have a university degree",
     "path.mapsa.title": "Bootcamp at Mapsa",
     "path.mapsa.description": "One of the right decisions in my life was participating in the Front-end Bootcamp at Mapsa, where I learned programming under the supervision of Professor Moein Alizadeh. Additionally, I completed a supplementary project as a sample of my work.",
     "path.notash.title": "Notash Company",

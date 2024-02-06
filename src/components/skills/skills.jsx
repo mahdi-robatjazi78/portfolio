@@ -192,34 +192,51 @@ const MySkills = () => {
                       shownItem === 1 && startAnimate ? "start-animate" : ""
                     }`}
                   >
-                    <img src="/logos/reactnative.png" />{" "}
-                    <div className=" hidden md:block skills-description f-exo-medium select-none">
-                      <InjectMassage id="skills.description.react-native" />
-                    </div>{" "}
-                  </div>
-                  <div
-                    onClick={handleClickOnSkillsBox}
-                    className={`skills-box skills-animated-border-1 ${
-                      shownItem === 1 && startAnimate ? "start-animate" : ""
-                    }`}
-                  >
                     <img src="/logos/vue.png" />{" "}
                     <div className=" hidden md:block skills-description f-exo-medium select-none">
                       <InjectMassage id="skills.description.vue" />
                     </div>{" "}
                   </div>
+
+
+
+
+
+
+
                   <div
                     onClick={handleClickOnSkillsBox}
                     className={`skills-box skills-animated-border-1 ${
                       shownItem === 1 && startAnimate ? "start-animate" : ""
                     }`}
                   >
-                    <img src="/logos/python.png" />{" "}
+                    <img src="/logos/mongo.png" />{" "}
                     <div className=" hidden md:block skills-description f-exo-medium select-none">
-                      <InjectMassage id="skills.description.python" />
+                      <InjectMassage id="skills.description.mongo" />
                     </div>{" "}
                   </div>
+                  
+                  <div
+                    onClick={handleClickOnSkillsBox}
+                    className={`skills-box skills-animated-border-1 ${
+                      shownItem === 1 && startAnimate ? "start-animate" : ""
+                    }`}
+                  >
+                    <img src="/logos/sql.png" />{" "}
+                    <div className=" hidden md:block skills-description f-exo-medium select-none">
+                      <InjectMassage id="skills.description.sql" />
+                    </div>{" "}
+                  </div>
+
+
+
+
+
+
+
+
                 </div>
+
                 <div className="flex gap-5 skills-row">
                   <div
                     onClick={handleClickOnSkillsBox}

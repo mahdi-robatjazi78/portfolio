@@ -38,6 +38,8 @@ export default {
     "skills.description.react-native":"ری اکت نیتیو",
     "skills.description.vue":"وی یو ای",
     "skills.description.python":"پایتون",
+    "skills.description.sql":"اس کیو ال",
+    "skills.description.mongo":"مونگو دی بی",
 
     "skills.description.git":"گیت",
     "skills.description.jira":"جیرا",
@@ -51,7 +53,7 @@ export default {
     "text.worked":"مهارت های فرعی من",
 
     "path.shahab.danesh.title":"دانشگاه شهاب دانش",
-    "path.shahab.danesh.description":"من در شهر قم به دانشگاه شهاب دانش رفتم اما متاسفانه به دلیل مهاجرت و مشکلات مالی نتوانستم درس و دانشگاه را ادامه بدهم واینکه مدرک دانشگاهی ندارم ",
+    "path.shahab.danesh.description":"دانشگاه شهاب دانش واقع در قم در رشته مهندسی نرم افزار تحصیل کردم ، ولی فاقد مدرک دانشگاهی",
 
     "path.mapsa.title":"بوت کمپ مپصا",
     "path.mapsa.description":" یکی از تصمیمات درست زندگی من شرکت در بوت کمپ فرانت مپصا بود که در آنجا زیر نظر استاد معین علی زاده مشغول یادگیری برنامه نویسی فرانت اند شدم و البته یک پروژه تکمیلی به عنوان نمونه کار انجام دادم",
