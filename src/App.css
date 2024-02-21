@@ -331,8 +331,9 @@ span.Typewriter__wrapper::selection {
   width:200px;
   height:300px;
   position: absolute;
-  bottom:-6.2rem;
-  right:1rem;
+  bottom:-2.2rem;
+  right:0rem;
+  z-index: 10;
 }
 
 .image-me-styles{ 
