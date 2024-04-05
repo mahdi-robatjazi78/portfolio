@@ -135,7 +135,6 @@
     url("../public/fonts/vazir/Vazir-Light.ttf") format("truetype");
 }
 
- 
 @font-face {
   font-family: "Vazir";
   font-style: normal;
@@ -159,10 +158,6 @@
     url("../public/fonts/vazir/Vazir-Bold.ttf") format("truetype");
 }
  
-
-
-
-
 .f-dosis-section-1{
   font-family: 'Dosis' , Vazir, sans-serif;
   font-weight: 600;

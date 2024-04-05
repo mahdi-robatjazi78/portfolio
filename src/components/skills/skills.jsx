@@ -47,27 +47,21 @@ const MySkills = () => {
 
   const handleClickOnSkillsBox = (e) => {
     if (sizeName === "mobile" || sizeName === "tablet") {
-      // const list = document.querySelectorAll(".skillbox-show-placeholder")
-      // if( list.length > 0 ){
-      //   for(const item of list){
-      //     item.classList.remove("skillbox-show-placeholder")
-
-      //   }
-      // }
-      // if(!e.currentTarget.classList.contains("skillbox-show-placeholder")){
+ 
       e.currentTarget.classList.toggle("skillbox-show-placeholder");
 
-      // }else{
-      //   e.currentTarget.classList.remove("skillbox-show-placeholder")
-      // }
+      setTimeout(()=>{e.currentTarget.classList.remove("skillbox-show-placeholder")} , 1000 )
+ 
+
+      
     } else return;
   };
 
   return (
     <Element
       name="skills-section"
-      dir={lang === "fa-IR" ? "rtl" : "ltr"}
       id="skills-section"
+      dir={lang === "fa-IR" ? "rtl" : "ltr"}
       className={`h-screen w-screen skills-gradient flex flex-col justify-center items-center`}
     >
       <div className="mx-w-md  skills-animated-border-1 p-4 sm:p-12 md:p-12">
@@ -197,13 +191,6 @@ const MySkills = () => {
                       <InjectMassage id="skills.description.vue" />
                     </div>{" "}
                   </div>
-
-
-
-
-
-
-
                   <div
                     onClick={handleClickOnSkillsBox}
                     className={`skills-box skills-animated-border-1 ${
@@ -227,14 +214,6 @@ const MySkills = () => {
                       <InjectMassage id="skills.description.sql" />
                     </div>{" "}
                   </div>
-
-
-
-
-
-
-
-
                 </div>
 
                 <div className="flex gap-5 skills-row">

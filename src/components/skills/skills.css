@@ -238,6 +238,12 @@
     height: 4rem;
   }
 }
+
+@media only screen and (max-width: 450px){
+  .skills-description {
+    height: 4rem;
+  }
+}
 @media only screen and (max-width: 640px) {
   .skills-center {
     /* max-width:300px; */
@@ -267,6 +273,8 @@
   .skills-description {
     height: 6rem;
   }
+
+
 }
 
 @-moz-document url-prefix() {

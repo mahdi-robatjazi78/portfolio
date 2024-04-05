@@ -11,8 +11,7 @@ export default {
     "introduction.section.text.4":"Expertise : javascript 👍",
 
     "about.me.section0.title.who.am.i":"Who am i? ",
-    "about.me.section0.t1":"Hello! 👋 I am Mehdi Robatjazi, a passionate web developer in the field\n" +
-      "  Front-end, focusing on Reactjs and Next. I add to my experience by cultivating creative ideas.",
+    "about.me.section0.t1":"Experienced React developer, proficient in creating innovative Frontend  Applications across various domains. Expertise in developing CSR and SSR web applications, I am also considered a junior programmer in the field of back-end seeking opportunities to leverage my skills in challenging projects, I help companies achieve their development Goals.",
 
     "about.me.section1.title.what.i.do":"What i do? ",
     "about.me.section1.t1":"I help companies achieve their development Goals",

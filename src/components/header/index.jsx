@@ -14,7 +14,7 @@ import { scroller , Events , scrollSpy ,  Link} from "react-scroll";
 import PositionContext from '../../utils/context/position'
 
 const Header = (props) => {
-  const { setOpenContactMeBox } = props;
+  const { setOpenContactMeBox , openContactMeBox } = props;
 
   const { lang, setLanguageToggle } = useContext(LanguageContext);
   const { activePosition : section , hardSetActivePosition} = useContext(PositionContext); 
@@ -32,28 +32,12 @@ const Header = (props) => {
  
 
   useEffect(() => { 
-
-    // Registering the 'begin' event and logging it to the console when triggered.
-      /*
-        Events.scrollEvent.register('begin', (to, element) => {
-    
-        });
-      */
-    // Registering the 'end' event and logging it to the console when triggered.
     Events.scrollEvent.register('end', (to, element) => {
       setOpenContactMeBox((prevState)=>false)
       const section = to.split("-")[0];
       hardSetActivePosition(section)
-
       setExpandHeader(true);
-
-
     });
-
-    // Updating scrollSpy when the component mounts.
-    scrollSpy.update();
-
-    // Returning a cleanup function to remove the registered events when the component unmounts.
     return () => {
       Events.scrollEvent.remove('begin');
       Events.scrollEvent.remove('end');
@@ -66,14 +50,14 @@ const Header = (props) => {
     setOpenContactMeBox((prevState) => !prevState)
   }
 
-    
-
   return (
     <div
       className={`header-styles transition-[height] ease-in-out duration-300 fixed top-0 w-full z-10 p-6 overflow-hidden ${
         expandHeader ? "h-20 px-16" : "h-56 sm:px-16"
       }`}
-      dir={lang === "fa-IR" ? "ltr" : "rtl"}
+      dir={lang === "fa-IR" ? "ltr" : "rtl"}   
+      tabIndex={0} 
+      onBlur={() => {if(!expandHeader){    setExpandHeader(prevState=>!prevState)  }}}
     >
       <div className="flex justify-between">
         <div className="flex gap-20">
@@ -166,13 +150,13 @@ const Header = (props) => {
           >
             <IntlMessages id="header.section.title.projects" />
           </Link>
-          <a onClick={()=>setOpenContactMeBox((prevState) => !prevState)}>
+          <a
+            className={`contact-me-animation-rotate ${openContactMeBox && "contact-me-active-rotate"}`}
+          onClick={()=>setOpenContactMeBox((prevState) => !prevState)}>
             <IntlMessages id="header.section.title.contactme" />
           </a>
         </div>
       </div>
-
-
 
       <div
         className={`text-1xl f-exo-medium animate__animated mt-4 animate__fadeInUp ${
@@ -180,14 +164,14 @@ const Header = (props) => {
         } lg:hidden`}
         dir={lang === "fa-IR" ? "rtl" : "ltr"}
       >
-        <div className="flex justify-between leading-10 gap-3 minimized-header-links">
+        <div className="flex justify-between  gap-3 minimized-header-links">
           <Link
             spy={true} 
             smooth={true} 
             offset={50} 
             duration={300} 
             to="introduction-section"
-            className={`glassMorphism ${
+            className={`leading-10 glassMorphism ${
               section === "introduction" ? "active-header-minimized-item" : ""
             }`}
           >
@@ -199,21 +183,21 @@ const Header = (props) => {
             offset={50} 
             duration={300} 
             to="about-me-section"
-            className={`glassMorphism ${
+            className={`leading-10 glassMorphism ${
               section === "aboutme" ? "active-header-minimized-item" : ""
             }`}
           >
             <IntlMessages id="header.section.title.about" />
           </Link>
         </div>
-        <div className="flex justify-between leading-10 gap-3 minimized-header-links">
+        <div className="flex justify-between gap-3 minimized-header-links">
           <Link
             spy={true} 
             smooth={true} 
             offset={50} 
             duration={300} 
             to="skills-section"
-            className={`glassMorphism ${
+            className={`leading-10 glassMorphism ${
               section === "skills" ? "active-header-minimized-item" : ""
             }`}
           >
@@ -225,16 +209,16 @@ const Header = (props) => {
             offset={50} 
             duration={300} 
             to="projects-section"
-            className={`glassMorphism ${
+            className={`leading-10 glassMorphism ${
               section === "projects" ? "active-header-minimized-item" : ""
             }`}
           >
             <IntlMessages id="header.section.title.projects" />
           </Link>
         </div>
-        <div className="flex justify-between leading-10 gap-5 minimized-header-links">
+        <div className="flex justify-between gap-5 minimized-header-links">
           <a
-            className={`cursor-pointer glassMorphism`}
+            className={`leading-10 cursor-pointer glassMorphism ${openContactMeBox && "rotate-animation  border-[3px] border-green-500"}`}
             onClick={handleClickContactMeSection}
           >
             <IntlMessages id="header.section.title.contactme" />

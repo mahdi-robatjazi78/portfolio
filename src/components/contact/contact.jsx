@@ -5,7 +5,7 @@ import { IoCloseOutline } from "react-icons/io5";
 import { GoDownload } from "react-icons/go";
 import InjectMassage from "../../utils/intl";
 import { LanguageContext } from "../../utils/context/language";
-import Pdf from "../../../public/cv/word-cv.pdf";
+import Pdf from "../../cv/word-cv.pdf";
 import { truncateText } from "../../utils/helpers";
 import useWindowSize from "../../utils/hooks/useWindowSize";
 

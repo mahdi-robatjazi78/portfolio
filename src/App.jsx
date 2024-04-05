@@ -32,11 +32,9 @@ function App() {
   const projectsRef = useRef(null);
 
   useEffect(() => {
+
     if (
-      (introductionRef.current,
-      aboutRef.current,
-      skillsRef.current,
-      projectsRef.current)
+      aboutRef.current && skillsRef.current && projectsRef.current
     ) {
       const positions = {
         introduction: introductionRef.current.offsetTop,
@@ -47,17 +45,15 @@ function App() {
 
       handlePositionFixtures(positions);
     }
-  }, [
-    introductionRef.current,
-    aboutRef.current,
-    skillsRef.current,
-    projectsRef.current,
+  }, [ 
+    aboutRef?.current,
+    aboutRef?.current?.offsetTop
   ]);
 
   return (
     <div>
       <div className="w-full">
-        <Header setOpenContactMeBox={setOpenContactMeBox} />
+        <Header setOpenContactMeBox={setOpenContactMeBox} openContactMeBox={openContactMeBox} />
         <img
           // data-aos='fade-down'
           src="wave.svg"
