@@ -71,7 +71,7 @@ export default {
     "project.detail.box.notash.ticketing.description": " ",
     "project.detail.box.notash.select.rulechain": "Rule Chain",
     "project.detail.box.notash.select.ticketing": "Ticketing",
-    
+    "project.detail.box.notash.select.summary":"Summary",
     
     "kar.ra.bendaz.title":"Kar Ra Bendaz",
     "kar.ra.bendaz.description1":"The 'Kar Ra Bendaz' Project is a completely personal project, open-source, developed without the use of any ready-made templates or consultation with others. Its purpose is to test and learn new technologies and enhance resume skills. The project is currently not complete and online. The technologies used are new to me.",

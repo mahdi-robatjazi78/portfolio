@@ -32,19 +32,7 @@ const NotashDetailModal = (props) => {
               </a>
             </Dialog.Title>
 
-            <div className="py-4 my-4 overflow-y-scroll h-24">
-              <p className="text-sm selection-text-background text-gray-100 f-exo-medium px-2">
-                <InjectMassage id="project.detail.box.notash.description.section.1" />{" "}
-                <a
-                  className="text-yellow-400 selection-text-background"
-                  href="https://web.danialmoj.com/"
-                  target="_blank"
-                >
-                  <InjectMassage id="holding.danial.moj" />
-                </a>{" "}
-                <InjectMassage id="project.detail.box.notash.description.section.2" />
-              </p>
-            </div>
+           
 
             <Dialog.Title
               as="h3"
@@ -56,6 +44,20 @@ const NotashDetailModal = (props) => {
             <div className="w-full max-w-md px-0 md:px-2 py-6 sm:px-0">
               <Tab.Group>
                 <Tab.List className="flex space-x-1 mb-3 rounded-xl bg-blue-900/20 p-1">
+                <Tab
+                    className={({ selected }) => {
+                      return classNames(
+                        "selection-text-background f-exo-medium w-full rounded-lg py-2.5 text-sm font-medium leading-5",
+                        "ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2",
+                        selected
+                          ? "bg-white  text-gray-950 shadow"
+                          : "text-blue-100 hover:bg-white/[0.12] hover:text-white"
+                      );
+                    }}
+                  >
+                    <InjectMassage id="project.detail.box.notash.select.summary" />
+                  </Tab>
+
                   <Tab
                     className={({ selected }) => {
                       return classNames(
@@ -97,6 +99,29 @@ const NotashDetailModal = (props) => {
                   </Tab>
                 </Tab.List>
                 <Tab.Panels className="">
+                 
+                  <Tab.Panel
+                    className={classNames(
+                      "rounded-xl glassMorphism p-4 md:p-3",
+                      "ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
+                    )}
+                  >
+ <div className="py-4 my-4">
+              <p className="text-sm selection-text-background text-gray-950 f-exo-medium px-2">
+                <InjectMassage id="project.detail.box.notash.description.section.1" />{" "}
+                <a
+                  className="text-yellow-400 selection-text-background underline"
+                  href="https://web.danialmoj.com/"
+                  target="_blank"
+                >
+                  <InjectMassage id="holding.danial.moj" />
+                </a>{" "}
+                <InjectMassage id="project.detail.box.notash.description.section.2" />
+              </p>
+            </div>
+                  </Tab.Panel>
+                 
+                 
                   <Tab.Panel
                     className={classNames(
                       "rounded-xl glassMorphism p-4 md:p-3",

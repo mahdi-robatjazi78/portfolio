@@ -72,6 +72,7 @@ export default {
     "project.detail.box.notash.ticketing.description":" ",
     "project.detail.box.notash.select.rulechain":"موتور قواعد (رول چین)",
     "project.detail.box.notash.select.ticketing":"سیستم پرسش و پاسخ (تیکتینگ)",
+    "project.detail.box.notash.select.summary":"خلاصه",
     
     "kar.ra.bendaz.title":"کار را بنداز",
     "kar.ra.bendaz.description1":" پروژه کار رابنداز یک پروژه کاملا شخصی، متن باز، بدون استفاده از هیچگونه تمپلیت آماده یا مشورت با دیگران کار شده است وهدف آن تست ویادگیری تکنولوژی های جدید و کار رزومه ای است ",
