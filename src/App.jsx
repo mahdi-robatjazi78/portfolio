@@ -12,6 +12,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 // import useScrollPosition from "./utils/hooks/useScrollPosition";
 import PositionContext from "./utils/context/position";
+import ThemeContext from "./utils/context/theme";
 
 function App() {
   useEffect(() => {
@@ -26,16 +27,14 @@ function App() {
   const [openContactMeBox, setOpenContactMeBox] = useState(false);
   // const { fixtureUserPosition } = useScrollPosition();
   const { handlePositionFixtures } = useContext(PositionContext);
+  const { theme } = useContext(ThemeContext);
   const introductionRef = useRef(null);
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
   const projectsRef = useRef(null);
 
   useEffect(() => {
-
-    if (
-      aboutRef.current && skillsRef.current && projectsRef.current
-    ) {
+    if (aboutRef.current && skillsRef.current && projectsRef.current) {
       const positions = {
         introduction: introductionRef.current.offsetTop,
         about: aboutRef.current.offsetTop,
@@ -45,21 +44,28 @@ function App() {
 
       handlePositionFixtures(positions);
     }
-  }, [ 
-    aboutRef?.current,
-    aboutRef?.current?.offsetTop
-  ]);
+  }, [aboutRef?.current, aboutRef?.current?.offsetTop]);
+
+  const rainbowPilars =
+    theme === "rainbow" ? (
+      <img
+        // data-aos='fade-down'
+        src="wave.svg"
+        alt="header-wave"
+        className="absolute animate__animated animate__rotateInDownLeft hidden lg:block"
+      />
+    ) : (
+      <></>
+    );
 
   return (
     <div>
       <div className="w-full">
-        <Header setOpenContactMeBox={setOpenContactMeBox} openContactMeBox={openContactMeBox} />
-        <img
-          // data-aos='fade-down'
-          src="wave.svg"
-          alt="header-wave"
-          className="absolute animate__animated animate__rotateInDownLeft hidden lg:block"
+        <Header
+          setOpenContactMeBox={setOpenContactMeBox}
+          openContactMeBox={openContactMeBox}
         />
+        {rainbowPilars}
       </div>
       <div ref={introductionRef}>
         <Introduction />

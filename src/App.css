@@ -21,14 +21,10 @@ span.Typewriter__wrapper {
 span.Typewriter__wrapper::selection {
   background-color: rgba(165, 255, 198, 0.482);
   color: black;
-
-
 }
- 
 
 .t-w-parent > div > span {
   line-height: 7rem;
-
 }
 .wrapper-type-writer-persian-in-header {
   line-height: 2mrem;
@@ -39,12 +35,12 @@ span.Typewriter__wrapper::selection {
   transform: translateY(-20px);
 }
 
-.contact-me-animation-rotate{
-  transition: rotate .4s ease;
+.contact-me-animation-rotate {
+  transition: rotate 0.4s ease;
 }
 
-.contact-me-active-rotate{
-  transform: rotate(-5deg); 
+.contact-me-active-rotate {
+  transform: rotate(-5deg);
   -webkit-transform: rotate(-5deg);
   -moz-transform: rotate(-5deg);
   -ms-transform: rotate(-5deg);
@@ -85,8 +81,15 @@ span.Typewriter__wrapper::selection {
   }
 }
 
-.header-styles {
+.rainbow .header-styles {
   background-color: #ffd700;
+}
+.light .header-styles {
+  background-color: transparent;
+}
+.dark .header-styles {
+  background-color: #293a3e;
+  color: white;
 }
 
 .central {
@@ -102,8 +105,22 @@ span.Typewriter__wrapper::selection {
   transform: translate(-50%, -50%);
   width: 100%;
 }
+.light .intro-about-gradient,
+.light .intro-about-gradient,
+.light .about-section-gradient,
+.light .skills-gradient,
+.light .projects-gradient {
+  background-image: url("lii.png");
+}
+.dark .intro-about-gradient,
+.dark .intro-about-gradient,
+.dark .about-section-gradient,
+.dark .skills-gradient,
+.dark .projects-gradient {
+  background-color: rgba(0, 0, 0, 0.759);
+}
 
-.intro-about-gradient {
+.rainbow .intro-about-gradient {
   background: hsla(48, 96%, 53%, 1);
   background: linear-gradient(
     270deg,
@@ -126,7 +143,7 @@ span.Typewriter__wrapper::selection {
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FACC15", endColorstr="#7DD3FC", GradientType=1 );
 }
 
-.about-section-gradient {
+.rainbow .about-section-gradient {
   background: hsla(0, 100%, 75%, 1);
 
   background: linear-gradient(
@@ -153,7 +170,7 @@ span.Typewriter__wrapper::selection {
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FF7E7E", endColorstr="#AC0000", GradientType=1 );
 }
 
-.skills-gradient {
+.rainbow .skills-gradient {
   background: hsla(0, 100%, 16%, 1) 0%;
   background: linear-gradient(
     270deg,
@@ -173,7 +190,7 @@ span.Typewriter__wrapper::selection {
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FF7E7E", endColorstr="#AC0000", GradientType=1 );
 }
 
-.projects-gradient {
+.rainbow .projects-gradient {
   background: rgb(3, 12, 32);
   background: linear-gradient(
     270deg,
@@ -257,16 +274,15 @@ span.Typewriter__wrapper::selection {
 }
 .rotate-animation:hover {
   background-color: #ff13623d;
-  border:2px solid #ff13623d;
-
+  border: 2px solid #ff13623d;
 }
 .rotate-animation2 {
   /* animation: rotateIconBox 3s linear forwards infinite; */
 }
 .rotate-animation2:hover {
   background-color: #ff13623d;
-  color:white; 
-  border:1px solid white;
+  color: white;
+  border: 1px solid white;
 }
 
 @keyframes rotateIconBox {
@@ -291,64 +307,55 @@ span.Typewriter__wrapper::selection {
   }
 }
 
-.embed-animated-text-background{
+.embed-animated-text-background {
   bottom: 0;
-  color: #fff;
   display: flex;
   flex-direction: column;
   font-size: 100px;
   font-weight: 700;
   left: 0;
-  line-height: .9;
-  opacity: .06;
+  line-height: 0.9;
+  opacity: 0.06;
   overflow: hidden;
   pointer-events: none;
   position: absolute;
   right: 0;
   top: 0;
 }
+.rainbow .embed-animated-text-background {
+  color: #fff;
+}
+.light .embed-animated-text-background {
+  color: green;
+}
 
 .embed-animated-text-background > span {
   animation: slideUp 20s linear infinite;
   display: block;
   white-space: nowrap;
-  will-change: transform,opacity;
+  will-change: transform, opacity;
 }
 
 @keyframes slideUp {
   0% {
     transform: translateY(0);
-}
+  }
 
-100% {
+  100% {
     transform: translateY(-100%);
-}
+  }
 }
 
-.image-me-styles{
-  /* opacity: 1;
-  background-image: url("public/me/me.png");
-  background-size: contain;
-  background-position: right bottom;
-  max-width: min(30vw, 480px);
-  max-height: 40vh;
-  width: 100%;
-  height: 100%;
-  inset: auto 10vw 10vw auto;
-  translate: none;
-  rotate: none;
-  scale: none;
-  transform: translate(0%, 0%);
-  background-repeat: no-repeat */
-  width:200px;
-  height:300px;
+.image-me-styles {
+  width: 200px;
+  height: 300px;
   position: absolute;
-  bottom:-2.2rem;
-  right:0rem;
+  bottom: -2.2rem;
+  right: 0rem;
   z-index: 10;
 }
 
-.image-me-styles{ 
+.image-me-styles {
   /* inset: auto 10vw 10vw auto; */
   translate: none;
   rotate: none;
@@ -360,26 +367,26 @@ span.Typewriter__wrapper::selection {
   border-right: 3px solid;
   color: #1a1a1a;
   line-height: 1.8em;
-  padding: .5em .5em;
+  padding: 0.5em 0.5em;
   position: absolute;
-  right:30px;
-  top:15px;
+  right: 30px;
+  top: 15px;
   transition: 0.2s border ease-in-out;
   z-index: 0;
 }
 .blockquote:before {
-  content: "";  
+  content: "";
   position: absolute;
   top: 50%;
   right: -4px;
   height: 2em;
-  background-color:rgba(222,33,24,1);
+  background-color: rgba(222, 33, 24, 1);
   width: 5px;
   margin-top: -1em;
 }
 .blockquote:after {
   content: "\002C \002C";
-  font-size:3rem;
+  font-size: 3rem;
   position: absolute;
   top: 50%;
   right: -0.5em;
@@ -390,9 +397,8 @@ span.Typewriter__wrapper::selection {
   text-align: center;
   text-indent: -2px;
   width: 1em;
-  margin-top: -.85em;
+  margin-top: -0.85em;
   transition: 0.2s all ease-in-out, 0.4s transform ease-in-out;
-
 }
 
 .blockquote:active:after {
@@ -401,34 +407,40 @@ span.Typewriter__wrapper::selection {
 .blockquote:hover:after {
   transform: rotateY(360deg);
 }
-.section2-gradient{
+.section2-gradient {
   /* background: rgb(222,33,24); */
-background: linear-gradient(90deg, rgba(222,33,24,1) 0%, rgba(121,9,9,1) 39%, rgba(122,12,8,1) 64%, rgba(222,33,24,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(222, 33, 24, 1) 0%,
+    rgba(121, 9, 9, 1) 39%,
+    rgba(122, 12, 8, 1) 64%,
+    rgba(222, 33, 24, 1) 100%
+  );
 }
 .blockquote-eng-mode {
   border-left: 3px solid;
   color: #1a1a1a;
   line-height: 1.8em;
-  padding: .5em .5em;
+  padding: 0.5em 0.5em;
   position: absolute;
-left:30px;
-  top:6px;
+  left: 30px;
+  top: 6px;
   transition: 0.2s border ease-in-out;
   z-index: 0;
 }
 .blockquote-eng-mode:before {
-  content: "";  
+  content: "";
   position: absolute;
   top: 50%;
   left: -4px;
   height: 2em;
-  background-color:rgba(222,33,24,1);
+  background-color: rgba(222, 33, 24, 1);
   width: 5px;
   margin-top: -1em;
 }
 .blockquote-eng-mode:after {
   content: "\002C \002C";
-  font-size:3rem;
+  font-size: 3rem;
   position: absolute;
   top: 50%;
   left: -0.5em;
@@ -439,7 +451,7 @@ left:30px;
   text-align: center;
   text-indent: -2px;
   width: 1em;
-  margin-top: -.85em;
+  margin-top: -0.85em;
   transition: 0.2s all ease-in-out, 0.4s transform ease-in-out;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);

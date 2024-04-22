@@ -23,8 +23,7 @@
     "react-icons": "^4.11.0",
     "react-intl": "^6.5.0",
     "react-player": "^2.14.1",
-    "react-scroll": "^1.9.0",
-    "typewriter-effect": "^2.20.1"
+    "react-scroll": "^1.9.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.21",

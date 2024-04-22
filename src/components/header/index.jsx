@@ -1,8 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
-import {
-  IntroductionTextEnglish,
-  IntroductionTextPersian,
-} from "../introductionText";
+
 import { LanguageContext } from "../../utils/context/language";
 import IntlMessages from "../../utils/intl";
 import useScrollPosition from "../../utils/hooks/useScrollPosition";
@@ -10,16 +7,17 @@ import useWindowSize from "../../utils/hooks/useWindowSize";
 import "./header.css";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
-import { scroller , Events , scrollSpy ,  Link} from "react-scroll";
-import PositionContext from '../../utils/context/position'
-
+import { scroller, Events, scrollSpy, Link } from "react-scroll";
+import PositionContext from "../../utils/context/position";
+import ThemeEmoji from "../../utils/templates/themeEmoji";
 const Header = (props) => {
-  const { setOpenContactMeBox , openContactMeBox } = props;
+  const { setOpenContactMeBox, openContactMeBox } = props;
 
   const { lang, setLanguageToggle } = useContext(LanguageContext);
-  const { activePosition : section , hardSetActivePosition} = useContext(PositionContext); 
+  const { activePosition: section, hardSetActivePosition } =
+    useContext(PositionContext);
   const { size } = useWindowSize();
-  const [expandHeader, setExpandHeader] = useState(true); 
+  const [expandHeader, setExpandHeader] = useState(true);
 
   const windowWidthSize = size[0];
 
@@ -29,35 +27,36 @@ const Header = (props) => {
     }
   }, [windowWidthSize]);
 
- 
-
-  useEffect(() => { 
-    Events.scrollEvent.register('end', (to, element) => {
-      setOpenContactMeBox((prevState)=>false)
+  useEffect(() => {
+    Events.scrollEvent.register("end", (to, element) => {
+      setOpenContactMeBox((prevState) => false);
       const section = to.split("-")[0];
-      hardSetActivePosition(section)
+      hardSetActivePosition(section);
       setExpandHeader(true);
     });
     return () => {
-      Events.scrollEvent.remove('begin');
-      Events.scrollEvent.remove('end');
+      Events.scrollEvent.remove("begin");
+      Events.scrollEvent.remove("end");
     };
   }, []);
 
-
-  const handleClickContactMeSection = ()=>{
-    setExpandHeader(prevState=>!prevState)
-    setOpenContactMeBox((prevState) => !prevState)
-  }
+  const handleClickContactMeSection = () => {
+    setExpandHeader((prevState) => !prevState);
+    setOpenContactMeBox((prevState) => !prevState);
+  };
 
   return (
     <div
       className={`header-styles transition-[height] ease-in-out duration-300 fixed top-0 w-full z-10 p-6 overflow-hidden ${
         expandHeader ? "h-20 px-16" : "h-56 sm:px-16"
       }`}
-      dir={lang === "fa-IR" ? "ltr" : "rtl"}   
-      tabIndex={0} 
-      onBlur={() => {if(!expandHeader){    setExpandHeader(prevState=>!prevState)  }}}
+      dir={lang === "fa-IR" ? "ltr" : "rtl"}
+      tabIndex={0}
+      onBlur={() => {
+        if (!expandHeader) {
+          setExpandHeader((prevState) => !prevState);
+        }
+      }}
     >
       <div className="flex justify-between">
         <div className="flex gap-20">
@@ -70,15 +69,8 @@ const Header = (props) => {
               {lang === "en-US" ? "Fa" : "En"}
             </span>
           </span>
-          {section !== "introduction" && (
-            <div className="text-2xl f-dosis-bold z-10 hidden xl:block ">
-              {lang === "fa-IR" ? (
-                <IntroductionTextPersian />
-              ) : (
-                <IntroductionTextEnglish />
-              )}
-            </div>
-          )}
+
+          <ThemeEmoji />
         </div>
         <div className="lg:hidden">
           {expandHeader ? (
@@ -102,37 +94,38 @@ const Header = (props) => {
           )}
         </div>
         <div
-          className="text-1xl f-exo-medium animate__animated  animate__fadeInUp header-container hidden lg:flex lg:justify-between lg:gap-24"
+          className="text-1xl f-exo-medium animate__animated  animate__fadeInUp header-container hidden lg:flex lg:justify-between lg:gap-10"
           dir={lang === "fa-IR" ? "rtl" : "ltr"}
         >
           <Link
-            spy={true} 
-            smooth={true} 
-            offset={50} 
-            duration={300} 
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={300}
             to="introduction-section"
             // onClick={()=>{handlePositionFixtures("introduction")}}
-            className={section === "introduction" ? "active-section-header" : ""}
+            className={
+              section === "introduction" ? "active-section-header" : ""
+            }
           >
             <IntlMessages id="header.section.title.introduction" />
           </Link>
           <Link
-           spy={true} 
-           smooth={true} 
-           offset={50} 
-           duration={300} 
-          //  onClick={()=>{handlePositionFixtures("aboutme")}}
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={300}
+            //  onClick={()=>{handlePositionFixtures("aboutme")}}
             to="aboutme-section"
-             
             className={section === "aboutme" ? "active-section-header" : ""}
           >
             <IntlMessages id="header.section.title.about" />
           </Link>
           <Link
-           spy={true} 
-           smooth={true} 
-           offset={50} 
-           duration={300} 
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={300}
             to="skills-section"
             // onClick={()=>{handlePositionFixtures("skills")}}
             className={section === "skills" ? "active-section-header" : ""}
@@ -140,10 +133,10 @@ const Header = (props) => {
             <IntlMessages id="header.section.title.skills" />
           </Link>
           <Link
-           spy={true} 
-           smooth={true} 
-           offset={50} 
-           duration={300} 
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={300}
             to="projects-section"
             // onClick={()=>{handlePositionFixtures("projects")}}
             className={section === "projects" ? "active-section-header" : ""}
@@ -151,8 +144,11 @@ const Header = (props) => {
             <IntlMessages id="header.section.title.projects" />
           </Link>
           <a
-            className={`contact-me-animation-rotate ${openContactMeBox && "contact-me-active-rotate"}`}
-          onClick={()=>setOpenContactMeBox((prevState) => !prevState)}>
+            className={`contact-me-animation-rotate ${
+              openContactMeBox && "contact-me-active-rotate"
+            }`}
+            onClick={() => setOpenContactMeBox((prevState) => !prevState)}
+          >
             <IntlMessages id="header.section.title.contactme" />
           </a>
         </div>
@@ -166,10 +162,10 @@ const Header = (props) => {
       >
         <div className="flex justify-between  gap-3 minimized-header-links">
           <Link
-            spy={true} 
-            smooth={true} 
-            offset={50} 
-            duration={300} 
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={300}
             to="introduction-section"
             className={`leading-10 glassMorphism ${
               section === "introduction" ? "active-header-minimized-item" : ""
@@ -178,10 +174,10 @@ const Header = (props) => {
             <IntlMessages id="header.section.title.introduction" />
           </Link>
           <Link
-            spy={true} 
-            smooth={true} 
-            offset={50} 
-            duration={300} 
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={300}
             to="about-me-section"
             className={`leading-10 glassMorphism ${
               section === "aboutme" ? "active-header-minimized-item" : ""
@@ -192,10 +188,10 @@ const Header = (props) => {
         </div>
         <div className="flex justify-between gap-3 minimized-header-links">
           <Link
-            spy={true} 
-            smooth={true} 
-            offset={50} 
-            duration={300} 
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={300}
             to="skills-section"
             className={`leading-10 glassMorphism ${
               section === "skills" ? "active-header-minimized-item" : ""
@@ -204,10 +200,10 @@ const Header = (props) => {
             <IntlMessages id="header.section.title.skills" />
           </Link>
           <Link
-            spy={true} 
-            smooth={true} 
-            offset={50} 
-            duration={300} 
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={300}
             to="projects-section"
             className={`leading-10 glassMorphism ${
               section === "projects" ? "active-header-minimized-item" : ""
@@ -218,7 +214,10 @@ const Header = (props) => {
         </div>
         <div className="flex justify-between gap-5 minimized-header-links">
           <a
-            className={`leading-10 cursor-pointer glassMorphism ${openContactMeBox && "rotate-animation  border-[3px] border-green-500"}`}
+            className={`leading-10 cursor-pointer glassMorphism ${
+              openContactMeBox &&
+              "rotate-animation  border-[3px] border-green-500"
+            }`}
             onClick={handleClickContactMeSection}
           >
             <IntlMessages id="header.section.title.contactme" />

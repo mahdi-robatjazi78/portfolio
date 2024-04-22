@@ -1,10 +1,11 @@
-import React, { createContext, useState } from "react";
+import { createContext, useState } from "react";
 import debounce from "lodash.debounce";
 import { useEffect } from "react";
 
 const PositionContext = createContext();
 
-export const PositionContextProvider = ({ children }) => {
+export const PositionContextProvider = (props) => {
+  const {children}  = props
   const [positions, setPositions] = useState({
     introduction: 0,
     about: 0,
