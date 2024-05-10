@@ -8,7 +8,6 @@ export const PositionContextProvider = (props) => {
   const {children}  = props
   const [positions, setPositions] = useState({
     introduction: 0,
-    about: 0,
     skills: 0,
     projects: 0,
   });
@@ -18,15 +17,14 @@ export const PositionContextProvider = (props) => {
   };
 
   const [activePosition, setActivePosition] = useState("introduction");
-  // introduction , aboutme , skills , projects
+  // introduction  , skills , projects
 
   const hardSetActivePosition = (pos) => {
     setActivePosition(pos);
   };
 
   const handleFillPositions = () => {
-    const aboutmeSectionOffsetTop =
-      document.getElementById("about-me-section").offsetTop;
+
     const skillsSectionOffsetTop =
       document.getElementById("skills-section").offsetTop;
     const projectsSectionOffsetTop =
@@ -34,7 +32,6 @@ export const PositionContextProvider = (props) => {
 
     const obj = {
       introduction: 0,
-      about: aboutmeSectionOffsetTop,
       skills: skillsSectionOffsetTop,
       projects: projectsSectionOffsetTop,
     }
@@ -45,7 +42,7 @@ export const PositionContextProvider = (props) => {
 
   function execute() {
 
-    if (!positions.about || !positions.skills || !positions.projects) {
+    if (!positions.skills || !positions.projects) {
       handleFillPositions();
       return
     }
@@ -53,11 +50,6 @@ export const PositionContextProvider = (props) => {
 
     if (pageY_Offset <= positions.about - 150) {
       setActivePosition("introduction");
-    } else if (
-      pageY_Offset > positions.about - 150 &&
-      pageY_Offset <= positions.skills - 150
-    ) {
-      setActivePosition("aboutme");
     } else if (
       pageY_Offset > positions.skills - 150 &&
       pageY_Offset < positions.projects - 150

@@ -2,6 +2,7 @@ export default {
 
     "header.section.title.introduction":"معرفی",
     "header.section.title.about":"درباره من",
+    "header.section.title.worth":"ارزش های من",
     "header.section.title.skills":"مهارت ها",
     "header.section.title.projects":"مسیر من",
     "header.section.title.contactme":"بامن تماس بگیر",
@@ -69,7 +70,7 @@ export default {
     "project.detail.box.notash.description.section.2":" است و در زمینه اینترنت اشیا در حال ادامه فعالیت می باشد. مهم ترین چالش های من در این پوزیشن شغلی یکی همکاری با مهندسین نرم افزار با تجربه زیاد و براورد خواسته هایشان به عنوان اولین پوزیشن کاری، دوم مدیریت فرایند های اپلیکیشن ارائه دهنده اینترنت اشیا با سه سطح کاربری در کنار فقط یک همکار فرانت ، تجربه فراموش نشدنی کار تیمی درکنار مهندسین مجرب در زمینه وب و نرم افزار از دستاورد های ارزشمند من در شرکت نوتاش است.",
     "project.detail.box.notash.description.subtitle":"بعضی پروژه های کاملا به من محول شده :",
     "project.detail.box.notash.rulechain.description":"موتور قواعد یک چارچوب ساده برای ساخت گردش کارهای مبتنی بر رویداد است. تنها با کشیدن و رها کردن بلوک‌های گرافیکی از قبل برنامه‌نویسی شده، می‌توانید گردش کارهای مبتنی بر رویداد را تعریف کنید و دیگر نیازی به ساعت‌ها کد نویسی نیست.",
-    "project.detail.box.notash.ticketing.description":" ",
+    "project.detail.box.notash.ticketing.description":"پیاده سازی کامل سرویس تیکتینگ شرکت نوتاش",
     "project.detail.box.notash.select.rulechain":"موتور قواعد (رول چین)",
     "project.detail.box.notash.select.ticketing":"سیستم پرسش و پاسخ (تیکتینگ)",
     "project.detail.box.notash.select.summary":"خلاصه",

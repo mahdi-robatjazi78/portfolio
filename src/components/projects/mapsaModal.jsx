@@ -4,6 +4,7 @@ import InjectMassage from "../../utils/intl";
 import { LanguageContext } from "../../utils/context/language";
 import { Tab } from "@headlessui/react";
 import MyModal from "../../utils/templates/modal";
+import ThemeContext from "../../utils/context/theme";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -11,7 +12,7 @@ function classNames(...classes) {
 const MapsaDetailModal = (props) => {
   const { open, setOpen } = props;
   const { lang } = useContext(LanguageContext);
-
+  const {theme} = useContext(ThemeContext)
   return (
     <MyModal open={open} setOpen={setOpen}>
       <div className="px-4 pb-4 pt-5 sm:p-6 sm:pb-4 ">
@@ -24,17 +25,19 @@ const MapsaDetailModal = (props) => {
               <a
                 href="https://bootcamp.mapsahr.com/"
                 target="_blank"
-                className="selection-text-background text-yellow-400"
+                className={`selection-text-background
+                ${theme === "light"?"text-yellow-700":"text-yellow-400"}
+                `}
               >
                 <InjectMassage id="mapsa.bootcamp.modal.title" />
               </a>
             </Dialog.Title>
 
             <div className="py-4 my-4  h-24">
-              <p className="text-sm selection-text-background text-gray-100 f-exo-medium px-2">
+              <p className={`text-sm selection-text-background  ${theme === "light" ? "text-gray-950" : "text-gray-100"} f-exo-medium px-2`}>
                 <InjectMassage id="mapsa.bootcamp.modal.description1" />
               </p>
-              <p className="text-sm selection-text-background text-gray-100 f-exo-medium px-2">
+              <p className={`text-sm selection-text-background  ${theme === "light" ? "text-gray-950" : "text-gray-100"} f-exo-medium px-2`}>
                 <InjectMassage id="mapsa.bootcamp.modal.description2" />
               </p>
             </div>
@@ -117,15 +120,10 @@ const MapsaDetailModal = (props) => {
                           : "list-disc pl-7"
                       }`}
                     >
-                      <li className="text-yellow-300 mt-5 f-exo-medium"><a target="_blank" href="https://bootcamp.mapsahr.com/"><InjectMassage id="mapsa.bootcamp.modal.title" /></a></li>
-                      <li className="text-yellow-300 mt-5 f-exo-medium"><a target="_blank" href="https://cv-mehdirobatjazi-tmp.vercel.app/"><InjectMassage id="mapsa.bootcamp.movie.project.tab.2" /></a></li>
-                      <li className="text-yellow-300 mt-5 f-exo-medium"><a target="_blank" href="https://www.linkedin.com/in/truemoein/?originalSubdomain=ir"><InjectMassage id="mapsa.bootcamp.moein.alizadeh.linkedin" /></a></li>
-                      </ul>
-                    <div className="">
-                      <p className="text-sm text-black f-exo-medium selection-text-background">
-                        <InjectMassage id="project.detail.box.notash.ticketing.description" />
-                      </p>
-                    </div>
+                      <li className={`${theme === "light"?"text-yellow-700":"text-yellow-400"} mt-5 f-exo-medium`}><a target="_blank" href="https://bootcamp.mapsahr.com/"><InjectMassage id="mapsa.bootcamp.modal.title" /></a></li>
+                      <li className={`${theme === "light"?"text-yellow-700":"text-yellow-400"} mt-5 f-exo-medium`}><a target="_blank" href="https://cv-mehdirobatjazi-tmp.vercel.app/"><InjectMassage id="mapsa.bootcamp.movie.project.tab.2" /></a></li>
+                      <li className={`${theme === "light"?"text-yellow-700":"text-yellow-400"} mt-5 f-exo-medium`}><a target="_blank" href="https://www.linkedin.com/in/truemoein/?originalSubdomain=ir"><InjectMassage id="mapsa.bootcamp.moein.alizadeh.linkedin" /></a></li>
+                      </ul> 
                   </Tab.Panel>
                 </Tab.Panels>
               </Tab.Group>

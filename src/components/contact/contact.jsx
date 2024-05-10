@@ -64,7 +64,7 @@ const ContactMe = (props) => {
 
   const closeIconStyles = {
     position: "absolute",
-    top: "-40px",
+    
     right: "-1px",
     cursor: "pointer",
   };
@@ -76,19 +76,20 @@ const ContactMe = (props) => {
   }
 
   return (
-    <div className="fixed left-4 sm:left-1/2 translate-x-0 sm:-translate-x-1/2  w-[94%] sm:w-3/5 h-42 px-4 pt-12 pb-6 md:py-3 glassMorphism contact-box-animation">
-      <div className="relative flex flex-col xl:flex-row">
+    <div className="fixed left-4 sm:left-1/2 translate-x-0 sm:-translate-x-1/2 w-[94%] sm:w-4/5 h-42 px-4 pt-12 pb-6 md:py-9 glassMorphism rounded-md contact-box-animation z-30">
+      <div className="relative lg:flex">
         <span
           style={closeIconStyles}
-          className="glassMorphism rotate-animation"
+          className="glassMorphism rotate-animation rounded-md top-[-40px] lg:top-[-30px]"
           onClick={() => {
             setOpenContactMeBox(false);
           }}
         >
           <IoCloseOutline className="text-3xl scale-animation" />
         </span>
-        <section className="w-full xl:w-1/2 md:mt-2">
-          <div className="flex w-[100%] mb-2">
+        <section className="w-full md:mt-2">
+          
+          <div className="flex w-full mb-2">
             <img src="/contactme-logos/linkedin.png" width={40} height={40} />
             <div
               ref={LinkedinRef}
@@ -123,7 +124,7 @@ const ContactMe = (props) => {
             </div>
           </div>
 
-          <div className="flex w-[100%] mb-2">
+          <div className="flex w-full mb-2">
             <img src="/contactme-logos/gmail.png" width={40} height={40} />
             <div
               ref={GmailRef}
@@ -153,7 +154,7 @@ const ContactMe = (props) => {
             </div>
           </div>
 
-          <div className="flex w-[100%] mb-2">
+          <div className="flex w-full mb-2">
             <img src="/contactme-logos/telegram.png" width={40} height={40} />
             <div
               ref={TelegramRef}
@@ -182,10 +183,11 @@ const ContactMe = (props) => {
               </div>
             </div>
           </div>
+
         </section>
 
-        <section className="w-full xl:w-1/2 md:mt-2">
-          <div className="flex w-[100%] mb-2">
+        <section className="w-full md:mt-2">
+          <div className="flex w-full mb-2">
             <img src="/contactme-logos/github2.png" width={40} height={40} />
             <div
               ref={GithubRef}
@@ -225,7 +227,7 @@ const ContactMe = (props) => {
             </div>
           </div>
 
-          <div className="flex w-[100%] mb-2">
+          <div className="flex w-full mb-2">
             <img src="/contactme-logos/mobile.jpg" width={40} height={40} />
             <div
               ref={mobileRef}
@@ -257,7 +259,7 @@ const ContactMe = (props) => {
             </div>
           </div>
 
-          <div className="flex w-[100%] mb-2">
+          <div className="flex w-full mb-2">
             <img src="/contactme-logos/cv.png" width={40} height={40} />
             <div
               ref={GithubRef}

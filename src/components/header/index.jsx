@@ -1,8 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
-
 import { LanguageContext } from "../../utils/context/language";
 import IntlMessages from "../../utils/intl";
-import useScrollPosition from "../../utils/hooks/useScrollPosition";
 import useWindowSize from "../../utils/hooks/useWindowSize";
 import "./header.css";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -11,14 +9,12 @@ import { scroller, Events, scrollSpy, Link } from "react-scroll";
 import PositionContext from "../../utils/context/position";
 import ThemeEmoji from "../../utils/templates/themeEmoji";
 const Header = (props) => {
-  const { setOpenContactMeBox, openContactMeBox } = props;
 
+  const { setOpenContactMeBox, openContactMeBox } = props;
   const { lang, setLanguageToggle } = useContext(LanguageContext);
-  const { activePosition: section, hardSetActivePosition } =
-    useContext(PositionContext);
+  const { activePosition: section, hardSetActivePosition } = useContext(PositionContext);
   const { size } = useWindowSize();
   const [expandHeader, setExpandHeader] = useState(true);
-
   const windowWidthSize = size[0];
 
   useEffect(() => {
@@ -115,17 +111,6 @@ const Header = (props) => {
             smooth={true}
             offset={50}
             duration={300}
-            //  onClick={()=>{handlePositionFixtures("aboutme")}}
-            to="aboutme-section"
-            className={section === "aboutme" ? "active-section-header" : ""}
-          >
-            <IntlMessages id="header.section.title.about" />
-          </Link>
-          <Link
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={300}
             to="skills-section"
             // onClick={()=>{handlePositionFixtures("skills")}}
             className={section === "skills" ? "active-section-header" : ""}
@@ -172,18 +157,6 @@ const Header = (props) => {
             }`}
           >
             <IntlMessages id="header.section.title.introduction" />
-          </Link>
-          <Link
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={300}
-            to="about-me-section"
-            className={`leading-10 glassMorphism ${
-              section === "aboutme" ? "active-header-minimized-item" : ""
-            }`}
-          >
-            <IntlMessages id="header.section.title.about" />
           </Link>
         </div>
         <div className="flex justify-between gap-3 minimized-header-links">

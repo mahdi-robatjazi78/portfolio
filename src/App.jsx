@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef, useContext } from "react";
 import "./App.css";
 
 import Header from "./components/header";
-import AboutMe from "./components/about/about";
 import ContactMe from "./components/contact/contact";
 import MySkills from "./components/skills/skills";
 import Projects from "./components/projects";
@@ -29,22 +28,21 @@ function App() {
   const { handlePositionFixtures } = useContext(PositionContext);
   const { theme } = useContext(ThemeContext);
   const introductionRef = useRef(null);
-  const aboutRef = useRef(null);
+  // const aboutRef = useRef(null);
   const skillsRef = useRef(null);
   const projectsRef = useRef(null);
 
   useEffect(() => {
-    if (aboutRef.current && skillsRef.current && projectsRef.current) {
+    if (skillsRef.current && projectsRef.current) {
       const positions = {
         introduction: introductionRef.current.offsetTop,
-        about: aboutRef.current.offsetTop,
         skills: skillsRef.current.offsetTop,
         projects: projectsRef.current.offsetTop,
       };
 
       handlePositionFixtures(positions);
     }
-  }, [aboutRef?.current, aboutRef?.current?.offsetTop]);
+  }, [skillsRef?.current, skillsRef?.current?.offsetTop]);
 
   const rainbowPilars =
     theme === "rainbow" ? (
@@ -69,9 +67,6 @@ function App() {
       </div>
       <div ref={introductionRef}>
         <Introduction />
-      </div>
-      <div ref={aboutRef}>
-        <AboutMe />
       </div>
       <div ref={skillsRef}>
         <MySkills />

@@ -2,6 +2,8 @@ export default {
     "header.section.title.introduction":"Introduction",
     "header.section.title.about":"َAbout Me",
     "header.section.title.skills":"Skills",
+    "header.section.title.worth":"My Values",
+
     "header.section.title.projects":"My Path",
     "header.section.title.contactme":"Contact Me",
 
@@ -68,7 +70,7 @@ export default {
     "project.detail.box.notash.description.section.2": "My role involves working in the Internet of Things (IoT) field. Some key projects assigned to me include: collaboration with highly experienced software engineers, managing the processes of the IoT application provider with three levels of user interface alongside just one front-end colleague. The unforgettable teamwork experience with experienced engineers in web and software development is one of my valuable achievements at Notash company.",
     "project.detail.box.notash.description.subtitle": "Some projects entirely was entrusted to me:",
     "project.detail.box.notash.rulechain.description": "A motor for a framework is a simple tool for building event-driven workflows. By dragging and dropping pre-programmed graphical blocks, you can define event-driven workflows without the need for hours of coding.",
-    "project.detail.box.notash.ticketing.description": " ",
+    "project.detail.box.notash.ticketing.description": "Complete implementation of notash ticketing service",
     "project.detail.box.notash.select.rulechain": "Rule Chain",
     "project.detail.box.notash.select.ticketing": "Ticketing",
     "project.detail.box.notash.select.summary":"Summary",

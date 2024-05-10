@@ -35,7 +35,7 @@ const Projects = (props) => {
         <div className="h-fit">
           <RtlMaker>
             <div className="flex flex-col md:flex-row justify-center gap-5 w-full">
-              <div className="glassMorphism w-full md:w-3/5 h-52 flex justify-between items-center">
+              <div className="glassMorphism w-full md:w-3/5 h-52 flex justify-between items-center rounded-md">
                 <img
                   src="/project-logos/shahabDanesh.jpg"
                   className="w-14 h-14 rounded-lg mx-5"
@@ -54,12 +54,12 @@ const Projects = (props) => {
               </div>
 
               <div
-                className="glassMorphism cursor-pointer w-full md:w-3/5 h-52 flex justify-between items-center"
+                className="glassMorphism cursor-pointer w-full md:w-3/5 h-52 flex justify-between items-center rounded-md"
                 onClick={() => {
                   setOpenMapsaModal(true);
                 }}
               >
-                <span style={InformationIconStyle} className="glassMorphism">
+                <span style={InformationIconStyle} className="glassMorphism rounded-md">
                   <IoIosInformationCircleOutline className="text-3xl scale-animation" />
                 </span>
                 <div className="mx-5 max-w-14">
@@ -92,12 +92,12 @@ const Projects = (props) => {
           <RtlMaker>
             <div className="flex flex-col md:flex-row justify-center gap-5 w-full">
               <div
-                className="glassMorphism cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center"
+                className="glassMorphism cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center rounded-md"
                 onClick={() => {
                   setOpenNotashModal(true);
                 }}
               >
-                <span style={InformationIconStyle} className="glassMorphism">
+                <span style={InformationIconStyle} className="glassMorphism rounded-md">
                   <IoIosInformationCircleOutline className="text-3xl scale-animation" />
                 </span>
 
@@ -129,9 +129,9 @@ const Projects = (props) => {
                 onClick={() => {
                   setOpenKarModal(true);
                 }}
-                className="glassMorphism cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center"
+                className="glassMorphism cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center rounded-md"
               >
-                <span style={InformationIconStyle} className="glassMorphism">
+                <span style={InformationIconStyle} className="glassMorphism rounded-md">
                   <IoIosInformationCircleOutline className="text-3xl scale-animation" />
                 </span>
 
@@ -157,7 +157,7 @@ const Projects = (props) => {
       </div>
 
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 cursor-pointer flex flex-col md:flex-row gap-3 md:gap-10">
-        <div className="glassMorphism w-44">
+        <div className="glassMorphism rounded-md w-44">
           <a target="_blank" href={Pdf}>
             <div
               className="flex justify-around items-center px-4 "
@@ -171,7 +171,7 @@ const Projects = (props) => {
             </div>
           </a>
         </div>
-        <div className="glassMorphism w-44">
+        <div className="glassMorphism rounded-md w-44">
           <div
             onClick={() => setOpenContactMeBox((prevState) => !prevState)}
             className="flex justify-around items-center px-4 "

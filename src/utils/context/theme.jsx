@@ -3,7 +3,9 @@ import React, { useState, useEffect } from "react";
 const ThemeContext = React.createContext("light");
 
 export const ThemeContextProvider = ({ children }) => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+  );
   const html = document.getElementsByTagName("html")[0];
   html.classList.remove("rainbow");
   html.classList.remove("dark");
@@ -18,13 +20,24 @@ export const ThemeContextProvider = ({ children }) => {
   }, [theme]);
 
   const setThemeDark = () => {
-    setTheme("dark");
+    if (theme !== "dark") {
+      setTheme("dark");
+      localStorage.setItem("theme" , 'dark')
+    }
   };
   const setThemeLight = () => {
-    setTheme("light");
+    if (theme !== "light") {
+      setTheme("light");
+      localStorage.setItem("theme" , 'light')
+
+    }
   };
   const setThemeRainbow = () => {
-    setTheme("rainbow");
+    if (theme !== "rainbow") {
+      setTheme("rainbow");
+      localStorage.setItem("theme" , 'rainbow')
+
+    }
   };
 
   return (

@@ -30,8 +30,6 @@ const useScrollPosition = () => {
           
           if(pageY_Offset <= sectionPositionInBrowser.about){
             setSection("introduction")
-          }else if(pageY_Offset > sectionPositionInBrowser.about && pageY_Offset <= sectionPositionInBrowser.skills){
-            setSection("aboutme")
           }
           else if(pageY_Offset > sectionPositionInBrowser.skills && pageY_Offset <= sectionPositionInBrowser.project ){
             setSection("skills")

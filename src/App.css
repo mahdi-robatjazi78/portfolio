@@ -23,9 +23,6 @@ span.Typewriter__wrapper::selection {
   color: black;
 }
 
-.t-w-parent > div > span {
-  line-height: 7rem;
-}
 .wrapper-type-writer-persian-in-header {
   line-height: 2mrem;
 }
@@ -83,13 +80,16 @@ span.Typewriter__wrapper::selection {
 
 .rainbow .header-styles {
   background-color: #ffd700;
+  z-index: 25;
 }
 .light .header-styles {
   background-color: transparent;
+  z-index: 25;
 }
 .dark .header-styles {
   background-color: #293a3e;
   color: white;
+  z-index: 25;
 }
 
 .central {
@@ -105,6 +105,13 @@ span.Typewriter__wrapper::selection {
   transform: translate(-50%, -50%);
   width: 100%;
 }
+
+.light-bg{
+  background-image: url("lii.png");
+
+}
+
+
 .light .intro-about-gradient,
 .light .intro-about-gradient,
 .light .about-section-gradient,
@@ -125,26 +132,26 @@ span.Typewriter__wrapper::selection {
   background: linear-gradient(
     270deg,
     hsla(48, 96%, 53%, 1) 0%,
-    hsla(0, 100%, 75%, 1) 100%
+    hsla(0, 80%, 60%, 1) 100%
   );
 
   background: -moz-linear-gradient(
     270deg,
     hsla(48, 96%, 53%, 1) 0%,
-    hsla(0, 100%, 75%, 1) 100%
+    hsla(0, 80%, 60%, 1) 100%
   );
 
   background: -webkit-linear-gradient(
     270deg,
     hsla(48, 96%, 53%, 1) 0%,
-    hsla(0, 100%, 75%, 1) 100%
+    hsla(0, 80%, 60%, 1) 100%
   );
 
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FACC15", endColorstr="#7DD3FC", GradientType=1 );
 }
 
-.rainbow .about-section-gradient {
-  background: hsla(0, 100%, 75%, 1);
+/* .rainbow .about-section-gradient {
+  background: hsla(0, 80%, 60%, 1);
 
   background: linear-gradient(
     270deg,
@@ -168,23 +175,23 @@ span.Typewriter__wrapper::selection {
   );
 
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FF7E7E", endColorstr="#AC0000", GradientType=1 );
-}
+} */
 
 .rainbow .skills-gradient {
   background: hsla(0, 100%, 16%, 1) 0%;
   background: linear-gradient(
     270deg,
-    hsla(0, 100%, 16%, 1) 0%,
+    hsla(0, 80%, 60%, 1) 0%,
     rgb(3, 12, 32) 100%
   );
   background: -moz-linear-gradient(
     270deg,
-    hsla(0, 100%, 16%, 1) 0%,
+    hsla(0, 80%, 60%, 1) 0%,
     rgb(3, 12, 32) 100%
   );
   background: -webkit-linear-gradient(
     270deg,
-    hsla(0, 100%, 16%, 1) 0%,
+    hsla(0, 80%, 60%, 1) 0%,
     rgb(3, 12, 32) 100%
   );
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FF7E7E", endColorstr="#AC0000", GradientType=1 );

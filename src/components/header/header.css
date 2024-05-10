@@ -18,6 +18,10 @@
   transform: translateX(-100%);
   background-color: black;
 }
+.dark .header-container > a::before {
+
+  background-color: white;
+}
 .header-container > a:hover::before {
   transform: translateX(0);
 }
@@ -33,6 +37,10 @@
   animation: bottomLineAnimationSection 2s ease-in-out infinite;
 }
 
+.dark .active-section-header::after {
+  background-color: rgb(88, 13, 5);
+
+}
 .active-section-header-yellow::after {
   content: "";
   position: absolute;
