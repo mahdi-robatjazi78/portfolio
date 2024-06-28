@@ -46,7 +46,7 @@ const Projects = (props) => {
                       <InjectMassage id="path.shahab.danesh.title" />
                     </h2>
                     <br />
-                    <p className="selection-text-background">
+                    <p className="selection-text-background low_weight">
                       <InjectMassage id="path.shahab.danesh.description" />
                     </p>
                   </div>
@@ -78,7 +78,7 @@ const Projects = (props) => {
                       <InjectMassage id="path.mapsa.title" />
                     </h2>
                     <br />
-                    <p className="selection-text-background">
+                    <p className="selection-text-background low_weight">
                       <InjectMassage id="path.mapsa.description" />
                     </p>
                   </div>
@@ -114,11 +114,11 @@ const Projects = (props) => {
 
                 <RtlMaker>
                   <div className="p-4 f-dosis-bold overflow-y-auto max-h-36	">
-                    <h2 className="selection-text-background">
+                    <h2 className="selection-text-background ">
                       <InjectMassage id="path.notash.title" />
                     </h2>
                     <br />
-                    <p className="selection-text-background">
+                    <p className="selection-text-background low_weight">
                       <InjectMassage id="path.notash.description" />
                     </p>
                   </div>
@@ -126,26 +126,28 @@ const Projects = (props) => {
               </div>
 
               <div
-                onClick={() => {
-                  setOpenKarModal(true);
-                }}
+                // onClick={() => {
+                //   setOpenKarModal(true);
+                // }}
                 className="glassMorphism cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center rounded-md"
               >
-                <span style={InformationIconStyle} className="glassMorphism rounded-md">
+                {/* <span style={InformationIconStyle} className="glassMorphism rounded-md">
                   <IoIosInformationCircleOutline className="text-3xl scale-animation" />
-                </span>
+                </span> */}
 
                 <img
-                  src="/project-logos/todo-512.jpg"
+                  src="/project-logos/kafineteman.jpg"
                   className="w-14 h-14 rounded-lg mx-5"
                 />
                 <RtlMaker>
                   <div className="p-4 f-dosis-bold overflow-y-auto max-h-36	">
                     <h2 className="selection-text-background">
+                      <a id="link_1" href="https://kafineteman.com/" target="_blank">
                       <InjectMassage id="path.kar.title" />
+                      </a>
                     </h2>
                     <br />
-                    <p className="selection-text-background">
+                    <p className="selection-text-background low_weight">
                       <InjectMassage id="path.kar.description" />
                     </p>
                   </div>
@@ -188,7 +190,7 @@ const Projects = (props) => {
 
       <MapsaDetailModal open={openMapsaModal} setOpen={setOpenMapsaModal} />
       <NotashDetailModal open={openNotashModal} setOpen={setOpenNotashModal} />
-      <KarRaBendazDetailModal open={openKarModal} setOpen={setOpenKarModal} />
+      {/* <KarRaBendazDetailModal open={openKarModal} setOpen={setOpenKarModal} /> */}
     </Element>
   );
 };

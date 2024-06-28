@@ -152,7 +152,7 @@ const Header = (props) => {
             offset={50}
             duration={300}
             to="introduction-section"
-            className={`leading-10 glassMorphism ${
+            className={`leading-10 glassMorphism rounded-md ${
               section === "introduction" ? "active-header-minimized-item" : ""
             }`}
           >
@@ -166,7 +166,7 @@ const Header = (props) => {
             offset={50}
             duration={300}
             to="skills-section"
-            className={`leading-10 glassMorphism ${
+            className={`leading-10 glassMorphism rounded-md ${
               section === "skills" ? "active-header-minimized-item" : ""
             }`}
           >
@@ -178,7 +178,7 @@ const Header = (props) => {
             offset={50}
             duration={300}
             to="projects-section"
-            className={`leading-10 glassMorphism ${
+            className={`leading-10 glassMorphism rounded-md ${
               section === "projects" ? "active-header-minimized-item" : ""
             }`}
           >
@@ -187,7 +187,7 @@ const Header = (props) => {
         </div>
         <div className="flex justify-between gap-5 minimized-header-links">
           <a
-            className={`leading-10 cursor-pointer glassMorphism ${
+            className={`leading-10 cursor-pointer glassMorphism rounded-md ${
               openContactMeBox &&
               "rotate-animation  border-[3px] border-green-500"
             }`}

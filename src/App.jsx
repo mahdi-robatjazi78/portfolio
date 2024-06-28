@@ -3,7 +3,6 @@ import "./App.css";
 
 import Header from "./components/header";
 import ContactMe from "./components/contact/contact";
-import MySkills from "./components/skills/skills";
 import Projects from "./components/projects";
 import Introduction from "./components/introdoction/introduction";
 import "animate.css";
@@ -12,6 +11,7 @@ import "aos/dist/aos.css";
 // import useScrollPosition from "./utils/hooks/useScrollPosition";
 import PositionContext from "./utils/context/position";
 import ThemeContext from "./utils/context/theme";
+import SkillsIndexComponent from "./components/skills/index";
 
 function App() {
   useEffect(() => {
@@ -69,7 +69,7 @@ function App() {
         <Introduction />
       </div>
       <div ref={skillsRef}>
-        <MySkills />
+        <SkillsIndexComponent />
       </div>
       <div ref={projectsRef}>
         <Projects setOpenContactMeBox={setOpenContactMeBox} />

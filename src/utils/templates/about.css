@@ -27,12 +27,11 @@
   z-index: 10;
   border: 1px solid gray;
 }
-
+ 
 @media only screen and (min-width: 1000px) {
   .tooltip{
     top: 100px !important;
-  z-index: 12;
-
+    z-index: 12;
   }
 }
 
@@ -96,6 +95,7 @@
   height: 180px;
   display: table-cell;
   vertical-align: middle;
+  max-height:210px;
 }
 .dark .tooltip p {
   color: white;
@@ -127,7 +127,7 @@
     transform: translateY(-10%) scaleY(1);
     border-radius: 8px;
     opacity: 1;
-    height: 200px;
+    height: fit-content;
   }
 }
 

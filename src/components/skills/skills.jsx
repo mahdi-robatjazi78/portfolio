@@ -5,8 +5,9 @@ import { useEffect } from "react";
 import InjectMassage from "../../utils/intl";
 import StepperSkills from "./stepper";
 import { LanguageContext } from "../../utils/context/language";
-import { Element } from "react-scroll";
+ 
 import useWindowSize from "../../utils/hooks/useWindowSize";
+ 
 
 const MySkills = () => {
   const [shownItem, setShownItem] = useState(0);
@@ -58,13 +59,13 @@ const MySkills = () => {
   };
 
   return (
-    <Element
-      name="skills-section"
-      id="skills-section"
-      dir={lang === "fa-IR" ? "rtl" : "ltr"}
-      className={`h-screen w-screen skills-gradient flex flex-col justify-center items-center`}
-    >
+
+
+
+
+
       <div className="mx-w-md  skills-animated-border-1 p-4 sm:p-12 md:p-12">
+      
         <StepperSkills
           activeStep={shownItem}
           handleStepperClick={handleStepperClick}
@@ -307,7 +308,11 @@ const MySkills = () => {
           </div>
         </div>
       </div>
-    </Element>
+
+
+  
+
+ 
   );
 };
 

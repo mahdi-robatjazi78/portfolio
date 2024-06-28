@@ -417,3 +417,13 @@ span.Typewriter__wrapper::selection {
 .blockquote-eng-mode:hover:after {
   transform: rotateY(360deg);
 }
+
+#link_1{
+  color:rgb(250 204 21);
+  text-decoration: underline;
+  text-underline-offset: 7px;
+   
+}
+.low_weight{
+  font-weight:500;
+} 

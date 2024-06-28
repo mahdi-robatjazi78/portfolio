@@ -57,6 +57,9 @@ const About = () => {
     );
   };
 
+  const dir = lang === "fa-IR" ? "rtl" : "ltr";
+  const textAlign = lang === "fa-IR" ? "text-right" : "text-left";
+
   return (
     <div className="inline-flex justify-around flex-col h-[75%] my-20 px-10 mt-50">
       <div className="aboutme-tooltip-container">
@@ -64,8 +67,8 @@ const About = () => {
           name={<InjectMassage id="header.section.title.introduction" />}
         />
 
-        <div className="tooltip" dir={lang === "fa-IR" ? "rtl" : "ltr"}>
-          <p className="selection-text-background">
+        <div className="tooltip z-50" dir={dir}>
+          <p className={`selection-text-background ${textAlign}`}>
             <InjectMassage id="about.me.section0.t1" />
           </p>
         </div>
@@ -75,9 +78,9 @@ const About = () => {
         <AboutNavigationItem
           name={<InjectMassage id="header.section.title.about" />}
         />
-        <div className="tooltip" dir={lang === "fa-IR" ? "rtl" : "ltr"}>
-          <p className="selection-text-background">
-            <InjectMassage id="about.me.section0.t1" />
+        <div className="tooltip z-50" dir={dir}>
+          <p className={`selection-text-background ${textAlign}`}>
+            <InjectMassage id="about.me.section0.t2" />
           </p>
         </div>
       </div>
@@ -86,11 +89,29 @@ const About = () => {
         <AboutNavigationItem
           name={<InjectMassage id="header.section.title.worth" />}
         />
-        <div className="tooltip" dir={lang === "fa-IR" ? "rtl" : "ltr"}>
-          <p className="selection-text-background">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-            perferendis culpa, neque numquam illum non laudantium tempora
-          </p>
+        <div className="tooltip z-50" dir={dir}>
+          <ul className="selection-text-background">
+            <li
+              className={`selection-text-background low_weight ${textAlign} leading-10`}
+            >
+              <InjectMassage id="about.me.section0.t3.li.1" />
+            </li>
+            <li
+              className={`selection-text-background low_weight ${textAlign} leading-10`}
+            >
+              <InjectMassage id="about.me.section0.t3.li.2" />
+            </li>
+            <li
+              className={`selection-text-background low_weight ${textAlign} leading-10`}
+            >
+              <InjectMassage id="about.me.section0.t3.li.3" />
+            </li>
+            <li
+              className={`selection-text-background low_weight ${textAlign} leading-10`}
+            >
+              <InjectMassage id="about.me.section0.t3.li.4" />
+            </li>
+          </ul>
         </div>
       </div>
     </div>
