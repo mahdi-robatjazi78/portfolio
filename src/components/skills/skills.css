@@ -173,6 +173,8 @@
 
 .stepper-container {
   width: 100%;
+  transform: translateY(30px);
+  
 }
 
 .stepper-container > .stepper-parent > div {
