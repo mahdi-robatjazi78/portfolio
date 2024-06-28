@@ -50,7 +50,7 @@ const About = () => {
             fter:z-10 after:w-20 after:h-20 after:content['']  after:bg-rose-300
             after:right-8 after:top-3 after:rounded-full after:blur-lg`}
           >
-            {name}
+            {/* {name} */}
           </button>
         )}
       </>
@@ -74,7 +74,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="  ">
+      <div className="aboutme-tooltip-container">
         <AboutNavigationItem
           name={<InjectMassage id="header.section.title.about" />}
         />
