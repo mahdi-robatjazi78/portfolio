@@ -74,7 +74,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="aboutme-tooltip-container">
+      <div className="  ">
         <AboutNavigationItem
           name={<InjectMassage id="header.section.title.about" />}
         />

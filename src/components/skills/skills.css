@@ -15,7 +15,7 @@
 
 .skills-center {
   position: relative;
-  height: 200px;
+  height: 400px;
   width: 600px;
 }
 
@@ -24,7 +24,7 @@
   top: 50%;
   left: 0;
   width: 100%;
-  height: 140px;
+  height: 270px; 
   transform: translateY(-50%);
   overflow: hidden;
 }
@@ -35,6 +35,11 @@
 .skills-row {
   /* height:110px; */
   padding: 14px 20px;
+  height: 270px;
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.25rem;
+  align-items: center;
 }
 .skills-box {
   border-radius: 10px;
@@ -215,10 +220,13 @@
   }
   .skills-row {
     flex-wrap: wrap;
-    height: 30vh;
+    height: 280px;
+
     align-content: center;
     overflow: hidden;
     justify-content: center;
+    gap:.7rem;
+
   }
 
   .skills-center > .road {
@@ -226,7 +234,8 @@
     top: 50%;
     left: 0;
     width: 100%;
-    height: 30vh;
+    height: 280px;
+
     /* transform: translateY(-50%); */
     overflow: hidden;
   }
@@ -244,7 +253,7 @@
     height: 4rem;
   }
 }
-@media only screen and (max-width: 640px) {
+@media only screen and  (min-width: 450px) and (max-width: 640px) {
   .skills-center {
     /* max-width:300px; */
     width: 70vw;
@@ -255,7 +264,8 @@
     height: 50vh;
     align-content: center;
     overflow: hidden;
-    justify-content: center;
+    justify-content: flex-start;
+    gap:.7rem;
   }
 
   .skills-center > .road {
@@ -269,6 +279,7 @@
   }
   .skills-box {
     height: 90px;
+    scale:.9;
   }
   .skills-description {
     height: 6rem;

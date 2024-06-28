@@ -11,7 +11,7 @@ const Introduction = () => {
     <Element
       name="introduction-section"
       id="introduction-section"
-      className={`h-screen w-screen intro-about-gradient`}
+      className={`h-screen min-h-[500px] w-screen intro-about-gradient`}
     >
       <SlideUpAnimationText
         lang={lang}

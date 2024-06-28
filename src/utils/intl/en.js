@@ -45,13 +45,18 @@ export default {
     "skills.description.python":"Python",
     "skills.description.sql":"Sql",
     "skills.description.mongo":"Mongo Db",
+    "skills.description.websocket":"Web Socket",
+
 
     "skills.description.git":"Git",
     "skills.description.jira":"Jira",
     "skills.description.photoshop":"Photoshop",
     "skills.description.illustrator":"Illustrator", 
-    "skills.description.mysql":"Mysql", 
+    "skills.description.mysql":"Mysql",
     "skills.description.figma":"Figma",
+    "skills.description.browser.extention":"Browser Extention",
+    "skills.description.library.code":"Libraray Code",
+
 
     "skills.description.paragraph.professional":"In the list above, you can see my",
     "text.skills":"skills.",   

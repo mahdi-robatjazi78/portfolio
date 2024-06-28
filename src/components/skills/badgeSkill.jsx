@@ -23,6 +23,9 @@ const BadgeSkill = () => {
         <Badge name={<InjectMassage id="skills.description.vue" />} />
         <Badge name={<InjectMassage id="skills.description.mongo" />} />
         <Badge name={<InjectMassage id="skills.description.sql" />} />
+        <Badge name={<InjectMassage id="skills.description.websocket" />} />
+        <Badge name={<InjectMassage id="skills.description.browser.extention" />} />
+        <Badge name={<InjectMassage id="skills.description.library.code" />} />
       </div>
 
       <div className={`flex flex-wrap justify-center gap-5 my-5`}>

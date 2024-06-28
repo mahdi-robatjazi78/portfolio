@@ -87,7 +87,7 @@ span.Typewriter__wrapper::selection {
   z-index: 25;
 }
 .dark .header-styles {
-  background-color: #293a3e;
+  background-color: #7d0a0a;
   color: white;
   z-index: 25;
 }
@@ -98,6 +98,7 @@ span.Typewriter__wrapper::selection {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .central-about {
   position: absolute;
   top: 50%;

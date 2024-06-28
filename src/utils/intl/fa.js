@@ -50,14 +50,20 @@ export default {
     "skills.description.python":"پایتون",
     "skills.description.sql":"اس کیو ال",
     "skills.description.mongo":"مونگو دی بی",
-
+    "skills.description.websocket":"وب سوکت",
+ 
+ 
     "skills.description.git":"گیت",
     "skills.description.jira":"جیرا",
     "skills.description.photoshop":"فوتوشاپ",
     "skills.description.illustrator":"ایلستریتور",
     "skills.description.mysql":"مای اس کیو ال", 
-
     "skills.description.figma":"فیگما", 
+    "skills.description.browser.extention":"افزونه مرورگر",
+    "skills.description.library.code":"کد کتابخانه",
+ 
+
+
     "text.professional":"مهارت های حرفه ای من",
     "text.learned":"مهارت های درحال یادگیری من",
     "text.worked":"مهارت های فرعی من",

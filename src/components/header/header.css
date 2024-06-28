@@ -38,7 +38,7 @@
 }
 
 .dark .active-section-header::after {
-  background-color: rgb(88, 13, 5);
+  background-color: rgb(255, 168, 61);
 
 }
 .active-section-header-yellow::after {
