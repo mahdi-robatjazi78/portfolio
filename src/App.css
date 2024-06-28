@@ -107,7 +107,7 @@ span.Typewriter__wrapper::selection {
 }
 
 .light-bg{
-  background-image: url("lii.png");
+  background-image: url("/public/lii.png");
 
 }
 
@@ -117,7 +117,7 @@ span.Typewriter__wrapper::selection {
 .light .about-section-gradient,
 .light .skills-gradient,
 .light .projects-gradient {
-  background-image: url("lii.png");
+  background-image: url("/public/lii.png");
 }
 .dark .intro-about-gradient,
 .dark .intro-about-gradient,
