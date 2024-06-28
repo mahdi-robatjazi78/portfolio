@@ -24,12 +24,14 @@
   top: 50%;
   left: 0;
   width: 100%;
-  height: 270px; 
+  height: 270px;
   transform: translateY(-50%);
   overflow: hidden;
 }
 .skills-center > .road > #parent {
   transition: all 0.4s ease;
+  height: 270px;
+
 }
 
 .skills-row {
@@ -38,7 +40,7 @@
   height: 270px;
   display: flex;
   flex-wrap: wrap;
-  gap:1.25rem;
+  gap: 1.25rem;
   align-items: center;
 }
 .skills-box {
@@ -225,8 +227,7 @@
     align-content: center;
     overflow: hidden;
     justify-content: center;
-    gap:.7rem;
-
+    gap: 0.7rem;
   }
 
   .skills-center > .road {
@@ -234,7 +235,7 @@
     top: 50%;
     left: 0;
     width: 100%;
-    height: 280px;
+    height: 270px;
 
     /* transform: translateY(-50%); */
     overflow: hidden;
@@ -248,12 +249,34 @@
   }
 }
 
-@media only screen and (max-width: 450px){
-  .skills-description {
-    height: 4rem;
+@media only screen and (max-width: 450px) {
+  .mother {
+    width: 95vw;
+  }
+  .skills-center {
+    /* max-width:300px; */
+    width: 90vw;
+  }
+
+  .road {
+    height: 350px !important;
+  }
+  #parent {
+    height: 350px;
+  }
+
+  .skills-row {
+    gap: 0.3rem;
+    padding: 14px 0;
+    height: 350px;
+    align-content: flex-start;
+  }
+  .skills-box {
+    height: 90px;
+    scale: 0.9;
   }
 }
-@media only screen and  (min-width: 450px) and (max-width: 640px) {
+@media only screen and (min-width: 450px) and (max-width: 640px) {
   .skills-center {
     /* max-width:300px; */
     width: 70vw;
@@ -265,7 +288,7 @@
     align-content: center;
     overflow: hidden;
     justify-content: flex-start;
-    gap:.7rem;
+    gap: 0.7rem;
   }
 
   .skills-center > .road {
@@ -279,13 +302,11 @@
   }
   .skills-box {
     height: 90px;
-    scale:.9;
+    scale: 0.9;
   }
   .skills-description {
     height: 6rem;
   }
-
-
 }
 
 @-moz-document url-prefix() {
@@ -294,10 +315,12 @@
   }
 }
 
-
-.gradient-text-skills{
-  background:linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(217, 100%, 50%, 1) 100%);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-
+.gradient-text-skills {
+  background: linear-gradient(
+    90deg,
+    hsla(152, 100%, 50%, 1) 0%,
+    hsla(217, 100%, 50%, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

@@ -32,7 +32,7 @@ const MySkills = () => {
     setStartAnimate(false);
     if (parentRef.current) {
       parentRef.current.style.transform = `translateY(-${
-        shownItem * parseInt(skillsCenterRef?.current.offsetHeight)
+        shownItem * parseInt(parentRef?.current.offsetHeight )
       }px)`;
     }
     const to = setTimeout(() => {
@@ -56,7 +56,7 @@ const MySkills = () => {
   };
 
   return (
-    <div className="mx-w-md skills-animated-border-1 p-4 sm:p-12 md:p-12">
+    <div className="mx-w-md skills-animated-border-1 p-4 sm:px-12 md:px-12 mother">
       <StepperSkills
         activeStep={shownItem}
         handleStepperClick={handleStepperClick}
@@ -86,9 +86,10 @@ const MySkills = () => {
         </div>
         <div className="skills-center">
           <div className="road">
-            <div id="parent" ref={parentRef}>
-              <div ref={skillsCenterRef} className="skills-row">
+            <div id="parent"  ref={parentRef}>
+              <div  className="skills-row">
                 <div
+                ref={skillsCenterRef}
                   onClick={handleClickOnSkillsBox}
                   className={`skills-box skills-animated-border-1 ${
                     shownItem === 0 && startAnimate ? "start-animate" : ""
