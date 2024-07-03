@@ -160,7 +160,7 @@ const Projects = (props) => {
 
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 cursor-pointer flex flex-col md:flex-row gap-3 md:gap-10">
         <div className="glassMorphism rounded-md w-44">
-          <a target="_blank" href={Pdf}>
+          <a target="_blank" href={Pdf} download>
             <div
               className="flex justify-around items-center px-4 "
               dir={lang === "fa-IR" ? "rtl" : "ltr"}

@@ -277,7 +277,7 @@ const ContactMe = (props) => {
                   className="iconBox"
                   data-tooltip-target="open-tooltip-box"
                 >
-                  <a target="_blank" href={Pdf}>
+                  <a target="_blank" href={Pdf} download>
                     <GoDownload />
                   </a>
                 </span>
