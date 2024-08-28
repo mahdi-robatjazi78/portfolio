@@ -3,6 +3,7 @@ import InjectMassage from "../../utils/intl";
 import useWindowSize from "../hooks/useWindowSize";
 import { LanguageContext } from "../context/language";
 import ThemeContext from "../context/theme";
+
 import "./about.css";
 
 const About = () => {
