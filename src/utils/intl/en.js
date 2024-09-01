@@ -74,6 +74,7 @@ export default {
     "path.kar.description": "During my time at Notash Company, I engaged in a resume project and also took on a testing project to learn new front-end technologies. The project is about a to-do list, and I encourage you to take a professional look at it if possible.",
     "resume.title":"resume file ",
     "get.resume.file":"Get Resume File",
+    "go.to.my.virgool.account":"My Virgool Articles",
     "mobile.number":"09190868386",
     "project.detail.box.notash.description.section.1": "About 20 months of activity as a front-end programmer at Notash company. Notash is a subsidiary of Holding Danial Moaj and is actively involved in the Internet of Things (IoT) field. The most significant challenges in this job position include collaborating with highly experienced software engineers and meeting their requirements as the first working position. Additionally, managing the processes of the IoT application provider with three levels of user interface alongside just one front-end colleague. Unforgettable teamwork experience with experienced engineers in web and software development is one of my valuable achievements at Notash company.",
     "holding.danial.moj": 'Holding Danial Moj',

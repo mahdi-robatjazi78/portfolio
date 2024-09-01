@@ -80,6 +80,7 @@ export default {
     "path.kar.description":'بعد از حضورم در نوتاش عضو یک تیم باتعداد افراد کم ولی بسیار چابک و سریع  و کاملا ریموت و منعطف شدم که البته در حال حاضر پروژه متوقف شده ',
     "resume.title":"فایل رزومه",
     "get.resume.file":"دریافت فایل رزومه",
+    "go.to.my.virgool.account":"مقالات من در ویرگول",
     "mobile.number":"09190868386",
     "project.detail.box.notash.description.section.1":"حدود 20 ماه فعالیت به عنوان برنامه نویس سمت فرانت شرکت نوتاش. شرکت نوتاش از زیر مجموعه های",
     "holding.danial.moj":'هلدینگ دانیال موج',

@@ -19,7 +19,7 @@ const SlideUpAnimationText = ({ text, lang }) => {
   return (
     <div
       data-text={text}
-      className="opacity-10 md:opacity-10 leading-[1.5] md:leading-[1] embed-animated-text-background f-dosis-bold"
+      className="opacity-5 0 md:opacity-5 leading-[1.5] md:leading-[1] embed-animated-text-background f-dosis-bold"
       style={styles2}
     >
       <span style={spanGhostStyle3}>{text}</span>

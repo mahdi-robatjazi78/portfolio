@@ -9,8 +9,8 @@ import { LanguageContext } from "../../utils/context/language";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import MapsaDetailModal from "./mapsaModal";
 import NotashDetailModal from "./notashModal";
-import {motion} from "framer-motion";
-
+import KarRaBendazDetailModal from "./KarRaBendazlModal";
+import Virgool from "../../../public/logos/virgool.svg" 
 const Projects = (props) => {
   const { lang } = useContext(LanguageContext);
   const { setOpenContactMeBox } = props;
@@ -35,25 +35,18 @@ const Projects = (props) => {
         <div className="h-fit">
           <RtlMaker>
             <div className="flex flex-col md:flex-row justify-center gap-5 w-full">
-              <div className="glassMorphism overflow-hidden w-full md:w-3/5 h-52 flex justify-between items-center rounded-md">
-                <motion.div
-                initial={{ opacity: 0, x: -100 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1}}
-                >
-
+              <div className="glassMorphism w-full md:w-3/5 h-52 flex justify-between items-center rounded-md">
                 <img
                   src="/project-logos/shahabDanesh.jpg"
                   className="w-14 h-14 rounded-lg mx-5"
-                  />
-                  </motion.div>
+                />
                 <RtlMaker>
-                  <div className="f-dosis-bold overflow-y-auto px-3 max-h-36">
+                  <div className="p-4 f-dosis-bold overflow-y-auto max-h-36">
                     <h2 className="selection-text-background">
                       <InjectMassage id="path.shahab.danesh.title" />
                     </h2>
                     <br />
-                    <p className="selection-text-background  text-sm leading-6 md:leading-8 low_weight">
+                    <p className="selection-text-background low_weight">
                       <InjectMassage id="path.shahab.danesh.description" />
                     </p>
                   </div>
@@ -61,7 +54,7 @@ const Projects = (props) => {
               </div>
 
               <div
-                className="glassMorphism overflow-hidden cursor-pointer w-full md:w-3/5 h-52 flex justify-between items-center rounded-md"
+                className="glassMorphism cursor-pointer w-full md:w-3/5 h-52 flex justify-between items-center rounded-md"
                 onClick={() => {
                   setOpenMapsaModal(true);
                 }}
@@ -69,13 +62,7 @@ const Projects = (props) => {
                 <span style={InformationIconStyle} className="glassMorphism rounded-md">
                   <IoIosInformationCircleOutline className="text-3xl scale-animation" />
                 </span>
-                <motion.div
-                
-                initial={{ opacity: 0, x: -100 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1}}
-                
-                className="mx-5 max-w-14">
+                <div className="mx-5 max-w-14">
                   <img
                     src="/project-logos/mapsa.jpg"
                     className="max-w-4xl h-14 mb-3 rounded-lg"
@@ -84,14 +71,14 @@ const Projects = (props) => {
                     src="/project-logos/theMovieProject.jpg"
                     className="max-w-4xl h-14 rounded-lg"
                   />
-                </motion.div>
+                </div>
                 <RtlMaker>
-                  <div className="f-dosis-bold overflow-y-auto px-3 max-h-36	">
+                  <div className="p-4 f-dosis-bold overflow-y-auto max-h-36	">
                     <h2 className="selection-text-background">
                       <InjectMassage id="path.mapsa.title" />
                     </h2>
                     <br />
-                    <p className="selection-text-background  text-sm leading-6 md:leading-8 low_weight">
+                    <p className="selection-text-background low_weight">
                       <InjectMassage id="path.mapsa.description" />
                     </p>
                   </div>
@@ -105,7 +92,7 @@ const Projects = (props) => {
           <RtlMaker>
             <div className="flex flex-col md:flex-row justify-center gap-5 w-full">
               <div
-                className="glassMorphism overflow-hidden cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center rounded-md"
+                className="glassMorphism cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center rounded-md"
                 onClick={() => {
                   setOpenNotashModal(true);
                 }}
@@ -114,11 +101,7 @@ const Projects = (props) => {
                   <IoIosInformationCircleOutline className="text-3xl scale-animation" />
                 </span>
 
-                <div className="mx-5 max-w-14"
-                  initial={{ opacity: 0, x: -100 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 1}}
-                >
+                <div className="mx-5 max-w-14">
                   <img
                     src="/project-logos/danialmoj.jpg"
                     className="h-14 mb-3 rounded-lg max-w-4xl"
@@ -130,12 +113,12 @@ const Projects = (props) => {
                 </div>
 
                 <RtlMaker>
-                  <div className="f-dosis-bold overflow-y-auto px-3 max-h-36	">
+                  <div className="p-4 f-dosis-bold overflow-y-auto max-h-36	">
                     <h2 className="selection-text-background ">
                       <InjectMassage id="path.notash.title" />
                     </h2>
                     <br />
-                    <p className="selection-text-background  text-sm leading-6 md:leading-8 low_weight">
+                    <p className="selection-text-background low_weight">
                       <InjectMassage id="path.notash.description" />
                     </p>
                   </div>
@@ -146,46 +129,29 @@ const Projects = (props) => {
                 // onClick={() => {
                 //   setOpenKarModal(true);
                 // }}
-                className="glassMorphism overflow-hidden cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center rounded-md"
+                className="glassMorphism cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center rounded-md"
               >
                 {/* <span style={InformationIconStyle} className="glassMorphism rounded-md">
                   <IoIosInformationCircleOutline className="text-3xl scale-animation" />
                 </span> */}
 
-                <div
-                className="flex justify-between items-center"m
-                >
-
-
-                <motion.div
-                initial={{ opacity: 0, x: -100 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1}}
-                
-                >
-
-
-
                 <img
                   src="/project-logos/kafineteman.jpg"
-                  className="w-20 h-14 rounded-lg mx-5"
-                  />
-                  </motion.div>
+                  className="w-14 h-14 rounded-lg mx-5"
+                />
                 <RtlMaker>
-                  <div className="f-dosis-bold overflow-y-auto px-3 max-h-36	">
+                  <div className="p-4 f-dosis-bold overflow-y-auto max-h-36	">
                     <h2 className="selection-text-background">
                       <a id="link_1" href="https://kafineteman.com/" target="_blank">
                       <InjectMassage id="path.kar.title" />
                       </a>
                     </h2>
                     <br />
-                    <p className="selection-text-background  text-sm leading-6 md:leading-8 low_weight">
+                    <p className="selection-text-background low_weight">
                       <InjectMassage id="path.kar.description" />
                     </p>
                   </div>
                 </RtlMaker>
-                </div>
-
               </div>
             </div>
           </RtlMaker>
@@ -193,6 +159,23 @@ const Projects = (props) => {
       </div>
 
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 cursor-pointer flex flex-col md:flex-row gap-3 md:gap-10">
+        
+                  
+      <div className="glassMorphism rounded-md w-48">
+          <a target="_blank" href="https://virgool.io/@mahdi-robatjazi" download>
+            <div
+              className="flex justify-around items-center px-4 "
+              dir={lang === "fa-IR" ? "rtl" : "ltr"}
+            >
+              <img src={Virgool} width={14} height={14} />
+
+              <p className="leading-10 f-exo-medium">
+                <InjectMassage id="go.to.my.virgool.account" />
+              </p>
+            </div>
+          </a>
+        </div>
+        
         <div className="glassMorphism rounded-md w-44">
           <a target="_blank" href={Pdf} download>
             <div
