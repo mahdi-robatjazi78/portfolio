@@ -19,15 +19,12 @@ const Introduction = () => {
         text={lang === "fa-IR" ? "آماده همکاری" : "Open To Work"}
       />
       <div className="absolute top-[15%] lg:top-[30%] left-[5%]">
-
-
-      <Cards />
-
+        <Cards />
       </div>
       <div
         className={`f-dosis-section-1  text-4xl md:text-5xl lg:text-7xl h-full w-full`}
       >
-{/*         
+        {/*         
         <div className="py-5 h-screen w-full">
           <About />
         </div> */}

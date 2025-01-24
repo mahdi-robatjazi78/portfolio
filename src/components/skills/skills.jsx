@@ -32,7 +32,7 @@ const MySkills = () => {
     setStartAnimate(false);
     if (parentRef.current) {
       parentRef.current.style.transform = `translateY(-${
-        shownItem * parseInt(parentRef?.current.offsetHeight )
+        shownItem * parseInt(parentRef?.current.offsetHeight)
       }px)`;
     }
     const to = setTimeout(() => {
@@ -86,10 +86,10 @@ const MySkills = () => {
         </div>
         <div className="skills-center">
           <div className="road">
-            <div id="parent"  ref={parentRef}>
-              <div  className="skills-row">
+            <div id="parent" ref={parentRef}>
+              <div className="skills-row">
                 <div
-                ref={skillsCenterRef}
+                  ref={skillsCenterRef}
                   onClick={handleClickOnSkillsBox}
                   className={`skills-box skills-animated-border-1 ${
                     shownItem === 0 && startAnimate ? "start-animate" : ""
@@ -147,6 +147,18 @@ const MySkills = () => {
                   <div className=" hidden md:block skills-description f-exo-medium select-none">
                     {" "}
                     <InjectMassage id="skills.description.next" />
+                  </div>{" "}
+                </div>
+                <div
+                  onClick={handleClickOnSkillsBox}
+                  className={`skills-box skills-animated-border-1 ${
+                    shownItem === 0 && startAnimate ? "start-animate" : ""
+                  }`}
+                >
+                  <img src="/logos/test.png" />{" "}
+                  <div className=" hidden md:block skills-description f-exo-medium select-none">
+                    {" "}
+                    <InjectMassage id="text.software.testing.skill" />
                   </div>{" "}
                 </div>
               </div>

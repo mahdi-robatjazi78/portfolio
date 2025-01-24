@@ -53,7 +53,7 @@ const Cards = () => {
       <h1
         className={`f-exo-medium text-black selection-text-background py-4 text-xl`}
       >
-        <InjectMassage id="header.section.title.about" />
+        <InjectMassage id=" " />
       </h1>
       <p
         className={`text-black f-exo-medium text-xs selection-text-background leading-6 p-3`}
