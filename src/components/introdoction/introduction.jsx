@@ -18,11 +18,11 @@ const Introduction = () => {
         lang={lang}
         text={lang === "fa-IR" ? "آماده همکاری" : "Open To Work"}
       />
-      <div className="absolute top-[15%] lg:top-[30%] left-[5%]">
+      <div className="absolute top-[15%] lg:top-[30%] left-[5%] lg:left-[3%]">
         <Cards />
       </div>
       <div
-        className={`f-dosis-section-1  text-4xl md:text-5xl lg:text-7xl h-full w-full`}
+        className={`f-dosis-section-1 text-4xl md:text-5xl lg:text-7xl h-full w-full`}
       >
         <div className="image-me-styles">
           <img src="/me/me.png" />

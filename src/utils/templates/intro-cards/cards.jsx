@@ -8,18 +8,20 @@ import { FaQuoteRight } from "react-icons/fa";
 
 const Cards = () => {
   const { lang } = useContext(LanguageContext);
-  // const { theme } = useContext(ThemeContext);
-
   const dir = lang === "fa-IR" ? "rtl" : "ltr";
-  // const textAlign = lang === "fa-IR" ? "text-right" : "text-left";
-  // const textColor = (theme === "light" || theme === "rainbow") ? "text-dark" : "text-light"
+  const { theme } = useContext(ThemeContext);
+
+  const hoverHighlightCard =
+    theme === "light" || theme === "rainbow"
+      ? "hover:bg-slate-200"
+      : "hover:bg-slate-400";
 
   const c1 = (
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
-      className="card w-[85%] md:w-[360px]"
+      className="card w-[75%] md:w-[380px]"
     >
       <div className="align">
         <FaQuoteRight />
@@ -30,9 +32,9 @@ const Cards = () => {
       >
         <InjectMassage id="header.section.title.introduction" />
       </h1>
-      <div className="h-48 overflow-y-auto">
+      <div className="h-48 md:h-40 overflow-y-auto">
         <p
-          className={`text-slate-800 f-exo-medium hover:bg-slate-400 rounded-md text-md selection-text-background leading-6 p-3`}
+          className={`text-slate-800 f-exo-medium ${hoverHighlightCard} rounded-md text-md selection-text-background leading-6 p-3`}
           dir={lang === "fa-IR" ? "rtl" : "ltr"}
         >
           <InjectMassage id="about.me.section0.t1" />
@@ -46,7 +48,7 @@ const Cards = () => {
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
-      className="card w-[85%] md:w-[360px]"
+      className="card w-[75%] md:w-[380px]"
     >
       <div className="align">
         <FaQuoteRight />
@@ -57,9 +59,9 @@ const Cards = () => {
       >
         <InjectMassage id="header.section.title.about" />
       </h1>
-      <div className="h-48 overflow-y-auto">
+      <div className="h-48 md:h-40 overflow-y-auto">
         <p
-          className={`text-slate-800 hover:bg-slate-400 rounded-md f-exo-medium text-md selection-text-background leading-6 p-3 pb-6`}
+          className={`text-slate-800 ${hoverHighlightCard} rounded-md f-exo-medium text-md selection-text-background leading-6 p-3 pb-6`}
           dir={lang === "fa-IR" ? "rtl" : "ltr"}
         >
           <InjectMassage id="about.me.section0.t2" />
@@ -73,7 +75,7 @@ const Cards = () => {
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
-      className="card w-[85%] md:w-[360px]"
+      className="card w-[75%] md:w-[380px]"
     >
       <div className="align">
         <FaQuoteRight />
@@ -86,10 +88,13 @@ const Cards = () => {
       </h1>
 
       <div
-        dir={lang === "fa-IR" ? "rtl" : "ltr"}
-        className="h-48 overflow-y-auto"
+        dir={lang === "fa-IR" ? "ltr" : "rtl"}
+        className="h-48 md:h-40 overflow-y-auto"
       >
-        <div className="flex hover:bg-slate-400 rounded-md p-2">
+        <div
+          className={`flex  ${hoverHighlightCard} rounded-md p-2`}
+          dir={lang === "fa-IR" ? "rtl" : "ltr"}
+        >
           <span
             className={`${dir === "ltr" ? "point-to-right " : "point-to-left"}`}
           ></span>
@@ -100,7 +105,10 @@ const Cards = () => {
           </p>
         </div>
 
-        <div className="flex hover:bg-slate-400 rounded-md p-2">
+        <div
+          className={`flex ${hoverHighlightCard} rounded-md p-2`}
+          dir={lang === "fa-IR" ? "rtl" : "ltr"}
+        >
           <span
             className={`${dir === "ltr" ? "point-to-right" : "point-to-left"}`}
           ></span>
@@ -110,7 +118,10 @@ const Cards = () => {
             <InjectMassage id="about.me.section0.t3.li.2" />
           </p>
         </div>
-        <div className="flex hover:bg-slate-400 rounded-md p-2">
+        <div
+          className={`flex ${hoverHighlightCard} rounded-md p-2`}
+          dir={lang === "fa-IR" ? "rtl" : "ltr"}
+        >
           <span
             className={`${dir === "ltr" ? "point-to-right" : "point-to-left"}`}
           ></span>
@@ -121,7 +132,10 @@ const Cards = () => {
             <InjectMassage id="about.me.section0.t3.li.3" />
           </p>
         </div>
-        <div className="flex hover:bg-slate-400 rounded-md p-2">
+        <div
+          className={`flex ${hoverHighlightCard} rounded-md p-2`}
+          dir={lang === "fa-IR" ? "rtl" : "ltr"}
+        >
           <span
             className={`${dir === "ltr" ? "point-to-right" : "point-to-left"}`}
           ></span>
@@ -137,7 +151,7 @@ const Cards = () => {
   );
 
   return (
-    <div className="flex gap-5  lg:flex-row flex-col">
+    <div className="flex gap-5 xl:flex-row flex-col">
       {c1}
       {c2}
       {c3}
