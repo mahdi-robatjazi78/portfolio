@@ -20,7 +20,7 @@ export default {
   "about.me.section0.t3.li.1": `Continuous learning and acquiring new skills`,
   "about.me.section0.t3.li.2": `Building and creating practical and solution-oriented applications`,
   "about.me.section0.t3.li.3": `Interaction, learning and networking from expert friends and colleagues`,
-  "about.me.section0.t3.li.4": `High quality work, team work practice, gaining experiences unique to organizational work and ...`,
+  "about.me.section0.t3.li.4": `High quality work, team work practice, gaining experiences unique to organizational work`,
 
   "about.me.section1.title.what.i.do": "What i do? ",
   "about.me.section1.t1": "I help companies achieve their development Goals",

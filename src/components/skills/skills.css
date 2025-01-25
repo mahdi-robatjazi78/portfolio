@@ -24,20 +24,19 @@
   top: 50%;
   left: 0;
   width: 100%;
-  height: 270px;
+  height: 350px;
   transform: translateY(-50%);
   overflow: hidden;
 }
 .skills-center > .road > #parent {
   transition: all 0.4s ease;
-  height: 270px;
-
+  height: 350px;
 }
 
 .skills-row {
   /* height:110px; */
   padding: 14px 20px;
-  height: 270px;
+  height: 350px;
   display: flex;
   flex-wrap: wrap;
   gap: 1.25rem;
@@ -174,7 +173,6 @@
 .stepper-container {
   width: 100%;
   transform: translateY(30px);
-  
 }
 
 .stepper-container > .stepper-parent > div {
@@ -224,7 +222,7 @@
   }
   .skills-row {
     flex-wrap: wrap;
-    height: 280px;
+    height: 350px;
 
     align-content: center;
     overflow: hidden;
@@ -237,7 +235,7 @@
     top: 50%;
     left: 0;
     width: 100%;
-    height: 270px;
+    height: 350px;
 
     /* transform: translateY(-50%); */
     overflow: hidden;
@@ -261,17 +259,17 @@
   }
 
   .road {
-    height: 350px !important;
+    height: 320px !important;
   }
   #parent {
-    height: 350px;
+    height: 250px;
   }
 
   .skills-row {
     gap: 0.3rem;
     padding: 14px 0;
     height: 350px;
-    align-content: flex-start;
+    align-content: center;
   }
   .skills-box {
     height: 90px;
@@ -289,27 +287,44 @@
     height: 50vh;
     align-content: center;
     overflow: hidden;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 0.7rem;
   }
 
   .skills-center > .road {
     position: absolute;
-    top: 40%;
+    top: 55%;
     left: 0;
     width: 100%;
-    height: 50vh;
+    height: 420px !important;
+
     /* transform: translateY(-50%); */
     overflow: hidden;
   }
   .skills-box {
-    height: 90px;
-    scale: 0.9;
+    height: 100px;
+    scale: 1;
   }
   .skills-description {
     height: 6rem;
   }
+  #parent {
+    height: 420px !important;
+  }
 }
+
+/* @media only screen and (max-width: 396px) {
+  .skills-center > .road > #parent {
+    height: 350px;
+  }
+  .skills-row {
+    justify-content: center;
+  }
+  .skills-box {
+    height: 80px;
+    scale: 0.8;
+  }
+} */
 
 @-moz-document url-prefix() {
   .skills-animated-border-1 {

@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { LanguageContext } from "../../utils/context/language";
 import { Element } from "react-scroll";
 import SlideUpAnimationText from "../../utils/templates/slideUpAnimationText";
-import About from "../../utils/templates/about";
+
 import Cards from "../../utils/templates/intro-cards/cards";
 
 const Introduction = () => {
@@ -24,11 +24,6 @@ const Introduction = () => {
       <div
         className={`f-dosis-section-1  text-4xl md:text-5xl lg:text-7xl h-full w-full`}
       >
-        {/*         
-        <div className="py-5 h-screen w-full">
-          <About />
-        </div> */}
-
         <div className="image-me-styles">
           <img src="/me/me.png" />
         </div>
