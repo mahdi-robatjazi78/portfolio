@@ -29,147 +29,121 @@ const Projects = (props) => {
     <Element
       name="project-section"
       id="projects-section"
-      className={`relative w-screen  h:fit md:h-screen projects-gradient pb-10 md:pb-none`}
+      className={`relative w-screen  h:fit md:h-screen projects-gradient`}
     >
-      <div className="flex-col max-w-[1200px] m-auto">
-        <div className="flex flex-col gap-5 w-full px-3 p-20 md:p-10 h-full justify-center items-center">
+      <div className="flex-col items-center content-center max-w-[1200px] m-auto h-full">
+        <div className="flex flex-col gap-5 w-full px-3 justify-center items-center  mb-10">
           <div className="h-fit">
             <RtlMaker>
-              <div className="flex flex-col md:flex-row justify-center gap-5 w-full">
-                {/* <div className="glassMorphism w-full md:w-3/5 h-52 flex justify-between items-center rounded-md">
-                <img
-                  src="/project-logos/shahabDanesh.jpg"
-                  className="w-14 h-14 rounded-lg mx-5"
-                />
+              <div
+                className="glassMorphism cursor-pointer w-full md:w-3/5 h-52 flex justify-between items-center rounded-md"
+                onClick={() => {
+                  setOpenMapsaModal(true);
+                }}
+              >
+                <span
+                  style={InformationIconStyle}
+                  className="glassMorphism rounded-md"
+                >
+                  <IoIosInformationCircleOutline className="text-3xl scale-animation" />
+                </span>
+                <div className="mx-5 max-w-14">
+                  <img
+                    src="/project-logos/mapsa.jpg"
+                    className="max-w-4xl h-14 mb-3 rounded-lg"
+                  />
+                  <img
+                    src="/project-logos/theMovieProject.jpg"
+                    className="max-w-4xl h-14 rounded-lg"
+                  />
+                </div>
                 <RtlMaker>
-                  <div className="p-4 f-dosis-bold overflow-y-auto max-h-36">
+                  <div className="p-4 f-dosis-bold overflow-y-auto max-h-36	">
                     <h2 className="selection-text-background">
-                      <InjectMassage id="path.shahab.danesh.title" />
+                      <InjectMassage id="path.mapsa.title" />
                     </h2>
                     <br />
                     <p className="selection-text-background low_weight">
-                      <InjectMassage id="path.shahab.danesh.description" />
+                      <InjectMassage id="path.mapsa.description" />
                     </p>
                   </div>
                 </RtlMaker>
-              </div>   */}
-
-                <div
-                  className="glassMorphism cursor-pointer w-full md:w-3/5 h-52 flex justify-between items-center rounded-md"
-                  onClick={() => {
-                    setOpenMapsaModal(true);
-                  }}
-                >
-                  <span
-                    style={InformationIconStyle}
-                    className="glassMorphism rounded-md"
-                  >
-                    <IoIosInformationCircleOutline className="text-3xl scale-animation" />
-                  </span>
-                  <div className="mx-5 max-w-14">
-                    <img
-                      src="/project-logos/mapsa.jpg"
-                      className="max-w-4xl h-14 mb-3 rounded-lg"
-                    />
-                    <img
-                      src="/project-logos/theMovieProject.jpg"
-                      className="max-w-4xl h-14 rounded-lg"
-                    />
-                  </div>
-                  <RtlMaker>
-                    <div className="p-4 f-dosis-bold overflow-y-auto max-h-36	">
-                      <h2 className="selection-text-background">
-                        <InjectMassage id="path.mapsa.title" />
-                      </h2>
-                      <br />
-                      <p className="selection-text-background low_weight">
-                        <InjectMassage id="path.mapsa.description" />
-                      </p>
-                    </div>
-                  </RtlMaker>
-                </div>
               </div>
-            </RtlMaker>
-          </div>
 
-          <div className="h-fit">
-            <RtlMaker>
-              <div className="flex flex-col md:flex-row justify-center gap-5 w-full">
-                <div
-                  className="glassMorphism cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center rounded-md"
-                  onClick={() => {
-                    setOpenNotashModal(true);
-                  }}
+              <div
+                className="glassMorphism cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center rounded-md"
+                onClick={() => {
+                  setOpenNotashModal(true);
+                }}
+              >
+                <span
+                  style={InformationIconStyle}
+                  className="glassMorphism rounded-md"
                 >
-                  <span
-                    style={InformationIconStyle}
-                    className="glassMorphism rounded-md"
-                  >
-                    <IoIosInformationCircleOutline className="text-3xl scale-animation" />
-                  </span>
+                  <IoIosInformationCircleOutline className="text-3xl scale-animation" />
+                </span>
 
-                  <div className="mx-5 max-w-14">
-                    <img
-                      src="/project-logos/danialmoj.jpg"
-                      className="h-14 mb-3 rounded-lg max-w-4xl"
-                    />
-                    <img
-                      src="/project-logos/notash.jpg"
-                      className="h-14 rounded-lg max-w-4xl"
-                    />
-                  </div>
-
-                  <RtlMaker>
-                    <div className="p-4 f-dosis-bold overflow-y-auto max-h-36	">
-                      <h2 className="selection-text-background ">
-                        <InjectMassage id="path.notash.title" />
-                      </h2>
-                      <br />
-                      <p className="selection-text-background low_weight">
-                        <InjectMassage id="path.notash.description" />
-                      </p>
-                    </div>
-                  </RtlMaker>
+                <div className="mx-5 max-w-14">
+                  <img
+                    src="/project-logos/danialmoj.jpg"
+                    className="h-14 mb-3 rounded-lg max-w-4xl"
+                  />
+                  <img
+                    src="/project-logos/notash.jpg"
+                    className="h-14 rounded-lg max-w-4xl"
+                  />
                 </div>
 
-                <div
-                  // onClick={() => {
-                  //   setOpenKarModal(true);
-                  // }}
-                  className="glassMorphism cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center rounded-md"
-                >
-                  {/* <span style={InformationIconStyle} className="glassMorphism rounded-md">
+                <RtlMaker>
+                  <div className="p-4 f-dosis-bold overflow-y-auto max-h-36	">
+                    <h2 className="selection-text-background ">
+                      <InjectMassage id="path.notash.title" />
+                    </h2>
+                    <br />
+                    <p className="selection-text-background low_weight">
+                      <InjectMassage id="path.notash.description" />
+                    </p>
+                  </div>
+                </RtlMaker>
+              </div>
+
+              <div
+                // onClick={() => {
+                //   setOpenKarModal(true);
+                // }}
+                className="glassMorphism cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center rounded-md"
+              >
+                {/* <span style={InformationIconStyle} className="glassMorphism rounded-md">
                   <IoIosInformationCircleOutline className="text-3xl scale-animation" />
                 </span> */}
 
-                  <img
-                    src="/project-logos/kafineteman.jpg"
-                    className="w-14 h-14 rounded-lg mx-5"
-                  />
-                  <RtlMaker>
-                    <div className="p-4 f-dosis-bold overflow-y-auto max-h-36	">
-                      <h2 className="selection-text-background">
-                        <a
-                          id="link_1"
-                          href="https://kafineteman.com/"
-                          target="_blank"
-                        >
-                          <InjectMassage id="path.kar.title" />
-                        </a>
-                      </h2>
-                      <br />
-                      <p className="selection-text-background low_weight">
-                        <InjectMassage id="path.kar.description" />
-                      </p>
-                    </div>
-                  </RtlMaker>
-                </div>
+                <img
+                  src="/project-logos/kafineteman.jpg"
+                  className="w-14 h-14 rounded-lg mx-5"
+                />
+                <RtlMaker>
+                  <div className="p-4 f-dosis-bold overflow-y-auto max-h-36	">
+                    <h2 className="selection-text-background">
+                      <a
+                        id="link_1"
+                        href="https://kafineteman.com/"
+                        target="_blank"
+                      >
+                        <InjectMassage id="path.kar.title" />
+                      </a>
+                    </h2>
+                    <br />
+                    <p className="selection-text-background low_weight">
+                      <InjectMassage id="path.kar.description" />
+                    </p>
+                  </div>
+                </RtlMaker>
               </div>
             </RtlMaker>
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-3 md:gap-10 justify-center items-center lg:mt-10">
+        <div className="flex flex-col sm:flex-row gap-3 md:gap-10 justify-center items-center">
           <div className="glassMorphism rounded-md min-w-60">
             <a
               target="_blank"

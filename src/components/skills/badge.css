@@ -28,8 +28,8 @@
   left: 0;
   background: radial-gradient(
     circle 60px at 0% 100%,
-    #3fe9ff,
-    #0000ff80,
+    var(--secondcolor),
+    var(--primarycolor),
     transparent
   );
   box-shadow: -10px 10px 30px #0051ff2d;
@@ -45,25 +45,22 @@
 }
 
 @media only screen and (min-width: 701px) and (max-width: 1000px) {
-  .inner{
+  .inner {
     padding: 8px 16px;
-
   }
-  .button{
-    font-size:1.2rem;
+  .button {
+    font-size: 1.2rem;
   }
 }
- 
+
 @media only screen and (max-width: 700px) {
-  .inner{
+  .inner {
     padding: 6px 13px;
   }
-  .button{
-    font-size:1rem;
+  .button {
+    font-size: 1rem;
   }
 }
-
-
 
 .inner::before {
   content: "";
@@ -80,7 +77,6 @@
   );
   position: absolute;
 }
-
 
 .btn-shine {
   position: absolute;

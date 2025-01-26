@@ -32,9 +32,6 @@ const MySkills = () => {
     setStartAnimate(false);
     if (parentRef.current) {
       let fixNavigateSize = 1;
-      if (sizeName === "mobile") {
-        fixNavigateSize = 1;
-      }
 
       parentRef.current.style.transform = `translateY(-${
         shownItem * parseInt(parentRef?.current.offsetHeight * fixNavigateSize)

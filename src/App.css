@@ -78,19 +78,7 @@ span.Typewriter__wrapper::selection {
   }
 }
 
-.rainbow .header-styles {
-  background-color: #ffd700;
-  z-index: 25;
-}
-.light .header-styles {
-  background-color: transparent;
-  z-index: 25;
-}
-.dark .header-styles {
-  background-color: #7d0a0a;
-  color: white;
-  z-index: 25;
-}
+
 
 .central {
   position: absolute;
@@ -107,11 +95,9 @@ span.Typewriter__wrapper::selection {
   width: 100%;
 }
 
-.light-bg{
+.light-bg {
   background-image: url("/public/lii.png");
-
 }
-
 
 .light .intro-about-gradient,
 .light .intro-about-gradient,
@@ -376,8 +362,8 @@ span.Typewriter__wrapper::selection {
   line-height: 1.8em;
   padding: 0.5em 0.5em;
   position: absolute;
-  left:30px;
-  top:6px;
+  left: 30px;
+  top: 6px;
   left: 30px;
   top: 6px;
   transition: 0.2s border ease-in-out;
@@ -419,12 +405,11 @@ span.Typewriter__wrapper::selection {
   transform: rotateY(360deg);
 }
 
-#link_1{
-  color:rgb(250 204 21);
+#link_1 {
+  color: rgb(250 204 21);
   text-decoration: underline;
   text-underline-offset: 7px;
-   
 }
-.low_weight{
-  font-weight:500;
-} 
+.low_weight {
+  font-weight: 500;
+}

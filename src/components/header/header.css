@@ -19,7 +19,6 @@
   background-color: black;
 }
 .dark .header-container > a::before {
-
   background-color: white;
 }
 .header-container > a:hover::before {
@@ -38,8 +37,7 @@
 }
 
 .dark .active-section-header::after {
-  background-color: rgb(255, 168, 61);
-
+  background-color: var(--secondcolor);
 }
 .active-section-header-yellow::after {
   content: "";
@@ -50,6 +48,20 @@
   height: 2px;
   background-color: rgb(249, 255, 65);
   animation: bottomLineAnimationSection 2s ease-in-out infinite;
+}
+
+.rainbow .header-styles {
+  background-color: var(--primarycolor);
+  z-index: 19;
+}
+.light .header-styles {
+  background-color: var(--primarycolor);
+  z-index: 19;
+}
+.dark .header-styles {
+  background-color: var(--primarycolor);
+  color: white;
+  z-index: 19;
 }
 
 @keyframes bottomLineAnimationSection {

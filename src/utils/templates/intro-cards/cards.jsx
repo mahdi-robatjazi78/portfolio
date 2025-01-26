@@ -28,11 +28,11 @@ const Cards = () => {
       </div>
 
       <h1
-        className={`f-exo-medium text-black selection-text-background py-2 md:py-4 text-xl`}
+        className={`f-exo-bold text-slate-800 selection-text-background py-2 md:py-4 text-2xl font-extrabold`}
       >
         <InjectMassage id="header.section.title.introduction" />
       </h1>
-      <div className="h-48 md:h-40 overflow-y-auto">
+      <div className="h-48 md:h-40 translate-y-4 overflow-y-auto">
         <p
           className={`text-slate-800 f-exo-medium ${hoverHighlightCard} rounded-md text-md selection-text-background leading-6 p-3`}
           dir={lang === "fa-IR" ? "rtl" : "ltr"}
@@ -55,11 +55,11 @@ const Cards = () => {
       </div>
 
       <h1
-        className={`f-exo-medium text-black selection-text-background py-2 md:py-4 text-xl`}
+        className={`f-exo-bold text-slate-800 selection-text-background py-2 md:py-4 text-2xl font-extrabold`}
       >
         <InjectMassage id="header.section.title.about" />
       </h1>
-      <div className="h-48 md:h-40 overflow-y-auto">
+      <div className="h-48 md:h-40 translate-y-4 overflow-y-auto px-2">
         <p
           className={`text-slate-800 ${hoverHighlightCard} rounded-md f-exo-medium text-md selection-text-background leading-6 p-3 pb-6`}
           dir={lang === "fa-IR" ? "rtl" : "ltr"}
@@ -82,14 +82,14 @@ const Cards = () => {
       </div>
 
       <h1
-        className={`f-exo-medium text-black selection-text-background py-2 md:py-4 text-xl`}
+        className={`f-exo-bold text-slate-800 selection-text-background py-2 md:py-4 text-2xl font-extrabold`}
       >
         <InjectMassage id="header.section.title.worth" />
       </h1>
 
       <div
         dir={lang === "fa-IR" ? "ltr" : "rtl"}
-        className="h-48 md:h-40 overflow-y-auto"
+        className="h-48 md:h-40 translate-y-4 overflow-y-auto  px-2"
       >
         <div
           className={`flex  ${hoverHighlightCard} rounded-md p-2`}
