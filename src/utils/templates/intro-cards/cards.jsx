@@ -32,9 +32,9 @@ const Cards = () => {
       >
         <InjectMassage id="header.section.title.introduction" />
       </h1>
-      <div className="h-48 md:h-40 translate-y-4 overflow-y-auto">
+      <div className="h-48  translate-y-4 overflow-y-auto px-2">
         <p
-          className={`text-slate-800 f-exo-medium ${hoverHighlightCard} rounded-md text-md selection-text-background leading-6 p-3`}
+          className={`text-slate-800 f-exo-medium ${hoverHighlightCard} rounded-md text-md selection-text-background leading-6 p-3 pb-6`}
           dir={lang === "fa-IR" ? "rtl" : "ltr"}
         >
           <InjectMassage id="about.me.section0.t1" />
@@ -59,7 +59,7 @@ const Cards = () => {
       >
         <InjectMassage id="header.section.title.about" />
       </h1>
-      <div className="h-48 md:h-40 translate-y-4 overflow-y-auto px-2">
+      <div className="h-48 translate-y-4 overflow-y-auto px-2">
         <p
           className={`text-slate-800 ${hoverHighlightCard} rounded-md f-exo-medium text-md selection-text-background leading-6 p-3 pb-6`}
           dir={lang === "fa-IR" ? "rtl" : "ltr"}
@@ -89,7 +89,7 @@ const Cards = () => {
 
       <div
         dir={lang === "fa-IR" ? "ltr" : "rtl"}
-        className="h-48 md:h-40 translate-y-4 overflow-y-auto  px-2"
+        className="h-48  translate-y-4 overflow-y-auto  px-2"
       >
         <div
           className={`flex  ${hoverHighlightCard} rounded-md p-2`}

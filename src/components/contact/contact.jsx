@@ -64,7 +64,7 @@ const ContactMe = (props) => {
 
   const closeIconStyles = {
     position: "absolute",
-    
+
     right: "-1px",
     cursor: "pointer",
   };
@@ -76,7 +76,7 @@ const ContactMe = (props) => {
   }
 
   return (
-    <div className="fixed left-4 sm:left-1/2 translate-x-0 sm:-translate-x-1/2 w-[94%] sm:w-4/5 h-42 px-4 pt-12 pb-6 md:py-9 glassMorphism rounded-md contact-box-animation z-30">
+    <div className="fixed left-4 sm:left-1/2 translate-x-0 sm:-translate-x-1/2 w-[94%] sm:w-4/5 h-42 px-4 pt-12 pb-6 md:py-9 bg-[var(--primarycolor)] rounded-md contact-box-animation z-30">
       <div className="relative lg:flex">
         <span
           style={closeIconStyles}
@@ -88,7 +88,6 @@ const ContactMe = (props) => {
           <IoCloseOutline className="text-3xl scale-animation" />
         </span>
         <section className="w-full md:mt-2">
-          
           <div className="flex w-full mb-2">
             <img src="/contactme-logos/linkedin.png" width={40} height={40} />
             <div
@@ -183,7 +182,6 @@ const ContactMe = (props) => {
               </div>
             </div>
           </div>
-
         </section>
 
         <section className="w-full md:mt-2">

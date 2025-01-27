@@ -44,7 +44,7 @@
   text-align: center;
   margin: 1rem;
   /* color: rgb(218, 244, 237); */
-  text-shadow: -10px 5px 6px var(--secondcolor);
+  /* text-shadow: -10px 5px 6px var(--secondcolor); */
 }
 
 .point-to-left {

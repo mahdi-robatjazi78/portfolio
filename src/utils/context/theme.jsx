@@ -23,7 +23,7 @@ export const ThemeContextProvider = ({ children }) => {
       root.style.setProperty("--primarycolor", "rgb(125, 10, 10)");
       root.style.setProperty("--secondcolor", "rgb(236, 255, 64)");
     } else if (theme === "light") {
-      root.style.setProperty("--primarycolor", "rgb(128, 128, 128)");
+      root.style.setProperty("--primarycolor", "rgb(162, 172, 255)");
       root.style.setProperty("--secondcolor", "rgb(0, 196, 0)");
     } else if (theme === "rainbow") {
       root.style.setProperty("--primarycolor", "rgb(255, 215, 0)");
@@ -43,7 +43,7 @@ export const ThemeContextProvider = ({ children }) => {
     if (theme !== "light") {
       setTheme("light");
       localStorage.setItem("theme", "light");
-      root.style.setProperty("--primarycolor", "rgb(128, 128, 128)");
+      root.style.setProperty("--primarycolor", "rgb(162, 172, 255)");
       root.style.setProperty("--secondcolor", "rgb(0, 196, 0)");
     }
   };
