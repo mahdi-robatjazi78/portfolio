@@ -96,7 +96,7 @@ const Projects = (props) => {
             </div>
 
             <RtlMaker>
-              <div className="p-4 f-dosis-bold overflow-y-hidden	">
+              <div className="p-4 f-dosis-bold overflow-y-hidden	max-h-36">
                 <h2 className="selection-text-background ">
                   <InjectMassage id="path.notash.title" />
                 </h2>

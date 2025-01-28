@@ -73,10 +73,10 @@ export default {
     "One of the right decisions in my life was participating in the Front-end Bootcamp at Mapsa, where I learned programming under the supervision of Professor Moein Alizadeh. Additionally, I completed a supplementary project as a sample of my work.",
   "path.notash.title": "Notash Company",
   "path.notash.description":
-    "After attending the Mapsa Bootcamp, I quickly got employed at Notash Company. I worked there for 20 months as a front-end programmer, gaining valuable team collaboration experience. Notash is actually a local provider of Internet of Things in Iran.",
+    "About 20 months of working as a front-end developer at Notash (a native IoT service) gave me valuable experience in team collaboration using the Scrum model.",
   "path.kar.title": "Kar Ra Bendaz Project",
   "path.kar.description":
-    "During my time at Notash Company, I engaged in a resume project and also took on a testing project to learn new front-end technologies. The project is about a to-do list, and I encourage you to take a professional look at it if possible.",
+    "After my time at Notash, I became a member of a small but very agile, fast, and completely remote and flexible team. Of course, the project is currently on hold.",
   "resume.title": "resume file ",
   "get.resume.file": "Get Resume File",
   "go.to.my.virgool.account": "My Virgool Articles",

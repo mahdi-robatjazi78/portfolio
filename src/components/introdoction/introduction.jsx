@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { LanguageContext } from "../../utils/context/language";
 import { Element } from "react-scroll";
 import SlideUpAnimationText from "../../utils/templates/slideUpAnimationText";
-
 import Cards from "../../utils/templates/intro-cards/cards";
 
 const Introduction = () => {
@@ -24,9 +23,9 @@ const Introduction = () => {
       <div
         className={`f-dosis-section-1 text-4xl md:text-5xl lg:text-7xl h-full w-full`}
       >
-        <div className="image-me-styles">
+        {/* <div className="image-me-styles">
           <img src="/me/me.png" />
-        </div>
+        </div> */}
       </div>
     </Element>
   );

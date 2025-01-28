@@ -27,7 +27,9 @@ const NotashDetailModal = (props) => {
               <a
                 href="https://notash.net"
                 target="_blank"
-                className={`selection-text-background ${theme === "light"?"text-yellow-700":"text-yellow-400"}`}
+                className={`selection-text-background ${
+                  theme === "light" ? "text-yellow-700" : "text-yellow-400"
+                }`}
               >
                 <InjectMassage id="path.notash.title" />
               </a>
@@ -107,11 +109,15 @@ const NotashDetailModal = (props) => {
                     )}
                   >
                     <div className="py-2">
-                      <p className="text-sm selection-text-background text-gray-950 f-exo-medium px-2">
+                      <p className="text-sm selection-text-background text-gray-950 f-exo-medium px-2 max-h-44 overflow-y-scroll">
                         <InjectMassage id="project.detail.box.notash.description.section.1" />{" "}
                         <a
                           className={`
-                          ${theme === "light"?"text-yellow-700":"text-yellow-400"}
+                          ${
+                            theme === "light"
+                              ? "text-yellow-700"
+                              : "text-yellow-400"
+                          }
                           selection-text-background underline`}
                           href="https://web.danialmoj.com/"
                           target="_blank"
@@ -129,13 +135,13 @@ const NotashDetailModal = (props) => {
                       "ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
                     )}
                   >
-                   <iframe
+                    <iframe
                       src="https://www.aparat.com/video/video/embed/videohash/fzwQO/vt/frame"
                       allowFullScreen="true"
                       webkitallowfullscreen="true"
                       mozallowfullscreen="true"
                       className="w-full h-56"
-                    ></iframe> 
+                    ></iframe>
 
                     {/* <ReactPlayer
                       width="100%"
@@ -162,14 +168,13 @@ const NotashDetailModal = (props) => {
                       webkitallowfullscreen="true"
                       mozallowfullscreen="true"
                       className="w-full h-56"
-                    ></iframe>  
+                    ></iframe>
 
                     {/* <ReactPlayer
                       width="100%"
                       height="180px"
                       url="https://youtu.be/NWGJAWrN49A"
                     /> */}
-                    
                   </Tab.Panel>
                   <Tab.Panel
                     className={classNames(
@@ -184,9 +189,15 @@ const NotashDetailModal = (props) => {
                           : "list-disc pl-7"
                       }`}
                     >
-                      <li className={`
-                        ${theme === "light"?"text-yellow-700":"text-yellow-400"}
-                      mt-5 f-exo-medium`}>
+                      <li
+                        className={`
+                        ${
+                          theme === "light"
+                            ? "text-yellow-700"
+                            : "text-yellow-400"
+                        }
+                      mt-5 f-exo-medium`}
+                      >
                         <a
                           target="_blank"
                           href="https://www.aparat.com/v/fzwQO"
@@ -195,18 +206,30 @@ const NotashDetailModal = (props) => {
                           <InjectMassage id="kar.ra.bendaz.links.aparat" />
                         </a>
                       </li>
-                      <li className={`
-                        ${theme === "light"?"text-yellow-700":"text-yellow-400"}
-                      mt-5 f-exo-medium`}>
+                      <li
+                        className={`
+                        ${
+                          theme === "light"
+                            ? "text-yellow-700"
+                            : "text-yellow-400"
+                        }
+                      mt-5 f-exo-medium`}
+                      >
                         <a target="_blank" href="https://youtu.be/HC0tddJodLg">
                           <InjectMassage id="project.detail.box.notash.select.rulechain" />{" "}
                           <InjectMassage id="kar.ra.bendaz.links.youtube" />
                         </a>
                       </li>
 
-                      <li className={`
-                        ${theme === "light"?"text-yellow-700":"text-yellow-400"}
-                      mt-5 f-exo-medium`}>
+                      <li
+                        className={`
+                        ${
+                          theme === "light"
+                            ? "text-yellow-700"
+                            : "text-yellow-400"
+                        }
+                      mt-5 f-exo-medium`}
+                      >
                         <a
                           target="_blank"
                           href="https://www.aparat.com/v/5R743"
@@ -215,9 +238,15 @@ const NotashDetailModal = (props) => {
                           <InjectMassage id="kar.ra.bendaz.links.aparat" />
                         </a>
                       </li>
-                      <li className={`
-                        ${theme === "light"?"text-yellow-700":"text-yellow-400"}
-                      mt-5 f-exo-medium`}>
+                      <li
+                        className={`
+                        ${
+                          theme === "light"
+                            ? "text-yellow-700"
+                            : "text-yellow-400"
+                        }
+                      mt-5 f-exo-medium`}
+                      >
                         <a target="_blank" href="https://youtu.be/NWGJAWrN49A">
                           <InjectMassage id="project.detail.box.notash.select.ticketing" />{" "}
                           <InjectMassage id="kar.ra.bendaz.links.youtube" />
