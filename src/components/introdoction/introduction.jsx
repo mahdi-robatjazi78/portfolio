@@ -22,11 +22,7 @@ const Introduction = () => {
       </div>
       <div
         className={`f-dosis-section-1 text-4xl md:text-5xl lg:text-7xl h-full w-full`}
-      >
-        {/* <div className="image-me-styles">
-          <img src="/me/me.png" />
-        </div> */}
-      </div>
+      ></div>
     </Element>
   );
 };

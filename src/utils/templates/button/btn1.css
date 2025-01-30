@@ -6,7 +6,7 @@
   color: rgb(0, 0, 0);
   background: none;
   border: 2px solid var(--primarycolor);
-  border-radius: 8px;
+  /* border-radius: 8px; */
   cursor: pointer;
   overflow: hidden;
   transition: all 0.3s ease;

@@ -28,13 +28,13 @@ const Cards = () => {
       </div>
 
       <h1
-        className={`f-exo-bold text-slate-800 selection-text-background py-2 md:py-4 text-2xl font-extrabold text-center m-0 sm:m-2 md:m-4`}
+        className={`f-exo-bold text-slate-800 selection-text-background text-2xl font-extrabold text-center m-0 sm:m-2 md:m-4`}
       >
         <InjectMassage id="header.section.title.introduction" />
       </h1>
-      <div className="h-48  translate-y-4 overflow-y-auto px-2">
+      <div className="par">
         <p
-          className={`text-slate-800 f-exo-medium ${hoverHighlightCard}  transition delay-150 duration-2000 ease-in-out  rounded-sm text-md selection-text-background leading-6 p-3 pb-6`}
+          className={`text-slate-800 f-exo-medium ${hoverHighlightCard} transition delay-150 duration-2000 ease-in-out  rounded-sm text-sm selection-text-background leading-6 p-3 `}
           dir={lang === "fa-IR" ? "rtl" : "ltr"}
         >
           <InjectMassage id="about.me.section0.t1" />
@@ -55,13 +55,13 @@ const Cards = () => {
       </div>
 
       <h1
-        className={`f-exo-bold text-slate-800 selection-text-background py-2 md:py-4 text-2xl font-extrabold text-center m-0 sm:m-2 md:m-4`}
+        className={`f-exo-bold text-slate-800 selection-text-background text-2xl font-extrabold text-center m-0 sm:m-2 md:m-4`}
       >
         <InjectMassage id="header.section.title.about" />
       </h1>
-      <div className="h-48 translate-y-4 overflow-y-auto px-2">
+      <div className="par">
         <p
-          className={`text-slate-800 ${hoverHighlightCard} rounded-sm f-exo-medium text-md selection-text-background leading-6 p-3 pb-6`}
+          className={`text-slate-800 ${hoverHighlightCard} rounded-sm f-exo-medium text-sm selection-text-background leading-6 p-3`}
           dir={lang === "fa-IR" ? "rtl" : "ltr"}
         >
           <InjectMassage id="about.me.section0.t2" />
@@ -82,53 +82,62 @@ const Cards = () => {
       </div>
 
       <h1
-        className={`f-exo-bold text-slate-800 selection-text-background py-2 md:py-4 text-2xl font-extrabold text-center m-0 sm:m-2 md:m-4`}
+        className={`f-exo-bold text-slate-800 selection-text-background text-2xl font-extrabold text-center m-0 sm:m-2 md:m-4`}
       >
         <InjectMassage id="header.section.title.worth" />
       </h1>
 
-      <div
-        dir={lang === "fa-IR" ? "ltr" : "rtl"}
-        className="h-48  translate-y-4 overflow-y-auto  px-2"
-      >
-        <div className={`flex p-2`} dir={lang === "fa-IR" ? "rtl" : "ltr"}>
+      <div dir={lang === "fa-IR" ? "ltr" : "rtl"} className="px-2 c3">
+        <div
+          className={`flex p-1 ${hoverHighlightCard}`}
+          dir={lang === "fa-IR" ? "rtl" : "ltr"}
+        >
           <span
-            className={`${dir === "ltr" ? "point-to-right " : "point-to-left"}`}
+            className={`${dir === "ltr" ? "point-to-right" : "point-to-left"}`}
           ></span>
           <p
-            className={`${hoverHighlightCard} p-2 text-slate-800 f-exo-medium text-md selection-text-background leading-6 `}
+            className={` text-slate-800 f-exo-medium text-sm selection-text-background leading-6 `}
           >
             <InjectMassage id="about.me.section0.t3.li.1" />
           </p>
         </div>
 
-        <div className={`flex p-2`} dir={lang === "fa-IR" ? "rtl" : "ltr"}>
+        <div
+          className={`flex p-1 ${hoverHighlightCard}`}
+          dir={lang === "fa-IR" ? "rtl" : "ltr"}
+        >
           <span
             className={`${dir === "ltr" ? "point-to-right" : "point-to-left"}`}
           ></span>
           <p
-            className={`${hoverHighlightCard} p-2 text-slate-800 f-exo-medium text-md selection-text-background leading-6 `}
+            className={`text-slate-800 f-exo-medium text-sm selection-text-background leading-6 `}
           >
             <InjectMassage id="about.me.section0.t3.li.2" />
           </p>
         </div>
-        <div className={`flex p-2`} dir={lang === "fa-IR" ? "rtl" : "ltr"}>
+        <div
+          className={`flex p-1 ${hoverHighlightCard}`}
+          dir={lang === "fa-IR" ? "rtl" : "ltr"}
+        >
           <span
             className={`${dir === "ltr" ? "point-to-right" : "point-to-left"}`}
           ></span>
           <p
-            className={`${hoverHighlightCard} p-2 text-slate-800 f-exo-medium text-md selection-text-background leading-6  `}
+            className={`text-slate-800 f-exo-medium text-sm selection-text-background leading-6  `}
             dir={lang === "fa-IR" ? "rtl" : "ltr"}
           >
             <InjectMassage id="about.me.section0.t3.li.3" />
           </p>
         </div>
-        <div className={`flex p-2`} dir={lang === "fa-IR" ? "rtl" : "ltr"}>
+        <div
+          className={`flex p-1 ${hoverHighlightCard}`}
+          dir={lang === "fa-IR" ? "rtl" : "ltr"}
+        >
           <span
             className={`${dir === "ltr" ? "point-to-right" : "point-to-left"}`}
           ></span>
           <p
-            className={`${hoverHighlightCard} p-2 text-slate-800 f-exo-medium text-md selection-text-background leading-6`}
+            className={`text-slate-800 f-exo-medium text-sm selection-text-background leading-6`}
             dir={lang === "fa-IR" ? "rtl" : "ltr"}
           >
             <InjectMassage id="about.me.section0.t3.li.4" />

@@ -30,32 +30,29 @@ const Projects = (props) => {
     <Element
       name="project-section"
       id="projects-section"
-      className={`relative w-screen h-fit projects-gradient`}
+      className={`relative w-screen h-fit py-10 projects-gradient`}
     >
       <div className="flex-col gap-10 items-center content-center max-w-[1200px] m-auto h-full">
         <RtlMaker className="flex flex-col gap-5 w-full px-3 justify-center items-center">
           <div
-            className="glassMorphism ag-courses-item_link cursor-pointer w-full md:w-3/5 h-52 flex justify-between items-center rounded-md"
+            className="glassMorphism ag-courses-item_link cursor-pointer w-full md:w-3/5 h-52 flex justify-between items-center "
             onClick={() => {
               setOpenMapsaModal(true);
             }}
           >
             <div className="ag-courses-item_bg"></div>
 
-            <span
-              style={InformationIconStyle}
-              className="glassMorphism rounded-md z-10"
-            >
+            <span style={InformationIconStyle} className="glassMorphism  z-10">
               <IoIosInformationCircleOutline className="text-3xl scale-animation" />
             </span>
             <div className="mx-5 max-w-14 z-10">
               <img
                 src="/project-logos/mapsa.jpg"
-                className="max-w-4xl h-14 mb-3 rounded-lg"
+                className="max-w-4xl h-14 mb-3 "
               />
               <img
                 src="/project-logos/theMovieProject.jpg"
-                className="max-w-4xl h-14 rounded-lg"
+                className="max-w-4xl h-14 "
               />
             </div>
             <RtlMaker>
@@ -71,27 +68,24 @@ const Projects = (props) => {
             </RtlMaker>
           </div>
           <div
-            className="glassMorphism ag-courses-item_link cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center rounded-md"
+            className="glassMorphism ag-courses-item_link cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center "
             onClick={() => {
               setOpenNotashModal(true);
             }}
           >
             <div className="ag-courses-item_bg"></div>
-            <span
-              style={InformationIconStyle}
-              className="glassMorphism rounded-md z-10"
-            >
+            <span style={InformationIconStyle} className="glassMorphism  z-10">
               <IoIosInformationCircleOutline className="text-3xl scale-animation" />
             </span>
 
             <div className="mx-5 max-w-14  z-10">
               <img
                 src="/project-logos/danialmoj.jpg"
-                className="h-14 mb-3 rounded-lg max-w-4xl"
+                className="h-14 mb-3  max-w-4xl"
               />
               <img
                 src="/project-logos/notash.jpg"
-                className="h-14 rounded-lg max-w-4xl"
+                className="h-14  max-w-4xl"
               />
             </div>
 
@@ -107,11 +101,11 @@ const Projects = (props) => {
               </div>
             </RtlMaker>
           </div>
-          <div className="glassMorphism ag-courses-item_link cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center rounded-md">
+          <div className="glassMorphism ag-courses-item_link cursor-pointer relative w-full md:w-3/5 h-52 flex justify-between items-center ">
             <div className="ag-courses-item_bg"></div>
             <img
               src="/project-logos/kafineteman.jpg"
-              className="w-14 h-14 rounded-lg mx-5  z-10"
+              className="w-14 h-14  mx-5  z-10"
             />
             <RtlMaker>
               <div className="p-4 f-dosis-bold overflow-y-hidden max-h-36	">
@@ -128,8 +122,8 @@ const Projects = (props) => {
             </RtlMaker>
           </div>
         </RtlMaker>
-        <div className="lg:absolute lg:bottom-10 lg:right-10 my-3 lg:my-0">
-          <div className="flex flex-col md:flex-row lg:flex-col  gap-3  justify-center items-center">
+        <div className="xl:absolute xl:bottom-10 xl:right-10 my-6 xl:my-0">
+          <div className="flex flex-col md:flex-row xl:flex-col gap-3 justify-center items-center">
             <div>
               <a
                 target="_blank"
@@ -142,7 +136,6 @@ const Projects = (props) => {
                 </Btn1>
               </a>
             </div>
-
             <div>
               <a target="_blank" href={Pdf} download>
                 <Btn1 dir={lang === "fa-IR" ? "rtl" : "ltr"}>

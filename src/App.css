@@ -78,8 +78,6 @@ span.Typewriter__wrapper::selection {
   }
 }
 
-
-
 .central {
   position: absolute;
   top: 50%;
@@ -412,4 +410,10 @@ span.Typewriter__wrapper::selection {
 }
 .low_weight {
   font-weight: 500;
+}
+.central{
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
