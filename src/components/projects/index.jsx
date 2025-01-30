@@ -45,7 +45,7 @@ const Projects = (props) => {
             <span style={InformationIconStyle} className="glassMorphism  z-10">
               <IoIosInformationCircleOutline className="text-3xl scale-animation" />
             </span>
-            <div className="mx-5 max-w-14 z-10">
+            <div className="mx-1 md:mx-5 max-w-14 z-10">
               <img
                 src="/project-logos/mapsa.jpg"
                 className="max-w-4xl h-14 mb-3 "
@@ -56,7 +56,7 @@ const Projects = (props) => {
               />
             </div>
             <RtlMaker>
-              <div className="p-4 f-dosis-bold overflow-y-hidden max-h-36	z-10">
+              <div className="p-1 md:p-4 f-dosis-bold overflow-y-hidden h-full md:max-h-36	z-10">
                 <h2 className="selection-text-background ">
                   <InjectMassage id="path.mapsa.title" />
                 </h2>
@@ -78,7 +78,7 @@ const Projects = (props) => {
               <IoIosInformationCircleOutline className="text-3xl scale-animation" />
             </span>
 
-            <div className="mx-5 max-w-14  z-10">
+            <div className="mx-1 md:mx-5 max-w-14  z-10">
               <img
                 src="/project-logos/danialmoj.jpg"
                 className="h-14 mb-3  max-w-4xl"
@@ -90,7 +90,7 @@ const Projects = (props) => {
             </div>
 
             <RtlMaker>
-              <div className="p-4 f-dosis-bold overflow-y-hidden	max-h-36">
+              <div className="p-1 md:p-4 f-dosis-bold overflow-y-hidden h-full md:max-h-36">
                 <h2 className="selection-text-background ">
                   <InjectMassage id="path.notash.title" />
                 </h2>
@@ -105,10 +105,10 @@ const Projects = (props) => {
             <div className="ag-courses-item_bg"></div>
             <img
               src="/project-logos/kafineteman.jpg"
-              className="w-14 h-14  mx-5  z-10"
+              className="w-14 h-14  mx-1 md:mx-5  z-10"
             />
             <RtlMaker>
-              <div className="p-4 f-dosis-bold overflow-y-hidden max-h-36	">
+              <div className="p-1 md:p-4 f-dosis-bold overflow-y-hidden h-full md:max-h-36	">
                 <h2 className="selection-text-background">
                   <h2 className="selection-text-background ">
                     <InjectMassage id="path.kar.title" />

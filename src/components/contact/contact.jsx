@@ -19,10 +19,7 @@ const ContactMe = (props) => {
   const mobileRef = useRef(null);
 
   function copyOperation(el, txt) {
-    // Get the text field
     let timeoutId;
-
-    // Select the text field
     if (el === "linkedin") {
       LinkedinRef.current.classList.add("success-box");
       timeoutId = setTimeout(() => {
@@ -54,10 +51,6 @@ const ContactMe = (props) => {
         mobileRef.current.classList.remove("success-box");
       }, 3000);
     }
-
-    // copyText.setSelectionRange(0, 99999); // For mobile devices
-
-    // Copy the text inside the text field
     navigator.clipboard.writeText(txt);
     clearTimeout(timeoutId);
   }
@@ -65,7 +58,7 @@ const ContactMe = (props) => {
   const closeIconStyles = {
     position: "absolute",
 
-    right: "-1px",
+    right: "12px",
     cursor: "pointer",
   };
 
@@ -76,11 +69,11 @@ const ContactMe = (props) => {
   }
 
   return (
-    <div className="fixed left-4 sm:left-1/2 translate-x-0 sm:-translate-x-1/2 w-[94%] sm:w-4/5 h-42 px-4 pt-12 pb-6 md:py-9 bg-[var(--primarycolor)] rounded-md contact-box-animation z-30">
+    <div className="fixed left-4 sm:left-1/2 translate-x-0 sm:-translate-x-1/2 w-[94%] sm:w-4/5 h-42 px-4 pt-12 pb-6 md:py-9 bg-[var(--primarycolor)] contact-box-animation z-30">
       <div className="relative lg:flex">
         <span
           style={closeIconStyles}
-          className="bg-white rotate-animation rounded-md top-[-40px] lg:top-[-30px]"
+          className="bg-white rotate-animation top-[-40px] lg:top-[-30px]"
           onClick={() => {
             setOpenContactMeBox(false);
           }}
@@ -92,7 +85,7 @@ const ContactMe = (props) => {
             <img src="/contactme-logos/linkedin.png" width={36} height={36} />
             <div
               ref={LinkedinRef}
-              className="flex flex-nowrap w-full bg-white mx-3 px-3 rounded-md justify-between items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+              className="flex flex-nowrap w-full bg-white mx-3 px-3 justify-between items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
             >
               <p className="selection-text-background f-dosis-medium tracking-wider space-2">
                 {size[0] < 480
@@ -127,7 +120,7 @@ const ContactMe = (props) => {
             <img src="/contactme-logos/gmail.png" width={36} height={36} />
             <div
               ref={GmailRef}
-              className="flex flex-nowrap w-full bg-white mx-3 px-3 rounded-md justify-between items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+              className="flex flex-nowrap w-full bg-white mx-3 px-3 justify-between items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
             >
               <p className="selection-text-background f-dosis-medium tracking-wider   space-2">
                 {size[0] < 480
@@ -157,7 +150,7 @@ const ContactMe = (props) => {
             <img src="/contactme-logos/telegram.png" width={36} height={36} />
             <div
               ref={TelegramRef}
-              className="flex flex-nowrap w-full bg-white mx-3 px-3 rounded-md justify-between items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+              className="flex flex-nowrap w-full bg-white mx-3 px-3 justify-between items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
             >
               <p className="selection-text-background f-dosis-medium tracking-wider space-2">
                 {size[0] < 480
@@ -189,7 +182,7 @@ const ContactMe = (props) => {
             <img src="/contactme-logos/github2.png" width={36} height={36} />
             <div
               ref={GithubRef}
-              className="flex flex-nowrap w-full bg-white mx-3 px-3 rounded-md justify-between items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+              className="flex flex-nowrap w-full bg-white mx-3 px-3 justify-between items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
             >
               <p className="selection-text-background f-dosis-medium tracking-wider space-2">
                 {size[0] < 480
@@ -229,7 +222,7 @@ const ContactMe = (props) => {
             <img src="/contactme-logos/mobile.jpg" width={36} height={36} />
             <div
               ref={mobileRef}
-              className="flex flex-nowrap w-full bg-white mx-3 px-3 rounded-md justify-between items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+              className="flex flex-nowrap w-full bg-white mx-3 px-3 justify-between items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
             >
               <p
                 className={`selection-text-background f-dosis-medium tracking-wider space-2 ${
@@ -261,7 +254,7 @@ const ContactMe = (props) => {
             <img src="/contactme-logos/cv.png" width={36} height={36} />
             <div
               ref={GithubRef}
-              className="flex flex-nowrap w-full bg-white mx-3 px-3 rounded-md justify-between items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+              className="flex flex-nowrap w-full bg-white mx-3 px-3 justify-between items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
             >
               <p
                 className={`selection-text-background f-dosis-medium tracking-wider space-2 ${

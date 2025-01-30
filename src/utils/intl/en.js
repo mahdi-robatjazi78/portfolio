@@ -18,7 +18,7 @@ export default {
   "about.me.section0.t2": `Nearly 3 years of activity in front-end website design. In all these years, I have continuously worked and focused on skills such as learning development, teamwork and personal growth, and I intend to use my knowledge to develop fast, stable and user-friendly websites. I am happy that all things There is new to learn and this learning path will continue.`,
 
   "about.me.section0.t3.li.1": `Continuous learning and acquiring new skills`,
-  "about.me.section0.t3.li.2": `Building and creating practical and solution-oriented applications`,
+  "about.me.section0.t3.li.2": `Building practical and solution-oriented applications`,
   "about.me.section0.t3.li.3": `Interaction, learning and networking from expert friends and colleagues`,
   "about.me.section0.t3.li.4": `High quality work, team work practice, gaining experiences unique to organizational work`,
 
