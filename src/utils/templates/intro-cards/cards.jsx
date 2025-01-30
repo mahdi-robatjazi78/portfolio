@@ -5,6 +5,7 @@ import { LanguageContext } from "../../context/language";
 import ThemeContext from "../../context/theme";
 import { motion } from "framer-motion";
 import { FaQuoteRight } from "react-icons/fa";
+import "animate.css";
 
 const Cards = () => {
   const { lang } = useContext(LanguageContext);
@@ -17,12 +18,7 @@ const Cards = () => {
       : "hover:bg-slate-400 text-slate-300 hover:text-slate-800";
 
   const c1 = (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
-      className="card w-[95%] md:w-[380px]"
-    >
+    <div className="card w-[95%] sm:w-[80%] md:w-[380px] animate__animated animate__zoomInUp animate__delay-.5s">
       <div className="align">
         <FaQuoteRight />
       </div>
@@ -40,16 +36,11 @@ const Cards = () => {
           <InjectMassage id="about.me.section0.t1" />
         </p>
       </div>
-    </motion.div>
+    </div>
   );
 
   const c2 = (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
-      className="card w-[95%] md:w-[380px]"
-    >
+    <div className="card w-[95%] sm:w-[80%] md:w-[380px] md:max-w-[420px] animate__animated animate__zoomInUp animate__delay-1s">
       <div className="align">
         <FaQuoteRight />
       </div>
@@ -67,16 +58,11 @@ const Cards = () => {
           <InjectMassage id="about.me.section0.t2" />
         </p>
       </div>
-    </motion.div>
+    </div>
   );
 
   const c3 = (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
-      className="card w-[95%] md:w-[380px]"
-    >
+    <div className="card w-[95%] sm:w-[80%] md:w-[380px] animate__animated animate__zoomInUp animate__delay-2s">
       <div className="align">
         <FaQuoteRight />
       </div>
@@ -144,7 +130,7 @@ const Cards = () => {
           </p>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 
   return (
